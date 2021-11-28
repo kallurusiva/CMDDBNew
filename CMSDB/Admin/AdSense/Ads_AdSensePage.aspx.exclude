@@ -1,0 +1,323 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMaster_DIY.master" AutoEventWireup="true" CodeFile="Ads_AdSensePage.aspx.cs" Inherits="Admin_Ads_AdSensePage" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style1
+        {
+            height: 18px;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .cssBullets1  {min-height: 15px; background-color:#F0F9CE; font-size: 11px; border: solid 1px #D4E594; padding: 2px 2px 2px 10px; color: #3A3F39;}
+        .cssBullets2  {min-height: 20px; font-family: Lucida Sans Unicode; border-bottom: solid 1px #C4C4C4; font-size: 12px; color: #242624;}
+        .cssNotify    { height:25px; background-color:#FDE6B6; font-size: 14px;font-family:"Trebuchet MS", Tahoma; border: solid 1px #98978E; padding: 2px 2px 2px 10px; color: #323332;}
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentLeftMenu" Runat="Server">
+    </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" Runat="Server">
+
+
+    <form id="form2" runat="server">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" width="90%" align="center">
+              
+        <tr style="height:20px">
+            <td align="center">
+            
+                &nbsp;</td>
+        </tr>
+         <tr style="height:20px">
+            <td align="right">
+            <%--<asp:HyperLink ID="HypBackToWP"  CssClass="small green awesome" NavigateUrl="~/Admin/Ad_Welcome.aspx" Text = "Back to WebPortal"  runat="server" />--%>
+            &nbsp;&nbsp;&nbsp;
+             </td>
+        </tr>
+        <tr>
+            <td align="center">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td align="center">
+                 <table cellpadding="0" cellspacing="0" class="tblSubHeader">
+                  <tr>
+                        <td width="5%" align="left" valign="top">
+                            <img alt="tl" src="../../Images/table_top_Leftarc.gif" 
+                                style="width: 10px; height: 20px" /></td>
+                        <td width="90%" align="left" class="subHeaderFontGrad">
+                            &nbsp; 
+                            Google AdSense Code&nbsp; ( <font style='font: bold 12px "Trebuchet MS";  color: #DC0D0D;'>Lauching 1 January, 2013 </font>)&nbsp; </td>
+                        <td width="5%"  align="right" valign="top">
+                            <img src="../../Images/table_top_Rightarc.gif" 
+                                style="width: 10px; height: 20px" /></td>
+                    </tr>
+                 </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table cellpadding="0" cellspacing="3" id="tblPlan" class="stdtableBorder_Main" width="98%" runat="server">
+                    <tr>
+                        <td width="3%">
+                            &nbsp;</td>
+                        <td width="70%">&nbsp;
+                            </td>
+                        <td width="3%">
+                            &nbsp;</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="style1">
+                            </td>
+                        <td align="left">
+                            <p>
+                              <font class="Section_headtext">  Google AdSense Setup</font></p>
+                            <ul>
+                                <li  class="cssBullets2">This Digital Product Service will help you setup Google Adsense Account and all 
+                                    related advertisement code as well as integration to your website and mobilweb 
+                                    without you knowing any Technical know how <br /></li>
+                                <li  class="cssBullets2">Once you have purchase this service, you will have a username and password from 
+                                    Google Adsense which will be displayed below. You can change anything including 
+                                    the password. However If you are not technically sound, please do not change any 
+                                    setting as it will affect your advertisement and because we will have no access 
+                                    to your Google Adsense , we will not be able to help you then. Any help may 
+                                    incur additional charges for manpower charge. <br /></li>
+                                <li  class="cssBullets2">Once Setup , you can always login to view your Earning / Incentive.</li>
+                            </ul>
+                        
+                            <p>
+                               <font class="Section_headtext">Benefits of purchase </font> </p>
+                            <ol>
+                                
+                                <li class="cssBullets1">All Adversitement that appear at your website or MobileWeb that belongs to your 
+                                    Direct Partners who have not purchased will belong to you,<br />
+                                    which means you will 
+                                    get to earn Advertisement revenue from Google Adsense.<br /><br /></li>
+                                <li class="cssBullets1">Payment from Google Advertisement will be DIRECTLY from Google.<br /><br /></li>
+                                <li class="cssBullets1">No Need to know any Technical Know How to do Google Adsense Business. No need to 
+                                    spend Thousands $$ Attending Google Adsense Workshop or Seminar<br /><br /></li>
+                                <li class="cssBullets1">Almost Instant Google Adsense Business.<br /><br /></li>
+                                <li class="cssBullets1">Simple and Easy to start Google Adsense Business</li>
+                                
+                            </ol>
+                            <p class="cssNotify" align="center">
+                            
+                               This Service is scheduled to be launched on <b>1st Jan 2013 </b>once all Technical 
+                                details are sorted out.
+                            
+                                </p>
+                        
+                        
+                        </td>
+                        <td class="style1">
+                            </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td class="style1">
+                            </td>
+                        <td align="left" class="style1">
+                            </td>
+                        <td class="style1">
+                            </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td align="left">
+                        <table class="style1" id="tblButtonInfo" width="100%">
+                                <%--<tr>
+                                    <td width="25%" class="tblFormLabel1">
+                                        <font class="font_12Msg_Success">User Details </font>:- </td>
+                                    <td width="75%" class="tblFormText1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1" width="25%" align="right">
+                                        Full Name :</td>
+                                    <td class="tblFormText1" width="75%">
+                                        <asp:TextBox ID="txtFullName" runat="server" CssClass="stdTextField1_disabled" 
+                                            Width="300px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1" width="25%">
+                                        Mobile Number :</td>
+                                    <td class="tblFormText1" width="75%">
+                                        <asp:TextBox ID="txtMobileNo" runat="server" CssClass="stdTextField1_disabled" 
+                                            Width="300px"></asp:TextBox>
+                                    </td>
+                                </tr>--%>
+                                <tr>
+                                    <td colspan="2" class="FontBRowHelp" >
+                                        Sample View of your Google AdSense earnings : - </td>
+                                   <%-- <td >
+                                        &nbsp;</td>--%>
+                                </tr>
+                                <tr>
+                                   <%-- <td >
+                                        &nbsp;</td>--%>
+                                    <td colspan="2">
+                                        <img alt="Google Adsense Earnings" src="../../Images/GAds_Earnings.jpg" 
+                                            style="width: 1028px; height: 310px; border: dashed 1px Red;" /></td>
+                                </tr>
+                                <tr>
+                                    <td >
+                                        &nbsp;</td>
+                                    <td >
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        <font class="font_12Msg_Success">AdSense details </font>:- </td>
+                                    <td class="tblFormText1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        &nbsp;Adsense Login ID :</td>
+                                    <td class="tblFormText1">
+                                        <asp:TextBox ID="txtAdsLoginID" runat="server" Text='<%# Eval("AdSenseID")  %>' CssClass="stdTextField1" 
+                                            Width="350px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        AdSense Password:</td>
+                                    <td class="tblFormText1">
+                                        <asp:TextBox ID="txtAdsPassword" runat="server" Text='<%# Eval("AdSensePwd")  %>' CssClass="stdTextField1" 
+                                            Width="350px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        AdSense Code:</td>
+                                    <td class="tblFormText1">
+                                        <table class="style2">
+                                            <tr>
+                                                <td>
+                                                    &nbsp;</td>
+                                                <td  class="FontBRowText">
+                                                    Use Default Google AdSense Code</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:RadioButton ID="RadioButton1" runat="server" Checked="True" />
+                                                </td>
+                                                <td>
+                                        <asp:TextBox ID="txtAdCode" runat="server" Text='<%# Eval("AdSenseCode")  %>' CssClass="stdTextArea2" 
+                                            TextMode="MultiLine" Width="350px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    &nbsp;</td>
+                                                <td>
+                                                    &nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    &nbsp;</td>
+                                                <td class="FontBRowText">
+                                                    Use My Google AdSense Code</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:RadioButton ID="RadioButton2" runat="server" />
+                                                </td>
+                                                <td>
+                                        <asp:TextBox ID="txtAdCode0" runat="server" Text='<%# Eval("AdSenseCode")  %>' CssClass="stdTextArea2" 
+                                            TextMode="MultiLine" Width="350px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        &nbsp;</td>
+                                    <td class="tblFormText1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        &nbsp;</td>
+                                    <td class="tblFormText1">
+                            <asp:Button ID="BtnSave" runat="server"   Text="SAVE Google AdSense Code" ValidationGroup="VgCheck" 
+                                CssClass="stdbuttonCRUD" Enabled="False" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        &nbsp;</td>
+                                    <td class="tblFormText1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="tblFormLabel1">
+                                        &nbsp;</td>
+                                    <td class="tblFormText1 font_11Msg_Error">
+                                        <span class="style3">NOTE</span> :&nbsp;
+                        <br />
+                        <br />
+                        <font class="font_11Msg_Error">
+                        Google Adsense (advertisements) will appear at website and Mobile website for 
+                        all your direct customers / partners<br />
+                        who have not purchased our digital 
+                        products.</font>
+                        
+                    </td>
+                                </tr>
+                            </table>
+                        
+                        
+                        </td>
+                        <td>
+                            &nbsp;</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                        <td align="left">
+                            &nbsp;</td>
+                        <td>
+                            &nbsp;</td>
+                        
+                    </tr>
+                    
+                    
+                    </table>
+            </td>
+        </tr>
+        </table>
+                
+                </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+
+    </form>
+    
+</asp:Content>
+

@@ -1,0 +1,5 @@
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\bin\Release\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\bin\Release\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\obj\Release\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\obj\Release\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\obj\Release\CMSv3.Entities.csprojResolveAssemblyReference.cache

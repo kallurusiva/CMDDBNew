@@ -1,0 +1,263 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Text;
+
+public partial class Admin_Ads_EmailPage : System.Web.UI.Page
+{
+    SqlConnection dbConn;
+    SqlCommand dbCmd;
+    SqlDataReader dbReader;
+    string strSQL;
+    DataSet ds; 
+
+
+    string tmpWpDescription = string.Empty;
+    int qLgType = 1;
+    int mLanguage = 1;
+    String mAccountType = "";
+    int isPurchased = 0;
+    int isSMEPurchased = 0; 
+
+    CMSv3.BAL.User objBAL_User = new CMSv3.BAL.User();
+    CMSv3.BAL.GemailSystem objBAL_Gems = new CMSv3.BAL.GemailSystem();
+    CMSv3.BAL.MalaysiaSMS objBAL_MasUser = new CMSv3.BAL.MalaysiaSMS(); 
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+
+        #region
+
+        if (Session["UserID"] == null)
+        {
+            Response.Redirect("~/SessionExpire.aspx");
+        }
+        else
+        {
+            if(Session["UserID"].ToString() == "")
+                Response.Redirect("~/SessionExpire.aspx");
+        }
+        #endregion 
+
+
+        if (!IsPostBack)
+        {
+
+            ViewState["vMobileLoginID"] = "";
+
+
+            LoadUserDetails((Session["UserID"].ToString()));
+
+
+           
+
+
+            #region  -- Code to Hide Top Panel Rows 
+                HtmlTableRow tr1 = (HtmlTableRow)Master.FindControl("MROW1");
+               tr1.Visible = false;
+
+
+               HtmlTableRow tr2 = (HtmlTableRow)Master.FindControl("MROW2");
+               tr2.Visible = false;
+
+               HtmlTableRow tr3 = (HtmlTableRow)Master.FindControl("MROW3");
+               tr3.Visible = false;
+
+               HtmlContainerControl tmpDivHeader = (HtmlContainerControl)Master.FindControl("headercontent");
+               tmpDivHeader.Attributes.Add("height", "80px");
+
+               HyperLink vHypWebPortal = (HyperLink)Master.FindControl("HypWebPortal");
+               vHypWebPortal.Visible = true;
+
+            #endregion
+
+
+               
+
+               ds = objBAL_MasUser.Get_1MasUser_Details(ViewState["vMobileLoginID"].ToString());
+
+               DataTable dtMasUser = ds.Tables[0];
+
+               foreach (DataRow mRow in dtMasUser.Rows)
+               {
+                   mAccountType = mRow["Acc_Type"].ToString(); 
+
+               }
+
+
+           
+                String vtrMessage = string.Empty; 
+
+                   if (mAccountType == "PLATINUM")
+                   {
+                       trPlatinum.Visible = true;
+                       trUnPlatinum.Visible = false;
+
+                       if (ViewState["vOwnDomain"] != null)
+                       {
+                           if ((ViewState["vOwnDomain"] == null) || (ViewState["vOwnDomain"] == ""))
+                           {
+                               vtrMessage = "Email system cannot be registered because you have not registered your Own domain yet. </br>";
+                               vtrMessage = vtrMessage + "</br>";
+                               vtrMessage = vtrMessage + "<a href='../Ad_DomainsList.aspx' class='links_Navigate'>Click here to Register your domain </a>";
+                               
+                           }
+                           else
+                           {
+                               vtrMessage = "Email system creation for your account is under progress. </br>";
+                               vtrMessage = vtrMessage + "</br>";
+                               vtrMessage = vtrMessage + "It will take 10 working days from the date of your purchase to verify and activate your email system.";
+
+                           }
+
+                       }
+                       ltrNotPurchasedMsg.Text = vtrMessage;
+
+
+                       //..Check if the User has purchased eMailSystem 
+                       isPurchased = objBAL_MasUser.Check_EMS_Purchase(ViewState["vMobileLoginID"].ToString());
+
+
+                      //..Additionally check if the user has purchased SME Web
+                       
+                       //if (isPurchased == 0)
+                       //{
+                       //    //Find if the user purchased SME WEB 
+                       //    isSMEPurchased = objBAL_User.Check_SMEWEB_Purchase(ViewState["vMobileLoginID"].ToString());  
+                           
+                       //    isPurchased = isSMEPurchased;
+
+                       //}
+
+
+                       if (isPurchased == 0) 
+                       {
+                           trNotPurchased.Visible = true;
+
+                       }
+                       else
+                       {
+                           LoadEMSDetails(ViewState["vMobileLoginID"].ToString());
+                            trNotPurchased.Visible = false;
+                       }
+                       
+                       
+                   }
+                   else
+                   {
+                       trPlatinum.Visible = false;
+                       trUnPlatinum.Visible = true;
+                   }
+
+
+                   //Find if the user purchased SME WEB 
+                   isSMEPurchased = objBAL_User.Check_SMEWEB_Purchase(ViewState["vMobileLoginID"].ToString());
+
+                   if (isSMEPurchased == 0)
+                   {
+                     //  trNotPurchased.Visible = true;
+
+                   }
+                   else
+                   {
+
+                       vtrMessage = "Email system creation for your account is under progress. </br>";
+                       vtrMessage = vtrMessage + "</br>";
+                       vtrMessage = vtrMessage + "It will take 10 working days from the date of your purchase to verify and activate your email system.";
+                       ltrNotPurchasedMsg.Text = vtrMessage;
+
+                       LoadEMSDetails(ViewState["vMobileLoginID"].ToString());
+                       trPlatinum.Visible = true;
+                       trUnPlatinum.Visible = false;
+                       trNotPurchased.Visible = false;
+                       //trAlertEmailSystem.Visible = false;
+                   }
+
+             
+            
+
+        }
+
+     }
+
+    protected void LoadUserDetails(string vUserID)
+    {
+
+        string SearchStr = "Where U.UserID = " + vUserID;
+        ds = objBAL_User.Retrieve_AllUserData(SearchStr, "");
+
+        DataTable dtUserDetails;
+        dtUserDetails = ds.Tables[0];
+
+        foreach (DataRow URow in dtUserDetails.Rows)
+        {
+            ViewState["vMobileLoginID"] = URow["MobileLoginID"].ToString();
+            ViewState["vOwnDomain"] = URow["OwnDomain"].ToString();
+            ViewState["vDomainType"] = URow["UserDomainType"].ToString();
+
+
+            //if (ViewState["vDomainType"].ToString() == "SME")
+            //{
+            //    ImgEmailLogo.ImageUrl = @"~/Images/zoho-mail.png";
+            //    ltrPoweredBy.Text = " Zoho ";
+            //}
+            //else
+            //{
+            //    ImgEmailLogo.ImageUrl = @"~/Images/gmail-logo.png";
+            //    ltrPoweredBy.Text = " Google ";
+            //}
+        }
+
+
+
+    }
+
+    protected void LoadEMSDetails(string vMobileLoginID)
+    {
+        string SearchStr = string.Empty;
+
+        //SearchStr = " MobileLoginID = (Select MobileLoginID from tblUsers where UserID = " + vUserID + ")";
+        SearchStr = " and MobileLoginID = '" + vMobileLoginID + "'";
+        ds = objBAL_Gems.Retrieve_EMSContent(SearchStr); 
+
+        DataTable dtUserDetails;
+        dtUserDetails = ds.Tables[0];
+
+        if (dtUserDetails.Rows.Count > 0)
+        {
+
+            foreach (DataRow URow in dtUserDetails.Rows)
+            {
+                txtAdEmailID.Text = URow["AdminID"].ToString();
+                txtEmailPwd.Text = URow["AdminPwd"].ToString();
+
+                txtEnquiryID.Text = URow["EnquiryID"].ToString();
+                txtEnquiryPwd.Text = URow["EnquiryPwd"].ToString();
+                //txtHttpUrlLink.Text = URow["HttpURLLink"].ToString();
+                HypGmailLink.Text = URow["HttpURLLink"].ToString();
+                HypGmailLink.NavigateUrl = URow["HttpURLLink"].ToString();
+
+               // HypAdminLoginID.Text = txtAdEmailID.Text;
+                
+            }
+        }
+        else
+        {
+            trPlatinum.Visible = false;
+            trAlertEmailSystem.Visible = true;
+        }
+        
+
+
+    }
+
+
+
+}

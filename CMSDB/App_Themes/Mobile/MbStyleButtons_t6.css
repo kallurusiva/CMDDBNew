@@ -1,0 +1,363 @@
+﻿
+
+
+  button.clean-gray:active {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #888;
+    -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #24B9DE;
+    -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #24B9DE;
+    box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #24B9DE; 
+}
+
+/* clean gray
+*******************************************************************************/
+.clean-gray {
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(top, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #333;
+  font: bold 11px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #eee;
+  width: 72px; }
+  button.clean-gray:hover {
+    background-color: #dddddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #bbbbbb));
+    background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: linear-gradient(top, #dddddd, #bbbbbb);
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #ddd; }
+  button.clean-gray:active {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #888;
+    -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee; 
+    }  
+   
+   
+   /* clean gray
+*******************************************************************************/
+.bottom-button {
+  background-color: #11AA36;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #11AA36), color-stop(100%, #29D653));
+  background-image: -webkit-linear-gradient(top, #11AA36, #29D653);
+  background-image: -moz-linear-gradient(top, #11AA36, #29D653);
+  background-image: -ms-linear-gradient(top, #11AA36, #29D653);
+  background-image: -o-linear-gradient(top, #11AA36, #29D653);
+  background-image: linear-gradient(top, #11AA36, #29D653);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font: bold 10px Palatino Tahoma Verdana, sans-serif;
+  line-height: 1;
+  padding: 5px 5px 5px 5px;
+  margin-left: 7px;
+  text-align: center;
+  text-shadow: 0 1px 0 #333;
+  }
+  
+  button.bottom-button:hover {
+    background-color: #29D653;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #29D653), color-stop(100%, #11AA36));
+    background-image: -webkit-linear-gradient(top, #29D653, #11AA36);
+    background-image: -moz-linear-gradient(top, #29D653, #11AA36);
+    background-image: -ms-linear-gradient(top, #29D653, #11AA36);
+    background-image: -o-linear-gradient(top, #29D653, #11AA36);
+    background-image: linear-gradient(top, #29D653, #11AA36);
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #ddd; }
+    
+  button.bottom-button:active {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #888;
+    -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354;
+    -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354;
+    box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354; 
+    }  
+     
+
+    
+.btnBox 
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient    (startColorStr='#11AA36', EndColorStr='#29D653')";
+-webkit-gradient:(linear,left top,left bottom,color-stop(0, #11AA36),color-stop(1, #29D653));
+	border: 1px solid #fff;
+	/*-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; */
+	padding: 0px 0px;
+	text-decoration: none;
+	text-shadow: #fff 0 1px 0;
+	float: left;
+	/*margin: 2px 5px 2px 5px;*/
+	display: block;
+	color: #47586A;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	/*background:url(../Images/Mobile/BtnSetluna/rss.png) no-repeat 5px 1px;*/
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #11AA36),color-stop(1, #29D653));
+	border: 1px solid #979797;
+	width: 100%;
+	line-height: 50px; 
+	
+	
+}    
+
+.btnBox:hover 
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient    (startColorStr='#29D653', EndColorStr='#11AA36')";
+	-webkit-gradient:(linear,left top,left bottom,color-stop(0, #29D653),color-stop(1, #11AA36));
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #29D653),color-stop(1, #11AA36));
+}
+.btnBoxItem
+{
+  width: 40px;
+  height: 40px;	
+  line-height: 50px; 
+
+}
+
+.rnSize { height: 5px;}
+a.button {
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient    (startColorStr='#11AA36', EndColorStr='#29D653')";
+-webkit-gradient:(linear,left top,left bottom,color-stop(0, #11AA36),color-stop(1, #29D653));
+	border: 1px solid #fff;
+	/*-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4); */
+	/*border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;*/
+	padding: 0px 0px;
+	text-decoration: none;
+	text-shadow: #323636 0 1px 0;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	display: block;
+	color: #D7F2EF;
+	line-height: 40px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #11AA36),color-stop(1, #29D653));
+	
+}
+
+a.button:hover 
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient    (startColorStr='#29D653', EndColorStr='#11AA36')";
+	-webkit-gradient:(linear,left top,left bottom,color-stop(0, #29D653),color-stop(1, #11AA36));
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #29D653),color-stop(1, #11AA36));
+	border: 1px solid #fff;
+}
+
+a.button:active {
+text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.5);
+	margin-top: 1px;
+	/*background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, #CDE6F2),color-stop(1, #24B9DE)); */
+}
+
+a.button {
+border: 1px solid #7DCF5D;
+width: 100%;
+line-height: 50px; 
+}
+
+a.button.icon {
+padding-left: 11px;
+}
+
+a.button.icon span{
+padding-left: 0px;
+text-indent:30px;
+background: url(../Images/Mobile/OwnBtnIcons/iconClock.gif) no-repeat 0 -140px;
+background-position: 0px -36px;
+
+}
+
+a.button.icon.chat span 
+{
+	text-indent:30px;
+background-position: 0px -36px;
+}    
+
+
+.events{
+background:url(../../Images/Mobile/ColorSet2/Events.png), url(../../Images/Mobile/forward.png);
+background-repeat: no-repeat; 
+background-position: 5px 1px, right 10px;
+background-size:40px 40px, 32px 32px;
+text-indent:30px;
+display:block;
+}
+
+.news{
+background-image: url(../../Images/Mobile/ColorSet2/News.png), url(../../Images/Mobile/forward.png);
+background-repeat: no-repeat; 
+background-position: 5px 1px, right 10px;
+background-size:40px 40px, 32px 32px;
+text-indent:30px;
+display:block;
+}
+
+.aboutus{
+background:url(../../Images/Mobile/ColorSet2/AboutUs.png), url(../../Images/Mobile/forward.png);
+background-repeat: no-repeat; 
+background-position: 5px 1px, right 10px;
+background-size:40px 40px, 32px 32px;
+text-indent:30px;
+display:block;
+}
+
+.contactus{
+background:url(../../Images/Mobile/ColorSet2/Contactus.png), url(../../Images/Mobile/forward.png);
+background-repeat: no-repeat; 
+background-position: 5px 1px, right 10px;
+background-size:40px 40px, 32px 32px;
+text-indent:30px;
+display:block;
+}
+
+.locationmap{
+background:url(../../Images/Mobile/ColorSet2/locationmap.png), url(../../Images/Mobile/forward.png);
+background-repeat: no-repeat; 
+background-position: 5px 1px, right 10px;
+background-size:40px 40px, 32px 32px;
+text-indent:30px;
+display:block;
+}
+
+
+img.floatLeft { 
+    float: left; 
+    margin: 5px; 
+    padding : 5px; 
+    width: 100px;
+    height: 100px;
+}
+img.floatRight { 
+    float: right; 
+    margin: 4px; 
+}
+
+
+.topbt			{ border-bottom: solid 1px #C6DC72;}
+.divCssLogoImage { max-height: 60px; max-width: 120px; overflow:hidden;}
+.ButtonSep		{height: 3px; background-color: #FFFFFF;}
+.LogoText       {font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px; font-variant: small-caps; position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText2      {font: bold 95%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText3      {font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}  
+
+.LogoBoxheadBlue   { height: 35px; background-color:#98A2A4;  
+                      background: -webkit-gradient(linear, left top, left bottom, from(#98A2A4), to(#C6CFD2)); /* for webkit browsers */
+						background: -moz-linear-gradient(top,  #98A2A4,  #C6CFD2); /* for firefox 3.6+ */
+						filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#98A2A4 ,EndColorStr=#C6CFD2,GradientType=0);
+                      }
+.LogoBoxheadGreen  { height: 0px; background-color:#B1F4E7; 
+                      background: -webkit-gradient(linear, left top, left bottom, from(#B1F4E7), to(#CAF5EC)); /* for webkit browsers */
+						background: -moz-linear-gradient(top,  #B1F4E7,  #CAF5EC); /* for firefox 3.6+ */
+						filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#B1F4E7 ,EndColorStr=#CAF5EC,GradientType=0);
+                       }
+
+.LogoBoxheadOren  { height: 35px; background-color:#F4CE68;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F4CE68,EndColorStr=#F0FFB8) }
+.sideBoxTLtarc  { display: table-cell; float:left; vertical-align: top;}
+.sideBoxTRtarc  {display: table-cell; float:right; vertical-align: top;}
+.sideBoxheadText{ font: bold italic 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+.loginCss1       {width: auto; margin-left: 5px; margin-right: 5px;}
+
+.cssfaq           {font-family: Lucida Sans Unicode, Verdana, Arial, Tahoma;}
+.cssfaqSeparator    {background-color:#FFFFFF;}
+.cssfaq_TLtarc      { display: table-cell; float:left; vertical-align: top;}
+.cssfaq_head        { height: 60px; border-bottom: solid 4px #FAC96B; font: bold 120%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;}
+.cssfaq_headText    {padding:  4px 0 0px 10px;  text-align: left; color: #3A3F39;}
+.cssfaq_QuestionText { font: bold 72%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding: 8px 0 4px 10px;  text-align: left; color: #3A3F39;}
+.cssfaqQuestion  {background-color:#D4E594; height:30px;  
+                 background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+                    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);}
+                    
+.cssfaqQuestion2  {background-color:#C9CAC4; height:32px;}
+.cssfaqAnswer    {min-height: 50px; background-color:#EBEDE4; font-size: 11px; border: solid 1px #D4E594; padding: 10px 5px 5px 10px; color: #3A3F39;}
+
+.font_EventDates11   { FONT-SIZE: 8px; COLOR: #4A6065; FONT-FAMILY:Arial,  sans-serif}
+.font_EventDates    { FONT-SIZE: 8px; COLOR: #446934; vertical-align: baseline; FONT-FAMILY:Arial,  sans-serif}
+
+.font_14BoldGrey    { FONT-SIZE: 12px; font-weight:bold; COLOR: #525B5B; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif}
+
+.stdbuttonAction            
+{   display:block;  float:left; margin:0 6px 0 0;
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#76E28A,EndColorStr=#BAE2C2);
+    background-color:#dff4ff;letter-spacing: 1px;cursor:pointer;font-size:90%;line-height:100%; 
+    border:1px solid #dedede; border-top:1px solid #999999; border-left:1px solid #999999;
+    font-family:  Arial, Verdana, sans-serif; font-variant:small-caps;
+    text-decoration:none; font-weight:bold; color:#565656;padding:6px 5px 4px 5px; /* padding  Tp Rt Dn Lt*/
+    }
+    
+ 
+.tblFormLabel   { background-color: #F2F0B2; font-family:Verdana,Tahoma,Helvetica,Arial; border-bottom: solid 1pt #D4DFAA; font-variant: small-caps; color: #4E5163; font-size: 12px; font-weight:bold; height:20px;}
+.tblFormText    { background-color: #F8F6BC; font-family:Verdana,Tahoma,Helvetica,Arial; border-bottom: solid 1pt #D4DFAA; font-size: 11px; color: #4E5163;}
+
+
+.stdTextField1			{color:#474444; font-size: 9pt; font-family:Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #C4C2C2; 
+              			 padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px;
+              			   -webkit-border-radius: 5px;
+						  -moz-border-radius: 5px;
+						  border-radius: 5px;}
+
+.stdTextArea2			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #C4C2C2; 
+             			 padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px; height:150px;
+             			 -webkit-border-radius: 5px;
+						  -moz-border-radius: 5px;
+						  border-radius: 5px;
+             			 }
+.stdDropDown1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #C4C2C2; 
+             			 padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:208px;
+             			 -webkit-border-radius: 5px;
+						  -moz-border-radius: 5px;
+						  border-radius: 5px;}
+						  
+						  
+.loginTextBox100		{color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; width: 180px; height:25px;}
+.loginBkg			{ background-color:#E0E5E1;}
+.loginfont12	{ FONT-SIZE: 11px; COLOR: #1D999D; font-weight:bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.loginCss2       {width: 270px; float:left; margin-left: 10px; margin-right: 10px;}
+
+.font_Msg_Error		{ FONT-SIZE: 10px; height:20px; padding:5px; padding-left:10px; COLOR: #FF4800; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+
+.stdtableBorder_Main		{ background-color:#FFFFFF; border: #CDF2D6 1px solid; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial,Verdana, Helvetica, sans-serif;}
+.tblBar1        {height: 40px; margin: 0; BORDER-BOTTOM: #CDF2D6 1px solid; background-color:#CDF2D6; 
+                          filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#EEFDF2 ,EndColorStr=#CDF2D6)}
+.tblBar2        {height: 40px; margin: 0; BORDER-BOTTOM: #F4F390 1px solid; background-color:#F4F390;
+                          filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F4F390 ,EndColorStr=#F8F8D6) }
+                   
+.stdButtonLogin             {background-color:#9DAAAA; display:block; border:1px solid #dedede; font-size:8pt; font-family:Verdana, Tahoma, Arial, Helvetica, Trebuchet Ms;
+                              border-top:1px solid #999999; border-left:1px solid #999999;}        
+.stdButtonLogin:hover       {background-color:#C1CECE; border:1px solid #c2e1ef; color:#336699; border-bottom:1px solid #999999; border-right:1px solid #999999;}

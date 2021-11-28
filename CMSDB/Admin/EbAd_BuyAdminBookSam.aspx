@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EbAd_BuyAdminBookSam.aspx.cs" Inherits="Admin_EbAd_BuyAdminBookSam" %>

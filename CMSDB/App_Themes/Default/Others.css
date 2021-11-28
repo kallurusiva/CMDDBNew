@@ -1,0 +1,68 @@
+﻿
+/*general menu background*/
+#main_menu1, #main_menu1 a, #main_menu1 a:hover {
+background-color: #8CA776;
+background-image: -webkit-linear-gradient(top, #8CA776, #6ACC00, #8CA776);
+background-image: -moz-linear-gradient(top, #8CA776, #6ACC00, #8CA776);
+background-image: -ms-linear-gradient(top, #8CA776, #6ACC00, #8CA776);
+background-image: -o-linear-gradient(top, #8CA776, #6ACC00, #8CA776);
+}
+
+
+/*container list*/
+#main_menu1 {
+font-family:sans-serif;
+list-style-type:none;
+text-align:center;
+float:left;
+width:90%;
+border-radius:5px;
+box-shadow: 3px 3px 2px #888888;
+}
+
+
+/*top list items*/
+.top_menu {
+float:left;
+position:relative;
+border-right:1px solid #ff00cc;
+border-left:1px solid #ff00cc;
+margin-left:-1px;
+}
+
+/*anchors*/
+#main_menu1 a, #main_menu1 a:hover {
+color:#ffffff;
+display:block;
+padding:5px;
+text-decoration:none;
+width:150px;
+border-top-right-radius:2px;
+border-top-left-radius:2px;
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;
+}
+
+/*sub menu list*/
+#main_menu1 ul {
+list-style:none;
+position:absolute;
+display:none;
+}
+
+/*sub menu when hover on top item*/
+#main_menu1 li:hover ul {
+display:block;
+}
+
+/*sub menu list items*/
+#main_menu1 ul li {
+padding-top:1px;
+margin-left:-25%;
+}
+
+/*sub menu list anchors*/
+#main_menu1 ul a {
+color:#ffff00;
+box-shadow: 3px 3px 2px #888888;
+}

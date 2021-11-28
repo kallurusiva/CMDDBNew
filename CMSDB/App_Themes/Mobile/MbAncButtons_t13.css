@@ -1,0 +1,340 @@
+﻿
+BODY  {margin: 0px; padding:0px; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif}
+.tblMainButtons	{ background-color: #FFFFFF; font-family:Verdana,Tahoma,Helvetica,Arial; color: #FFFFFF;}
+
+
+.topbt			{ border-bottom: solid 1px #C6DC72;}
+.divCssLogoImage { max-height: 60px; max-width: 120px; overflow:hidden;}
+.ButtonSep		{height: 3px; background-color: #FFFFFF;}
+.LogoText       {font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px; font-variant: small-caps; position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText2      {font: bold 95%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText3      {font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}  
+
+
+.tblFormLabel   { background-color: #F2F0B2; font-family:Verdana,Tahoma,Helvetica,Arial; border-bottom: solid 1pt #D4DFAA; font-variant: small-caps; color: #4E5163; font-size: 12px; font-weight:bold; height:20px;}
+.tblFormText    { background-color: #F8F6BC; font-family:Verdana,Tahoma,Helvetica,Arial; border-bottom: solid 1pt #D4DFAA; font-size: 11px; color: #4E5163;}
+
+.stdTextField1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px;}
+.stdTextArea2			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px; height:150px;}
+.stdDropDown1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:208px;}
+
+.loginTextBox100		{color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; width: 180px; height:25px;}
+.loginBkg			{ background-color:#E4F6EA;}
+.loginfont12	{ FONT-SIZE: 11px; COLOR: #1D999D; font-weight:bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.loginCss2       {width: 270px; float:left; margin-left: 10px; margin-right: 10px;}
+
+.font_Msg_Error		{ FONT-SIZE: 10px; height:20px; padding:5px; padding-left:10px; COLOR: #FF4800; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+
+.stdtableBorder_Main		{ background-color:#FFFFFF; border: #BAB5F8 1px solid; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial,Verdana, Helvetica, sans-serif;}
+.tblBar1        {height: 40px; margin: 0; BORDER-BOTTOM: #CDF2D6 1px solid; background-color:#CDF2D6; 
+                          filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#EEFDF2 ,EndColorStr=#CDF2D6)}
+.tblBar2        {height: 40px; margin: 0; BORDER-BOTTOM: #F4F390 1px solid; background-color:#F4F390;
+                          filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F4F390 ,EndColorStr=#F8F8D6) }
+
+
+.LogoBoxheadBlue   { height: 35px; background-color:#66C4DC;  
+                      background: -webkit-gradient(linear, left top, left bottom, from(#66C4DC), to(#A5ECFE)); /* for webkit browsers */
+						background: -moz-linear-gradient(top,  #66C4DC,  #A5ECFE); /* for firefox 3.6+ */
+						filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#66C4DC ,EndColorStr=#A5ECFE,GradientType=0);
+                      }
+.LogoBoxheadGreen  { height: 20px; background-color:#FF5B69; 
+                      background: -webkit-gradient(linear, left top, left bottom, from(#FF5B69), to(#F4C3E1)); /* for webkit browsers */
+						background: -moz-linear-gradient(top,  #FF5B69,  #F4C3E1); /* for firefox 3.6+ */
+						filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FF5B69 ,EndColorStr=#F4C3E1,GradientType=0);
+                       }
+
+.LogoBoxheadOren  { height: 35px; background-color:#F4CE68;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F4CE68,EndColorStr=#F0FFB8) }
+.sideBoxTLtarc  { display: table-cell; float:left; vertical-align: top;}
+.sideBoxTRtarc  {display: table-cell; float:right; vertical-align: top;}
+.sideBoxheadText{ font: bold italic 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+.loginCss1       {width: auto; margin-left: 5px; margin-right: 5px;}
+
+.stdbuttonAction            
+{   display:block;  float:left; margin:0 6px 0 0;
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#76E28A,EndColorStr=#BAE2C2);
+    background-color:#dff4ff;letter-spacing: 1px;cursor:pointer;font-size:90%;line-height:100%; 
+    border:1px solid #dedede; border-top:1px solid #999999; border-left:1px solid #999999;
+    font-family:  Arial, Verdana, sans-serif; font-variant:small-caps;
+    text-decoration:none; font-weight:bold; color:#565656;padding:6px 5px 4px 5px; /* padding  Tp Rt Dn Lt*/
+    }
+    
+    
+                   
+
+.cssfaq           {font-family: Lucida Sans Unicode, Verdana, Arial, Tahoma;}
+.cssfaqSeparator    {background-color:#FFFFFF;}
+.cssfaq_TLtarc      { display: table-cell; float:left; vertical-align: top;}
+.cssfaq_head        { height: 60px; border-bottom: solid 4px #F8D5D5; font: bold 120%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;}
+.cssfaq_headText    {padding:  4px 0 0px 10px;  text-align: left; color: #3A3F39;}
+.cssfaq_QuestionText { font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding: 8px 0 4px 10px;  text-align: left; color: #3A3F39;}
+.cssfaqQuestion  {background-color:#F8D5D5; height:30px;  
+                 background: -webkit-gradient(linear, left top, left bottom, from(#F8D5D5), to(#FFEEC9)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #F8D5D5,  #FFEEC9); /* for firefox 3.6+ */
+                    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#F8D5D5 ,EndColorStr=#FFEEC9,GradientType=0);}
+                    
+.cssfaqQuestion2  {background-color:#BEBAED; height:27px;}
+.cssfaqAnswer    {min-height: 50px; background-color:#E0E2FF; font-size: 11px; border: solid 1px #D4E594; padding: 10px 5px 5px 10px; color: #3A3F39;}
+
+.font_EventDates11   { FONT-SIZE: 9px; COLOR: #446934; FONT-FAMILY:Arial,  sans-serif}
+.font_EventDates    { FONT-SIZE: 8px; COLOR: #446934; FONT-FAMILY:Arial,  sans-serif}
+
+.font_14BoldGrey    { FONT-SIZE: 12px; font-weight:bold; COLOR: #525B5B; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif}
+
+
+
+img.source-image {
+	width:100%; 
+	/*min-height: 300px;
+	max-height: 300px;*/
+	height: 250px;
+	position: inherit;
+	/*top: 0;
+	left: 0; */
+}
+
+.cssAnchorImg	
+{
+/*min-width: 800px;*/
+
+
+}
+
+/*... Vertical Menu ...*/
+
+
+.menu_div ul
+{
+	padding:0px;
+	margin:0px;
+	font-family: Helvetica,Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	list-style:none;
+	/*text-indent:15px;*/
+	
+}
+.menu_div ul li
+{
+	padding:0px;
+	margin:0px;
+	background:#C11010;
+	line-height  :27px;
+    border-bottom:1px dotted #FDF0F0;
+    border-left: 1px dotted #FDF0F0;
+    
+        	
+	
+}
+.menu_div ul li a
+{
+	text-decoration:none;
+	color:#FFF;
+	display:block;
+	text-align: left;
+	/*text-indent:30px;*/
+	text-transform:capitalize; 
+	/*font-variant: small-caps; */
+	
+	padding:0px;
+	margin:0px;
+
+	text-shadow: 0 1px 0 #726F6F;
+	
+}
+.menu_div ul li a:hover
+{
+	
+	background:#FE3232;
+	
+}
+.menu_div ul li a:active
+{
+	background:#d40203;
+}
+.Chosen
+{
+background:#d40203;
+		}	
+
+
+
+
+
+.cssmenu {
+	width: 200px;
+	border-style: solid solid none solid;
+	border-color: #D76100;
+	border-size: 1px;
+	border-width: 1px;
+	padding:0px;
+	}
+	
+	.cssmenu ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+	
+	.cssmenu li a {
+		height: 32px;
+		height: 24px;
+		text-decoration: none;
+		font-weight:normal;
+		color: #9E3C02;
+		display: block;
+		background: url(images/menu4.gif);
+		padding: 8px 0 0 30px;
+		}
+		
+	.cssmenu li a:hover {
+		color: #fff;
+		background: url(images/menu4.gif) 0 -32px;
+		padding: 8px 0 0 30px;
+		}
+		
+	.cssmenu li a:active {
+		color: #fff;
+		background: url(images/menu4.gif) 0 -64px;
+		padding: 8px 0 0 30px;
+		}	
+		
+		
+		
+
+	
+
+
+.events{
+background:url(../../Images/Mobile/AncButtons/Events11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+font-family: Trebuchet MS;
+text-indent:30px;
+display:block;
+}
+
+.news{
+background-image: url(../../Images/Mobile/AncButtons/News11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+text-indent:30px;
+display:block;
+}
+
+
+.contactus{
+background:url(../../Images/Mobile/AncButtons/Contactus11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+text-indent:30px;
+display:block;
+}
+
+.aboutus{
+background:url(../../Images/Mobile/AncButtons/AboutUs11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+text-indent:30px;
+display:block;
+}
+
+
+.locationmap{
+background:url(../../Images/Mobile/AncButtons/locationmap11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+text-indent:30px;
+display:block;
+}
+
+
+
+.freesms{
+background:url(../../Images/Mobile/AncButtons/freesms11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+display:block;
+text-indent:30px;
+}
+
+
+
+.OwnBtn{
+background:url(../../Images/Mobile/AncButtons/OwnBtn11.png), url(../../Images/Mobile/AncButtons/forward11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px, right 5px;
+background-size:16px 16px, 18px 18px;
+display:block;
+text-indent:30px;
+}
+
+.socialmedia{
+background:url(../../Images/Mobile/AncButtons/SMicon11.png);
+background-repeat: no-repeat; 
+background-position: 3px 5px;
+background-size:16px 16px;
+display:block;
+padding-left: 30px;
+
+}
+		
+		
+.bottom-button {
+  background-color: #C11010;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C11010), color-stop(100%, #E95454));
+  background-image: -webkit-linear-gradient(top, #C11010, #E95454);
+  background-image: -moz-linear-gradient(top, #C11010, #E95454);
+  background-image: -ms-linear-gradient(top, #C11010, #E95454);
+  background-image: -o-linear-gradient(top, #C11010, #E95454);
+  background-image: linear-gradient(top, #C11010, #E95454);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFF;
+  font: bold 10px Helvetica,Verdana, sans-serif;
+  line-height: 1;
+  padding: 5px 5px 5px 5px;
+  margin-left: 7px;
+  text-align: center;
+  text-shadow: 0 1px 0 #333;
+  }
+  
+.bottom-button:hover {
+    background-color: #C11010;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E95454), color-stop(100%, #C11010));
+    background-image: -webkit-linear-gradient(top, #E95454, #C11010);
+    background-image: -moz-linear-gradient(top, #E95454, #C11010);
+    background-image: -ms-linear-gradient(top, #E95454, #C11010);
+    background-image: -o-linear-gradient(top, #E95454, #C11010);
+    background-image: linear-gradient(top, #E95454, #C11010);
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #ddd; }
+    
+.bottom-button:active {
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #888;
+    -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354;
+    -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354;
+    box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #FCC354; 
+    }  
+     		
+		
+
+
+.bottombar     {margin: 0; border: solid 1px #E95454;
+                     -webkit-border-radius: 5px;
+						  -moz-border-radius: 5px;
+						  border-radius: 5px;
+                  }
+       	
+			

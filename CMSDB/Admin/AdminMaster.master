@@ -1,0 +1,578 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <%--<meta http-equiv="X-UA-Compatible" content="IE=7" />--%>
+      
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../App_Themes/Default/DefaultStyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Default/Others.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Default/NewButtons.css" rel="stylesheet" />
+
+    <style type="text/css">
+        body {
+    margin: 0;
+    padding:0; 
+    background: #fff;
+}
+
+#headercontent{
+     width: 100%;
+     height: 150px;
+     margin: 0;
+     border-width: 0 0 0 0;
+     min-width: 1024px;
+ }
+
+#ContentContainer 
+{
+    min-width: 850px;
+    
+}
+
+#leftcontent {
+    width: 100%;
+    float: none;
+    color: #000;
+    padding: 1px; 
+}
+
+#rightcontent 
+{
+width: 100%;   
+float: none;
+padding: 1px;
+}
+    </style>
+    
+    
+    
+</head>
+<body>
+
+  <div id="headercontent" runat="server">
+    
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+    <tr>
+    <td colspan="3" class="TopFrameBkg" align="right" height="27px">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+ 
+          
+         <td class="TopFrameBkg" align="left" nowrap="nowrap" style="border-bottom: solid 1px #ADB65D; min-width:800px; padding-left:10px;" >
+            
+     
+<%--             <div id="dvEvendor"  style="float: right;">
+                <asp:HyperLink ID="HypEvendor" CssClass="small yellow awesome" Target="_blank" NavigateUrl="~/EVNotice.aspx" Text ="E-Vendor"  runat="server" />
+                  &nbsp;
+            </div>
+            
+              <div id="dvAdSense" runat="server" style="float:right;">
+                <asp:HyperLink ID="HypLnkAdSense"  CssClass="small blue awesome" NavigateUrl="~/Admin/AdSense/Ads_AdSensePage.aspx" Text = "AdSense"  runat="server" />
+                &nbsp;
+              </div>--%>
+              
+              <div id="dvSMSBizLink" runat="server" style="float: left;">
+                 <%--<img id="imgSmsBusiness" runat="server" alt="Clogin" src="~/Images/report.png" />--%>
+                <asp:HyperLink ID="HypSMSBusiness" CssClass="small red awesome" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=1MACC" Text ="HiTech Business"  runat="server" />
+                 &nbsp;
+                   
+             </div>
+             
+             
+             <div id="dvSMSsystemLink" runat="server" style="float: left; ">                   
+                    <%--<img id="imgSmsSystem" runat="server" alt="Clogin" src="~/Images/task.png" />--%>
+                <asp:HyperLink ID="HypSmsSystem"  CssClass="small yellow awesome" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=SMSSYSTEM" Text = "Bulk SMS"  runat="server" />
+                 &nbsp;
+                      
+              </div>
+              
+              <div id="dvPremiumSMS" runat="server"  style="float: left;">
+                <asp:HyperLink ID="HypPremiumSMS" Visible="false" CssClass="small magenta awesome" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_Welcome.aspx" Text ="PremiumSMS"  runat="server" />
+                  &nbsp;
+            </div>
+            
+            <div id="dvWebPortal" runat="server" style="float:left;">
+              <asp:HyperLink ID="HypWebPortal" Visible="false"  CssClass="small green awesome" NavigateUrl="~/Admin/Ad_Welcome.aspx" Text = "Web Portal"  runat="server" />
+              &nbsp;
+              </div>
+              
+              <div id="dvMobileWeb" runat="server" style="float:left;">
+                <%--<img id="img2" runat="server" alt="mphone" src="~/Images/smart_phone.png" />--%>
+                <asp:HyperLink ID="HypMobileWeb"  CssClass="small orange awesome" NavigateUrl="~/Admin/Mobile/Ad_MobileHome3.aspx" Text = "Mobile Web"  runat="server" />
+                &nbsp;
+              </div>
+              
+              <div id="dvEmail" runat="server" style="float:left;">
+                <asp:HyperLink ID="HypEmail"  CssClass="small yellow awesome" NavigateUrl="~/Admin/AdSense/Ads_EmailPage.aspx" Text = "Email"  runat="server" />
+                &nbsp;
+              </div>
+              
+              
+               <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({
+                          pageLanguage: 'en',
+	                        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+	                        includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,ta,te,th,tr,uk,ur,vi,cy,yi'
+                          }, 'google_translate_element');
+                        }
+                        </script>
+              <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            
+                            
+              
+
+             <%--<div id="dvtraining"  style="float: left;">
+                <asp:HyperLink ID="HyperLink7" CssClass="small magenta awesome" NavigateUrl="http://webportaltraining.1mybusiness.com" Target="_blank" Text ="Training"  runat="server" />
+                  &nbsp;
+            </div>--%>
+              
+             
+                    
+            </td>
+          
+          
+         <td align="left" width="100px" class="font_12Normal" style="border-bottom: solid 1px #ADB65D;">
+          <asp:Literal ID="ltrYourWebSiteHeader" Text="Your Domain Links" runat="server"></asp:Literal>&nbsp;
+          </td> 
+          
+          
+          <td align="left" nowrap="nowrap" width="300px" valign="top" style="vertical-align: top; padding-left:5px; padding-top: 1px; border-bottom: solid 1px #ADB65D;">
+           <%--<div "dvLangs" style="float:left;">--%>
+            <asp:HyperLink ID="HyperLink8" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=1" Text="ENGLISH" runat="server" />    
+            <%--&nbsp;|&nbsp;--%>
+            <asp:HyperLink ID="HyperLink11" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=2" Text="BAHASA" runat="server" />    
+            
+            <asp:HyperLink ID="HyperLink13" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=3" Text="CHINESE" runat="server" />    
+            <%--<asp:HyperLink ID="HyperLink13" CssClass="font_disabled8" Text="Chinese Mandarin (Coming Soon)" runat="server" />   --%> 
+            <%--</div>--%>
+         </td>
+          
+        </tr>
+        </table>
+    
+    </td>    
+
+    </tr>
+    <tr>
+    <%--<td class="TopFrameBkg">&nbsp;</td>  --%>  
+    <td colspan="3" class="TopFrameBkg_Grad">
+    
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+        <td align="left" width="300px"><font class="AdminFont">&nbsp;<img runat="server" src="~/Images/Mobile/gear_24.png" /> Administrator Panel</font></td>
+        <td align="left" width="300px">
+           <%-- <div id="dvYourWebSiteLinks" class="SubDomainGrad" runat="server" style="float:left;">--%>
+              <%--  <asp:Label ID="lblOwnDomainName" CssClass="font_12BlueBold" runat="server" Text=""></asp:Label>--%>
+               <%-- <asp:Label ID="lblSubDomain1" CssClass="font_12BlueBold" runat="server" Text=""></asp:Label>--%>
+                <%--<asp:Label ID="lblSubDomain2" CssClass="font_12BlueBold" runat="server" Text=""></asp:Label>--%>
+               <%-- <asp:HyperLink ID="HypYourSubDomains" ToolTip="Click Here to View SubDomain Links" CssClass="links_DomainName" NavigateUrl="~/Admin/Ad_AnchorDomainsList.aspx" Text="" runat="server" />   --%>
+          <%--  </div>--%>
+            <asp:Label ID="lblUserURL" CssClass="font_12BlueBold" runat="server" Text=""></asp:Label>
+            </td>
+            <td align="right" valign="bottom" nowrap="nowrap">
+            <div style="float:right;">
+            
+             <asp:HyperLink ID="HyperLink3" CssClass="links_Logout" NavigateUrl="~/Admin/Ad_SystemNewsListing.aspx" Text="<%$ Resources:LangResources, SystemNews %>" runat="server" />    
+             <%--&nbsp;|&nbsp;--%>
+             <asp:HyperLink ID="HyperLink9" CssClass="links_Logout" NavigateUrl="~/MemberLogout.aspx" Text="<%$ Resources:LangResources, Logout %>" runat="server" />        
+             &nbsp;&nbsp;
+              </div>
+             </td>
+        </tr>
+        </table>
+    </td>  
+   <%-- <td class="TopFrameBkg_Grad">&nbsp;</td>  --%>
+    </tr>
+<%--    <tr  class="TopFrameBkg" style="height:4px;">
+    <td>&nbsp;</td>    
+    <td>&nbsp;</td>  
+    <td>&nbsp;</td>  
+    </tr>--%>
+    
+    <tr id="MROW1" runat="server">
+    <%--<td>&nbsp;</td>    --%>
+    <td align="left" nowrap="nowrap"   class="MaingPgTopMenuGrad" colspan="3">
+        <div id="topmenu" runat="server" class="Links_AdminMenuRows2" nowrap="nowrap">
+            
+        <ul>
+       <li> 
+              &nbsp;<img runat="server" src="~/Images/Mobile/star_empty.png" />
+           </li>
+            <li>
+                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Admin/Ad_Welcome.aspx" Text="<%$ Resources:LangResources, Home %>" runat="server" />
+            </li>
+             <li>
+                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Admin/MyAccount.aspx" Text="<%$ Resources:LangResources, ContactUs%>" runat="server" />    
+            </li> 
+            <li>
+               <asp:HyperLink ID="HyperLinkWp" NavigateUrl="~/Admin/Ad_WelComePageSettings.aspx" Text="<%$ Resources:LangResources, WelcomePage%>" runat="server" />        
+            </li>
+            <li>
+               <asp:HyperLink ID="HyperLinkAbtUs" NavigateUrl="~/Admin/Ad_AboutUsPageCreate.aspx" Text="<%$ Resources:LangResources, AboutUs%>" runat="server" />        
+            </li>
+             
+                <li>
+               <asp:HyperLink ID="HyperLinkBnr" NavigateUrl="~/Admin/Ad_BannerSettings.aspx" Text="Template Picture" runat="server" />        
+            </li>
+             <li>
+               <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Admin/Ad_LogoSettings.aspx" Text="<%$ Resources:LangResources, Logo%>" runat="server" />        
+            </li>
+             <li>
+               <asp:HyperLink ID="HypWebTemplate" NavigateUrl="~/Admin/Ad_TemplateSet.aspx" Text="<%$ Resources:LangResources, WebTemplate %>" runat="server" />        
+            </li>
+            <li>
+               <asp:HyperLink ID="HyperLink6" NavigateUrl="~/Admin/Ad_WebSettings.aspx" Text="<%$ Resources:LangResources, WebSettings %>" runat="server" />        
+            </li>
+             <li>
+
+               <asp:HyperLink ID="HypSampleWebs" CssClass="fontMenuSP" NavigateUrl="~/Admin/Ad_AncSampleWebs.aspx" Text="<%$ Resources:LangResources, SampleWebsites %>" runat="server" />        
+            
+            </li>
+           
+            
+             
+           <%-- <li>
+                <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Admin/NewsListing.aspx" Text="<%$ Resources:LangResources, News %>" runat="server" />        
+            </li>
+            <li>
+                <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Admin/EventsListing.aspx" Text="<%$ Resources:LangResources, Events %>" runat="server" />        
+            </li>
+            <li>
+               <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Admin/FaqListing.aspx" Text="<%$ Resources:LangResources, FAQ %>" runat="server" />        
+            </li>--%>
+         
+            <%--<li>
+               <asp:HyperLink ID="HyperLink11" NavigateUrl="~/Admin/Ad_OwnButtonCreate.aspx" Text="OwnButton" runat="server" />        
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HyperLink6" NavigateUrl="~/Admin/TestimonialListing.aspx" Text="<%$ Resources:LangResources, Testimonial %>" runat="server" />        
+            </li>
+            <li>
+               <asp:HyperLink ID="HyperLink7" NavigateUrl="~/Admin/ProductListing.aspx" Text="<%$ Resources:LangResources, Products %>" runat="server" />        
+            </li>--%>
+              
+            
+         
+             <li>
+                   
+            </li>
+            <%-- <li>
+                <asp:HyperLink ID="HyperLink8" NavigateUrl="~/Admin/Mobile/Ad_MobileHome3.aspx" Text="Mobile" runat="server" />        
+            </li>--%>
+            <li>
+             
+             </li>
+        </ul>
+        </div>
+    
+    </td>  
+    <%--<td>&nbsp;</td>  --%>
+    </tr>
+    
+      <tr id="MROW2" runat="server"  >
+   <%-- <td>&nbsp;</td>    --%>
+    <td align="left" nowrap="nowrap" colspan="3"  class="MaingPgTopMenuGrad2">
+        <div id="Div1" runat="server" class="Links_AdminMenuRows2" nowrap="nowrap">
+        <ul>
+      <li>
+              &nbsp;<img runat="server" src="~/Images/Mobile/star_empty.png" />
+           </li>
+          <%--  <li>
+                <asp:HyperLink ID="HyperLink13" NavigateUrl="~/Admin/Welcome.aspx" Text="<%$ Resources:LangResources, Home %>" runat="server" />
+            </li>
+            <li>
+                <asp:HyperLink ID="HyperLink14" NavigateUrl="~/Admin/MyAccount.aspx" Text="<%$ Resources:LangResources, MyAccount %>" runat="server" />    
+            </li> --%>
+            <li>
+               <asp:HyperLink ID="HyperLink22" NavigateUrl="~/Admin/ProductListing.aspx" Text="<%$ Resources:LangResources, Products %>" runat="server" />        
+            </li>
+            
+            <%--  <li>
+               <asp:HyperLink ID="HyperLink5" NavigateUrl="~/Admin/Ad_EntreprenuerListing.aspx" Text="Entreprenuer Program" runat="server" />        
+            </li>--%>
+            
+            <li>
+                <asp:HyperLink ID="HyperLink15" CssClass="TextMiddle" NavigateUrl="~/Admin/Ad_NewsHome.aspx" Text="<%$ Resources:LangResources, News %>" runat="server" />        
+            </li>
+            <li>
+                <asp:HyperLink ID="HyperLink16" NavigateUrl="~/Admin/Ad_EventHome.aspx" Text="<%$ Resources:LangResources, Events %>" runat="server" />        
+            </li>
+            
+                       
+            <li>
+               <asp:HyperLink ID="HyperLink17" NavigateUrl="~/Admin/Ad_FaqHome.aspx" Text="<%$ Resources:LangResources, FAQ %>" runat="server" />        
+            </li>
+                       <li>
+               <asp:HyperLink ID="HyperLink21" NavigateUrl="~/Admin/Ad_TestimonialHome.aspx" Text="<%$ Resources:LangResources, Testimonial %>" runat="server" />        
+            </li>
+            
+             <li>
+               <asp:HyperLink ID="HyperLink10" NavigateUrl="~/Admin/Ad_EmailListing.aspx" Text="<%$ Resources:LangResources, Email %>" runat="server" />        
+            </li>
+        <%--     <li>
+               <asp:HyperLink ID="HyperLink12" NavigateUrl="~/Admin/Ad_LanguageSet.aspx" Text="<%$ Resources:LangResources, Language %>" runat="server" />        
+            </li>--%>
+             <li>
+               <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Admin/Ad_DomainSubInfo.aspx" Text="<%$ Resources:LangResources, Domain %>" runat="server" />        
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HyperLink12" NavigateUrl="~/Admin/Ad_Gallery_Images2.aspx" Text="Web Gallery" runat="server" />        
+            </li>
+            
+            
+           <%-- <li>
+               <asp:HyperLink ID="HyperLink12" NavigateUrl="~/Admin/Ad_Gallery_Images2.aspx" Text="<%$ Resources:LangResources, ImageGallery %>" runat="server" />        
+            </li>
+            
+              <li>
+               <asp:HyperLink ID="HyperLink14" NavigateUrl="~/Admin/Ad_Gallery_Videos.aspx" Text="<%$ Resources:LangResources, VideoGallery %>" runat="server" />        
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HyperLink7" NavigateUrl="~/Admin/Ad_Wp_BottomImage.aspx" Text="WpBottom" runat="server" />        
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HyperLink18" NavigateUrl="~/Admin/Ad_Wp_SideImage.aspx" Text="WpSide" runat="server" />        
+            </li>--%>
+            
+             <li>
+               <asp:HyperLink ID="HypTraining" CssClass="fontMenuSP" Target="_blank" NavigateUrl="http://webportaltraining.1mybusiness.com" Text="Training" runat="server" />        
+            </li>
+
+            
+         <%--    <li>
+               <asp:HyperLink ID="HyperLink18" NavigateUrl="~/Admin/Ad_EmailList.aspx" Text="Email" runat="server" />        
+            </li>
+            <li>
+               <asp:HyperLink ID="HyperLink19" NavigateUrl="~/Admin/Ad_LanguageSet.aspx" Text="<%$ Resources:LangResources, Language %>" runat="server" />        
+            </li>--%>
+           
+             
+            
+         <%--   <li>
+               <asp:HyperLink ID="HyperLink23" NavigateUrl="~/Admin/MyHomePageSettings.aspx" Text="<%$ Resources:LangResources, PageSettings %>" runat="server" />        
+            </li>--%>
+           <%-- <li>
+             <asp:HyperLink ID="HyperLink24" NavigateUrl="~/MemberLogout.aspx" Text="<%$ Resources:LangResources, Logout %>" runat="server" />        
+             </li>--%>
+        </ul>
+        
+        </div>
+    
+    </td>  
+   <%-- <td>&nbsp;</td>  --%>
+    </tr>
+    
+    <tr  id="MROW3" runat="server">
+    <td align="left" nowrap="nowrap" colspan="3"  class="MaingPgTopMenuGrad2">
+    
+    <div id="ctl00_Div1" class="Links_AdminMenuRows2">
+        <ul>
+          
+           <li>
+                &nbsp;<img runat="server" src="~/Images/Mobile/star_empty.png" />
+           </li>
+            <li>
+               <asp:HyperLink ID="HypMenuBtn1" NavigateUrl="~/Admin/Ad_OwnButtonCreate.aspx" Text="" runat="server">
+                   <asp:Literal ID="ltrMyBtn1" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>   
+               
+            </li>
+            <li>
+               <asp:HyperLink ID="HypMenuBtn2" NavigateUrl="~/Admin/Ad_OwnButtonCreate2.aspx" Text="" runat="server">        
+                <asp:Literal ID="ltrMyBtn2" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink> 
+            </li>
+             <li>
+               <asp:HyperLink ID="HypMenuBtn3" NavigateUrl="~/Admin/Ad_OwnButtonCreate3.aspx" Text="" runat="server" >        
+                <asp:Literal ID="ltrMyBtn3" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink> 
+            </li>
+            <li>
+               <asp:HyperLink ID="HypMenuBtn4" NavigateUrl="~/Admin/Ad_OwnButtonCreate4.aspx" Text="" runat="server">   
+                <asp:Literal ID="ltrMyBtn4" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+            <li>
+               <asp:HyperLink ID="HypMenuBtn5" NavigateUrl="~/Admin/Ad_OwnButtonCreate5.aspx" Text="" runat="server">        
+               <asp:Literal ID="ltrMyBtn5" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>   
+            </li>
+             <li>
+               <asp:HyperLink ID="HypMenuBtn6" NavigateUrl="~/Admin/Ad_OwnButtonCreates.aspx?MyButtonNo=6" Text="" runat="server" >        
+               <asp:Literal ID="ltrMyBtn6" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>
+            </li>
+             <li>
+               <asp:HyperLink ID="HypMenuBtn7" NavigateUrl="~/Admin/Ad_OwnButtonCreates.aspx?MyButtonNo=7" Text="" runat="server">        
+               <asp:Literal ID="ltrMyBtn7" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>
+            </li>
+             <li>
+               <asp:HyperLink ID="HypMenuBtn8" NavigateUrl="~/Admin/Ad_OwnButtonCreates.aspx?MyButtonNo=8" Text="" runat="server" >        
+               <asp:Literal ID="ltrMyBtn8" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>
+            </li>
+
+        </ul>
+        
+        </div>
+    </td>
+    </tr>
+    
+    
+     <tr  id="PSROW1" runat="server" visible="false">
+    <td align="left" nowrap="nowrap" colspan="3"  class="MaingPgTopMenuGrad2">
+    
+    <div id="Div2" class="Links_AdminMenuRows2">
+        <ul>
+          
+           <li>
+                &nbsp;<img id="Img1" runat="server" src="~/Images/Mobile/star_empty.png" />
+           </li>
+           
+           <li>
+               <asp:HyperLink ID="PSDetails" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_MyProfile.aspx" Text="My-Profile" runat="server" >        
+                <asp:Literal ID="Literal4" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink> 
+            </li>
+            
+             <li>
+               <asp:HyperLink ID="HyperLink20" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_ShowPremiumInfo.aspx" Text="  INFO  " runat="server">   
+                <asp:Literal ID="Literal8" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="PSPurchases" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_Purchases_My.aspx" Text="My-PurchasePinNo" runat="server" >        
+                <asp:Literal ID="Literal3" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink> 
+            </li>
+            
+             <li>
+               <asp:HyperLink ID="PsKeywordList" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_KeywordsList.aspx" Text="Customer-List" runat="server">
+                   <asp:Literal ID="Literal5" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>   
+               
+            </li>
+            
+            
+            <li>
+               <asp:HyperLink ID="PsKeyword" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_ProfitShartingKeyword.aspx" Text="Profit-Sharing" runat="server">
+                   <asp:Literal ID="Literal1" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>   
+               
+            </li>
+            
+              <li>
+               <asp:HyperLink ID="PsLogins" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_Logins.aspx" Text="PremiumSMS-Logins" runat="server">
+                   <asp:Literal ID="Literal2" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>   
+               
+            </li>
+            
+            
+          <%--  <li>
+               <asp:HyperLink ID="PsMonthly" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_Monthly.aspx" Text="Monthly Statement" runat="server">        
+                <asp:Literal ID="Literal2" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink> 
+            </li>
+          --%>
+              
+            
+             <%--<li>
+               <asp:HyperLink ID="HypPSfaq" NavigateUrl="#" Text="My PremiumSMS Purchases" runat="server">   
+                <asp:Literal ID="Literal4" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HyperLink18" NavigateUrl="#" Text="Debit Purchase - PremiumSMS" runat="server">   
+                <asp:Literal ID="Literal5" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>--%>
+            
+           
+            
+            
+            <%-- <li>
+               <asp:HyperLink ID="HyperLink18" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_ShowPremiumInfo.aspx" Text="PremiumSMS BIZ Info" runat="server">   
+                <asp:Literal ID="Literal8" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HypPSfaq" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_ShowFAQlist.aspx" Text="FAQ" runat="server">   
+               </asp:HyperLink>      
+               
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HypPsInfo" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_ShowNewList.aspx" Text="News" runat="server">   
+               </asp:HyperLink>      
+               
+            </li>
+            
+            <li>
+               <asp:HyperLink ID="HypPs3Way" Target="_blank" NavigateUrl="http://1premiumsms3way.com/Premiumsms3way/RegisterNewIOD.asp" Text="3WaySMS" runat="server">   
+                <asp:Literal ID="Literal6" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+            
+              <li>
+               <asp:HyperLink ID="HypPsSubscription" Target="_blank" NavigateUrl="http://1premiumsmssubscription.com/premiumsmssubscription/venchise/RegisterNewIOD.asp" Text="PremiumSMSsubscription" runat="server">   
+                <asp:Literal ID="Literal7" runat="server" Text=""></asp:Literal>
+               </asp:HyperLink>      
+               
+            </li>
+   --%>
+
+        </ul>
+        
+        </div>
+    </td>
+    </tr>
+    
+    </table>
+  
+  </div>
+
+  <div id="ContentContainer">
+    <div id="leftcontent">
+    <asp:ContentPlaceHolder ID="ContentLeftMenu" runat="server">
+     </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="rightcontent">
+      <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+  </div>
+    
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">
+
+    function fnShowWEB10Alert() {
+    
+        alert("This option is available for WEB 30 Users");
+    }
+
+</script>

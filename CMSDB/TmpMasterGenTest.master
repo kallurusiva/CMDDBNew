@@ -1,0 +1,304 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TmpMasterGenTest.master.cs" Inherits="TmpMasterGenTest" %>
+
+<%@ Register src="TopMostMenu.ascx" tagname="TopMostMenu" tagprefix="uc1" %>
+
+<%@ Register src="SuperAdmin/SelectLanguage4Create.ascx" tagname="SelectLanguage4Create" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+    <link runat="server" id="TmpMasterCss" name="TmpMasterCss" href="Assets/css/Red/style.css" rel="stylesheet" type="text/css" />
+
+    <%--<link href="App_Themes/Default/eBookPage.css" rel="stylesheet" />
+    <link href="App_Themes/Default/EbHomePageStyles.css" rel="stylesheet" />--%>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+body {
+    margin: 0;
+    padding:0; 
+    background: #fff;
+}
+
+#headercontent{
+     width: 100%;
+     height: 300px;
+     margin: 0;
+     border-width: 0 0 0 0;
+ }
+
+#maincontainer 
+{
+    width: 1326px;
+    margin: 0 auto;
+    
+}
+
+.ContentLeft {
+    width: 2%;
+    float: left;
+    color: #000;
+    padding: 0px; 
+}
+
+.ContentRight 
+{
+width: 100%;   
+float: left;
+padding: 10px;
+} 
+
+.ContentRight99 
+{
+width: 99%;   
+float: left;
+padding: 00px;
+} 
+
+#divWrapper {
+overflow:hidden;
+}
+
+.SideDiv
+{
+   
+   height:30px;
+   float: left;
+    /*border: solid 1px red;*/
+   overflow: auto;
+
+   /* IE only
+   word-wrap: break-word; */
+}
+
+#footer
+{
+    width: 100%;
+    height :30px;
+}
+
+.divCssBannerImg2 { height:200px; width:1160px; }
+
+.divGen1LogoCss { max-height: 200px; max-width: 200px; }
+
+</style>
+    
+</head>
+<body>
+
+<form id="form1" runat="server">
+    <div id="wrapper">
+    
+    
+    
+        <table border="0" cellpadding="0" cellspacing="0" class="style1">
+            
+                       
+            <tr>
+             <td>
+             <div id="headercontent">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+              <td valign="bottom">
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                <td style="height:35px;"   class="font_12Normal" valign="middle">
+                <div id="divWrapper">
+                    <div  class="SideDiv" style="width:450px;" >
+                    <uc1:TopMostMenu ID="TopMostMenu1" runat="server" />
+                    </div>
+                    <div id="dvGoogleTranslater" runat="server" visible="false">
+                     <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({
+                                  pageLanguage: 'en',
+                                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                  includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                              }, 'google_translate_element');
+                          }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              
+                    </div>
+                    </td>
+                
+                <td align="center">
+
+                               
+                </td>
+                
+               
+              
+                <td valign="top" colspan="2">
+                
+                    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+    
+                    
+                    <tr id="trLoginRow" runat="server">
+                    <td>
+                   &nbsp;
+                        
+                    </td>
+                    </tr>
+                       
+                    </table>
+                    
+                    
+                </td>
+                
+                </tr>
+               
+                <tr  style="height: 50px">
+             
+                
+                <td colspan="4" class="menu-wrapper sticky-header">
+
+<div id="wrapper">
+        <header class="header header4">
+               <%--<nav class="menu-wrapper sticky-header">
+                 <div class="container-fluid" id="dvTopMenu" runat="server" style="float:left;">
+                    <ul>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Home</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">About Us</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Corporate Info</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Incentive Plan</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Products</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Presentation</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Testimonials</span></span></a></li>
+                    <li><a href="#"><span>Features Buy<span class="tip hot">Download</span></span></a></li>
+                    </ul>
+                </div>
+            </nav>--%>
+
+            <nav class="menu-wrapper sticky-header">
+                <div class="container-fluid" id="dvTopMenu" runat="server">
+                    <%--<ul class="menu">
+                        <li class="visible-lg"><a href="#"><span>Features Buy<span class="tip hot">Hot</span></span></a></li>
+                        <li class="visible-lg"><a href="#"><span>Best Seller<span class="tip">New</span></span></a></li>
+                        <li class="visible-lg"><a href="#"><span>New Release</span></a></li>
+                        <li class="visible-lg"><a href="#"><span>Value Buy</span></a></li>
+                        <li class="visible-lg"><a href="#"><span>Free</span></a></li>
+                    </ul>--%>
+                </div>
+            </nav>
+                
+            </header>
+    </div>
+             
+                </td>
+                
+             
+                </tr>
+                
+                </table>
+              
+              </td>
+              </tr>
+              
+              <tr>
+              <td>
+              <table border="0" bordercolor="green" cellpadding="0" cellspacing="0">
+                <tr>
+                 <td valign="top">
+                <div id="dvBannerLeftPanel" runat="server" style="width:200px;">
+                <table border="0" bordercolor="red" cellpadding="0" cellspacing="0" style="width: 200px; height:200px;">
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td align="center"><div id="dvLogoImage" style="float:none;" runat="server"></div></td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td align="center" style="padding-left:10px; padding-right: 10px;"><asp:Label ID="lblLogoText" runat="server" Text=""></asp:Label></td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+                                
+                </table>
+                </div>
+                </td>
+                
+                <td><div id="dvBannerImg" runat="server">
+                    <img alt="banner image"  class="divCssBannerImg2" src="ImageRepository/Banner1.jpg" />
+                    </div>
+                </td>
+               
+                </tr>
+                <tr class="BkgunderBannerBar">
+                <td colspan="2"></td>
+              </tr>
+                </table>
+              </td>
+              </tr>
+                
+                </table>
+             
+             
+             </div>
+             
+             </td>
+            </tr>
+            
+             <tr>
+             <td>
+             <asp:Panel ID="PanelContentLeft" Visible="false" runat="server">
+             <div id="dvContentLeft" class="ContentLeft" runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderLEFT" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+             </asp:Panel>
+              <div id="dvContentRight" class="ContentRight" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRight" runat="server">
+                     </asp:ContentPlaceHolder></div>
+              </td>
+            </tr>
+            
+            <tr>
+            <td>&nbsp;</td></tr>
+            
+            
+            <tr>
+             <td>
+             <div id="footer">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+                
+                    <div id="dvCopyRights" class="fontCopyRight" runat="server">GlobalSurf Sdh bhd.2010 All Rights Reserved </div> 
+                    
+                    </asp:ContentPlaceHolder>
+                    
+                    </div>
+             </td>
+            </tr>
+            
+            
+        </table>
+    
+    </div>
+<IFRAME id=Defib src="/SessionKeepAlive.aspx" 
+     frameBorder=no width=0 height=0 runat="server"></IFRAME>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="M_MasterDummy.master.cs" Inherits="M_MasterDummy" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head runat="server">
+    
+    <meta charset="utf-8" />
+    <title  runat="server" id="metaTitleMain" >Book Store | Home Page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="title" content="E-book - BookStore" runat="server" id="metaTitle" />
+    <meta name="description" content="One-Stop EBook Digital BookStore" runat="server" id="metaDescription" />
+    <meta name="keywords" content="Book, Store, book store, ebook, online book, online book store" id="metaKeywords" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">   
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- Stylesheets -->
+
+    <link runat="server" id="tmpMasterPluginCSS" name="tmpMasterPluginCSS" rel="stylesheet" href="AssetsNew/css/red/css/bootstrap.min.css" type="text/css" media="screen" />
+    <link runat="server" id="tmpMasterStyleCSS" name="tmpMasterStyleCSS" rel="stylesheet" href="AssetsNew/css/red/css/bootstrap-theme.min.css" type="text/css" media="screen" />
+    <link runat="server" id="tmpMasterStyleAwesome" name="tmpMasterStyleAwesome" rel="stylesheet" href="AssetsNew/css/red/css/font-awesome.min.css" type="text/css" />
+    <link runat="server" id="tmpMasterStyleMain" name="tmpMasterStyleMain" rel="stylesheet" href="AssetsNew/css/red/css/main.css" type="text/css" media="screen" />
+
+
+    <!--[if lt IE 9]>
+			<script type="text/javascript" src="/js/html5shiv.js"></script>
+			<script type="text/javascript" src="/js/selectivizr.js"></script>
+			<script type="text/javascript" src="/js/respond.js"></script>
+		<![endif]-->
+
+
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+    <body>
+    <form id="form1" runat="server">
+    <div id="header" runat="server" class="header-top">
+        <div class="container" runat="server">
+            <div class="row" runat="server">
+                <div class="col-xs-12" runat="server">
+                    <div id="dvGoogleTranslater" runat="server" visible="false">
+                        <div id="google_translate_element"></div>
+                        <%--<script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en',
+                                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                    includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                                }, 'google_translate_element');
+                            }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>--%>
+
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                            }
+                        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+                    </div>
+                    <div class="menuheader" runat="server" id="dvTopMostMenu">
+                       <%-- <a href="N_Main.aspx"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <a href="N_ContactUs.aspx"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a>
+                        <a href="http://14.102.146.116/WebApps/EBook/ebook.html" target="_blank"><i class="fa fa-lock" aria-hidden="true"></i> E-vendor Login</a>
+                        <a href="N_BankInTop.aspx"><i class="fa fa-file-text" aria-hidden="true"></i> Bank-in Form</a>--%>
+                        <%--<ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> My account <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Sign In/ Register</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Change Password</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Credit Info</a></li>
+                                    <li><a href="#">Top Up Credit</a></li>
+                                    <li><a href="#">Top Up History</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Prepaid</a></li>
+                                    <li><a href="#">Direct Bank-In</a></li>
+                                    <li><a href="#">Paypal</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>--%>
+                    </div>
+                                       
+                    
+                        <div runat="server" id="dvUserMenu">
+                        <%--<ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> My account <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Sign In/ Register</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Change Password</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Credit Info</a></li>
+                                    <li><a href="#">Top Up Credit</a></li>
+                                    <li><a href="#">Top Up History</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Prepaid</a></li>
+                                    <li><a href="#">Direct Bank-In</a></li>
+                                    <li><a href="#">Paypal</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>--%>
+                        </div>
+                    <!-- menuheader -->
+                </div>
+                <!-- col 12 -->
+            </div>
+            <!-- row -->
+        </div>
+
+        
+
+        <!-- container -->
+    </div>
+    <!-- header -->        
+    
+    <div id="dvContentTopMenu"  runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderTopMenu" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="dvContentLeft"  runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderLEFT" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div id="dvContentRight"  runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRight" runat="server">
+                     </asp:ContentPlaceHolder></div>
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+    
+        <div id="dvContentFooter"  runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="AssetsNew/js/jquery.min.js"></script>
+    <script type="text/javascript" src="AssetsNew/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="AssetsNew/js/main.js"></script>
+
+</form>
+</body>
+
+</html>

@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>关於我们</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddEvents" xml:space="preserve">
+    <value>添加活动</value>
+  </data>
+  <data name="AddFaq" xml:space="preserve">
+    <value>添加常见问题</value>
+  </data>
+  <data name="AddNews" xml:space="preserve">
+    <value>添加讯息</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="AddTestimonial" xml:space="preserve">
+    <value>添加推荐</value>
+  </data>
+  <data name="AddTopMenuLinks" xml:space="preserve">
+    <value>添加主要链接库</value>
+  </data>
+  <data name="AdHom_SelTopMenuLinks" xml:space="preserve">
+    <value>挑选链接库</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>答案</value>
+  </data>
+  <data name="Banner" xml:space="preserve">
+    <value>旗幟</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Changepassword" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="clientpartners" xml:space="preserve">
+    <value>顾客火伴</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>联络</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>联络我们</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="corporateinfo" xml:space="preserve">
+    <value>公司资料</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>制造</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>已制造</value>
+  </data>
+  <data name="Currentpassword" xml:space="preserve">
+    <value>目前密码</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="DisplayatWebsite" xml:space="preserve">
+    <value>展示网页</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>域</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>電子郵件</value>
+  </data>
+  <data name="enquiry" xml:space="preserve">
+    <value>徇问</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="Faq" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="FollowUson" xml:space="preserve">
+    <value>跟随我们</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>遗忘密码</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="freesmssystem" xml:space="preserve">
+    <value>面费SMS系统</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>影相库</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主要目录</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="HomePageSettings" xml:space="preserve">
+    <value>主页设置</value>
+  </data>
+  <data name="id" xml:space="preserve">
+    <value>身份密码</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>影相</value>
+  </data>
+  <data name="ImageGallery" xml:space="preserve">
+    <value>圖片廊</value>
+  </data>
+  <data name="Incentiveplan" xml:space="preserve">
+    <value>津贴计划</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>资讯</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="lbl_MainMenu_AddNewMenuLink" xml:space="preserve">
+    <value>添加新主要链接</value>
+  </data>
+  <data name="lbl_MainMenu_AddNewMenuLinkURLS" xml:space="preserve">
+    <value>添加新主要链接库URLS</value>
+  </data>
+  <data name="lbl_MainMenu_ExistingLinks" xml:space="preserve">
+    <value>主要目录链接库</value>
+  </data>
+  <data name="Listing" xml:space="preserve">
+    <value>例表</value>
+  </data>
+  <data name="LocationMap" xml:space="preserve">
+    <value>地图</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>身份密码</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>標誌</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>推出</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>主要</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="ManageEvents" xml:space="preserve">
+    <value>活动管理</value>
+  </data>
+  <data name="ManageFaq" xml:space="preserve">
+    <value>问题管理</value>
+  </data>
+  <data name="ManageMyAccount" xml:space="preserve">
+    <value>户口管理</value>
+  </data>
+  <data name="ManageNews" xml:space="preserve">
+    <value>资讯管理</value>
+  </data>
+  <data name="ManageSettings" xml:space="preserve">
+    <value>设置管理</value>
+  </data>
+  <data name="ManageTestimonial" xml:space="preserve">
+    <value>推荐管理</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>留言</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>我</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>本身户口</value>
+  </data>
+  <data name="MyButton" xml:space="preserve">
+    <value>我的按钮</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>资讯</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>綽號</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>号码</value>
+  </data>
+  <data name="OwnButton" xml:space="preserve">
+    <value>本人键盘</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>网页</value>
+  </data>
+  <data name="PageSettings" xml:space="preserve">
+    <value>网页设置</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>开启密码</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Postedon" xml:space="preserve">
+    <value>张贴於</value>
+  </data>
+  <data name="presentation" xml:space="preserve">
+    <value>簡報</value>
+  </data>
+  <data name="ProductPageSettings" xml:space="preserve">
+    <value>产品网页设置</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="recentnews" xml:space="preserve">
+    <value>最新讯息</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>现在登记</value>
+  </data>
+  <data name="retype" xml:space="preserve">
+    <value>重新键入</value>
+  </data>
+  <data name="SampleWebsites" xml:space="preserve">
+    <value>範例網站</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>储存</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>肯定</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Showall" xml:space="preserve">
+    <value>展示</value>
+  </data>
+  <data name="ShowContent" xml:space="preserve">
+    <value>展示目录</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>简要说明</value>
+  </data>
+  <data name="SystemNews" xml:space="preserve">
+    <value>系统消息</value>
+  </data>
+  <data name="Testimonial" xml:space="preserve">
+    <value>推荐</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="upcomingevents" xml:space="preserve">
+    <value>近期活动</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户姓名</value>
+  </data>
+  <data name="VideoGallery" xml:space="preserve">
+    <value>視頻庫</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>檢視</value>
+  </data>
+  <data name="ViewEvents" xml:space="preserve">
+    <value>檢視活动</value>
+  </data>
+  <data name="ViewFaq" xml:space="preserve">
+    <value>檢視徇问</value>
+  </data>
+  <data name="ViewNews" xml:space="preserve">
+    <value>檢視最新动态</value>
+  </data>
+  <data name="ViewTestimonial" xml:space="preserve">
+    <value>檢視推荐</value>
+  </data>
+  <data name="WebSettings" xml:space="preserve">
+    <value>网页设置</value>
+  </data>
+  <data name="WebTemplate" xml:space="preserve">
+    <value>网页模板</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+  <data name="WelcomePage" xml:space="preserve">
+    <value>欢迎页</value>
+  </data>
+  <data name="Welcometo" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+  <data name="PartnerLogin" xml:space="preserve">
+    <value>伙伴登入</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="CustomerLogin" xml:space="preserve">
+    <value>顾客登入</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="HandPhone" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>家用电话号码</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>我的相片</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>上载</value>
+  </data>
+  <data name="AfterDiscount" xml:space="preserve">
+    <value>折扣价</value>
+  </data>
+  <data name="BestSeller" xml:space="preserve">
+    <value>畅销书</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>主要种类</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="ComingSoon" xml:space="preserve">
+    <value>即将推出</value>
+  </data>
+  <data name="eBook" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="eBookCatalog" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="eVendorLogin" xml:space="preserve">
+    <value>商家登录</value>
+  </data>
+  <data name="FeatureBuy" xml:space="preserve">
+    <value>推荐书</value>
+  </data>
+  <data name="FreeEbooks" xml:space="preserve">
+    <value>免费品</value>
+  </data>
+  <data name="MalaysiaMobilePurchase" xml:space="preserve">
+    <value>马来西亚手机</value>
+  </data>
+  <data name="MyCategory" xml:space="preserve">
+    <value>我的目录</value>
+  </data>
+  <data name="NewReleases" xml:space="preserve">
+    <value>最新发布</value>
+  </data>
+  <data name="NumberofBooks" xml:space="preserve">
+    <value>产品数量</value>
+  </data>
+  <data name="OriginalPrice" xml:space="preserve">
+    <value>原价</value>
+  </data>
+  <data name="PackageName" xml:space="preserve">
+    <value>套装名称</value>
+  </data>
+  <data name="persmsreceived" xml:space="preserve">
+    <value>每则收到的短信</value>
+  </data>
+  <data name="SendTo" xml:space="preserve">
+    <value>发送到</value>
+  </data>
+  <data name="SMSPurchaseFormat" xml:space="preserve">
+    <value>短信采购格式</value>
+  </data>
+  <data name="ValueBuy" xml:space="preserve">
+    <value>优惠套装</value>
+  </data>
+  <data name="Button" xml:space="preserve">
+    <value>按钮</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>信用卡</value>
+  </data>
+  <data name="DateAdded" xml:space="preserve">
+    <value>发布日期</value>
+  </data>
+  <data name="EbookManagement" xml:space="preserve">
+    <value>产品管理</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>简介</value>
+  </data>
+  <data name="RegisterDomain" xml:space="preserve">
+    <value>注册域名</value>
+  </data>
+  <data name="SalesRecord" xml:space="preserve">
+    <value>销售纪录</value>
+  </data>
+  <data name="SmsProfitSharing" xml:space="preserve">
+    <value>短信盈利股份</value>
+  </data>
+  <data name="SMSSystem" xml:space="preserve">
+    <value>短信系统</value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>培训</value>
+  </data>
+  <data name="WebEnquiry" xml:space="preserve">
+    <value>网上查询</value>
+  </data>
+</root>

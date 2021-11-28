@@ -1,0 +1,113 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Capriola);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* ---------- GENERAL ---------- */
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 30px auto;
+	width: 400px;
+    border: 1px solid #808080; 
+    border-radius: 18px;
+}
+
+#login h2 {
+	background-color: #f95252;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	color: #fff;
+	font-size: 24px;
+    font: 24px "Roboto"; 
+	padding:  15px 20px;
+}
+
+#login h2 span[class*="Roboto"] {
+   margin-right: 14px;
+}
+
+#login fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
+}
+
+
+
+.loginBkg     { background-color:#F1F6E4;}
+.loginfont12   { FONT-SIZE: 12px; COLOR: #1D999D; letter-spacing: 1px; font-weight:bold; FONT-FAMILY: "Roboto", Verdana, Arial, Helvetica, sans-serif}
+.loginTextBox   {color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:20px; width: 180px;}
+.loginTextBox100  {color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:20px; width: 100px;}
+.Boxhead   { height: 30px; background-color:#66C4DC;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F74F33,EndColorStr=#D41E00);
+    width: 223px; 
+    -webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+
+.loginfontTitle { font: bold italic 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+
+.loginTxtBox1			{color:#474444; font-size: 10pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; 
+                          padding-left:5px; padding-top:2px; vertical-align:baseline; height:30px; background-color:#FAFCF1;
+              			 -webkit-border-radius: 5px;  -moz-border-radius: 5px; border-radius: 5px;}
+.Txt1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px;
+              			 -webkit-border-radius: 5px;  -moz-border-radius: 5px; border-radius: 5px;
+
+
+}
+
+
+
+.loginbtn            
+{   filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#76E28A,EndColorStr=#BAE2C2);
+    background-color:#dff4ff;letter-spacing: 1px;cursor:pointer;font-size:90%;line-height:100%; 
+    border-top:1px solid #999999; border-left:1px solid #999999;
+    border-radius: 6px;
+    font-family:  Arial, Verdana, sans-serif; font-variant:small-caps;
+    text-decoration:none; font-weight:bold; color:#565656;
+     padding:10px 15px 10px 15px; /* padding  Tp Rt Dn Lt*/
+    height: 30px;
+}
+    
+.loginbtn button  { width:auto;    overflow:visible;    padding:4px 10px 3px 7px; /* IE6 */}    
+.loginbtn:hover, .buttons a:hover   {background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699;}
+.loginbtn a:active   {background-color:#6299c5; border:1px solid #6299c5; color:#fff;}

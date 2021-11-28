@@ -1,0 +1,559 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>
+
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link id="ctl00_TmpMasterCss" name="TmpMasterCss" href="App_Themes/Common/TmpStyleSheet6_tomato.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Default/eBookPage.css" rel="stylesheet" />
+    <link href="App_Themes/Default/EbHomePageStyles.css" rel="stylesheet" />
+
+    <style type="text/css">
+
+        .b-example {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+
+        #example-one {
+            border-radius: 10px;
+            background: #BADA55;
+        }
+
+        #example-two {
+            border-radius: 10px;
+            border: 3px solid #BADA55;
+        }
+
+        .RadiusDV {
+
+
+        }
+
+        .VB_HP_BookHeader {
+            border: 1px solid #BAC0C7;
+            background-color: #D4E594;
+            background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+            background: -moz-linear-gradient(top, #D4E594, #F1FAD0); /* for firefox 3.6+ */
+            filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594,EndColorStr=#F1FAD0,GradientType=0);
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            float: left;
+            text-align: left;
+            vertical-align: text-bottom;
+            padding-top: 2px;
+            padding-left: 30px;
+            height: 25px;
+            width: 850px;
+            margin: 2px;
+            margin-left: 10px;
+        }
+
+        .divGen1LogoCss {
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+
+        .WC_PhotoBox {
+            border: 1px dotted #BAC0C7;
+            padding: 10px;
+            margin: 2px;
+            max-height: 270px;
+            max-width: 175px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .WC_Photo {
+            max-height: 200px;
+            max-width: 150px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .WC_PhotoText {
+            font: bold 14px "Exo", "Trebuchet MS","Lucida Console", Arial, sans-serif;
+            color: #2E92C5;
+        }
+
+
+        .WC_WPtext {
+            font: 14px "Myriad Pro", "Trebuchet MS","Lucida Console", Arial, sans-serif;
+            color: #2E92C5;
+        }
+
+
+
+        .WC_WPtextBox {
+            padding: 10px;
+            margin: 2px;
+            min-width: 300px;
+            min-height: 300px;
+            max-height: 350px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            text-justify: distribute;
+        }
+    </style>
+
+
+
+    <style type="text/css">
+             .style1 {
+                 width: 100%;
+             }
+
+             body {
+                 margin: 0;
+                 padding: 0;
+                 background: #fff;
+             }
+
+             #headercontent {
+                 width: 100%;
+                 height: 100px;
+                 margin: 0;
+                 border-width: 0 0 0 0;
+             }
+
+             #maincontainer {
+                 width: 1326px;
+                 margin: 0 auto;
+             }
+
+             .ContentLeft {
+                 width: 2%;
+                 float: left;
+                 color: #000;
+                 padding: 0px;
+             }
+
+             .ContentRight {
+                 width: 100%;
+                 float: left;
+             }
+
+             .ContentRight99 {
+                 width: 99%;
+                 float: left;
+                 padding: 00px;
+             }
+
+             #divWrapper {
+                 overflow: hidden;
+             }
+
+             .SideDiv {
+                 height: 30px;
+                 float: left;
+                 /*border: solid 1px red;*/
+                 overflow: auto;
+                 /* IE only
+        word-wrap: break-word; */
+             }
+
+             #footer {
+                 width: 100%;
+                 height: 30px;
+             }
+
+             .divCssBannerImg2 {
+                 height: 200px;
+                 width: 1190px;
+             }
+
+             .divGen1LogoCss {
+                 max-height: 200px;
+                 max-width: 200px;
+             }
+    </style>
+
+</head>
+<body>
+
+    <form name="aspnetForm" method="post" action="dtGen3.aspx" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQxNzk2MTQxNQ8WAh4ORmlyc3RCdXR0b25VUkwFD0Vib29rc0xpc3QuYXNweBYCZg9kFgQCAQ9kFgICAg8WAh4EaHJlZgUrQXBwX1RoZW1lcy9Db21tb24vVG1wU3R5bGVTaGVldDZfdG9tYXRvLmNzc2QCAw9kFgwCAQ9kFgJmD2QWAmYPZBYCAgEPZBYOAgEPDxYCHgRUZXh0BQlGcmVlIFNNUyBkZAIDDxYCHgdWaXNpYmxlZ2QCBQ8PFgQfAgUESG9tZR8DZ2RkAgcPDxYEHwIFCkNvbnRhY3QgVXMfA2dkZAIJDxYCHwNnZAILDw8WAh8CBQ5DdXN0b21lciBMb2dpbmRkAg0PDxYCHwNnZGQCAw8WAh8DZ2QCBQ8WAh4JaW5uZXJodG1sBcwEPHVsPjxsaT48YSBjbGFzcz0nbGlua3NfTWFpbk1lbnVCYXInIGhyZWY9J0Vib29rc0xpc3QuYXNweCc+ZUJvb2sgQ2F0YWxvZzwvYT48L2xpPjxsaT48YSBjbGFzcz0nbGlua3NfTWFpbk1lbnVCYXInIGhyZWY9J2VCb29rc2ZlYXR1cmVkLmFzcHgnPkZlYXR1cmUgQnV5PC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdsaW5rc19NYWluTWVudUJhcicgaHJlZj0nZUJvb2tzQmVzdFNlbGxlci5hc3B4Jz5CZXN0IFNlbGxlcjwvYT48L2xpPjxsaT48YSBjbGFzcz0nbGlua3NfTWFpbk1lbnVCYXInIGhyZWY9J2VCb29rc05ld1JlbGVhc2UuYXNweCc+TmV3IFJlbGVhc2VzPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdsaW5rc19NYWluTWVudUJhcicgaHJlZj0nRWJvb2tzVmFsdWVCdXkuYXNweCc+VmFsdWUgQnV5PC9hPjwvbGk+PGxpPjxhIGNsYXNzPSdsaW5rc19NYWluTWVudUJhcicgaHJlZj0nZUJvb2tzRnJlZS5hc3B4Jz5GcmVlIGVCb29rczwvYT48L2xpPjxsaT48YSBjbGFzcz0nbGlua3NfTWFpbk1lbnVCYXInIGhyZWY9IlVzZXJzT3duUGFnZS5hc3B4P0J0PTEmQk49bXkrQnV0dG9uMWVuZyI+bXkgQnV0dG9uMWVuZzwvYT48L2xpPjwvdWw+ZAIHD2QWAgIBD2QWAgIBDxYCHwNoZAIJDxYCHgVjbGFzcwUOQ29udGVudFJpZ2h0OTkWAgIBD2QWEAIBD2QWAgIBDw8WAh8CBQ1lQm9vayBDYXRhbG9nZGQCAw9kFgICAQ8PFgIfAgUMTmV3IFJlbGVhc2VzZGQCBQ9kFgICAQ8PFgIfAgULRmVhdHVyZSBCdXlkZAIHDxYCHwQF/QsgPGgzPkJlc3QgU2VsbGVyPC9oMz4gPGJyLz4gPGEgaHJlZj0nZUJvb2tTaG93RGV0YWlscy5hc3B4P3FCb29rSUQ9RUUxNTE2Jz4NCjxkaXYgY2xhc3M9J0QzQm9va0Nzc0hwJyBhbGlnbj0nY2VudGVyJz4NCjxpbWcgc3JjPScvRG9jdW1lbnRSZXBvc2l0b3J5L2VCb29rSW1hZ2VzLzg1Nl9FQm9vayBCaXoucG5nJyBjbGFzcz0nRDNCb29rSW1nQ3NzSHAnIC8+DQo8YnIvPg0KPHNwYW4gY2xhc3M9J0QzQm9va05hbWUnPldvcmxkIERpZ2l0YWwgQml6IGVCb29rIFBsYXRmb3JtPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZUNhbmNlbCc+TVlSIDMwLjAwPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZSc+TVlSIDE1LjAwPC9zcGFuPg0KPC9kaXY+DQo8L2E+DQo8YSBocmVmPSdlQm9va1Nob3dEZXRhaWxzLmFzcHg/cUJvb2tJRD1FRTE1MTUnPg0KPGRpdiBjbGFzcz0nRDNCb29rQ3NzSHAnIGFsaWduPSdjZW50ZXInPg0KPGltZyBzcmM9Jy9Eb2N1bWVudFJlcG9zaXRvcnkvZUJvb2tJbWFnZXMvNjc2MF82LWluLTEucG5nJyBjbGFzcz0nRDNCb29rSW1nQ3NzSHAnIC8+DQo8YnIvPg0KPHNwYW4gY2xhc3M9J0QzQm9va05hbWUnPjYtaW4tMSBVbHRpbWF0ZSBlQm9va3MgU2FtcGxlIENvbGxlY3Rpb248L3NwYW4+DQo8YnIvPg0KPHNwYW4gY2xhc3M9J2hwQm9va1ByaWNlQ2FuY2VsJz5NWVIgMzAuMDA8L3NwYW4+DQo8YnIvPg0KPHNwYW4gY2xhc3M9J2hwQm9va1ByaWNlJz5NWVIgMTUuMDA8L3NwYW4+DQo8L2Rpdj4NCjwvYT4NCjxhIGhyZWY9J2VCb29rU2hvd0RldGFpbHMuYXNweD9xQm9va0lEPUVFMTUxNCc+DQo8ZGl2IGNsYXNzPSdEM0Jvb2tDc3NIcCcgYWxpZ249J2NlbnRlcic+DQo8aW1nIHNyYz0nL0RvY3VtZW50UmVwb3NpdG9yeS9lQm9va0ltYWdlcy85Nzc1XzU1IElkZWFzLnBuZycgY2xhc3M9J0QzQm9va0ltZ0Nzc0hwJyAvPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdEM0Jvb2tOYW1lJz41NSBJZGVhcyBNYWtlICQkJCB3aXRoIFByZW1pdW0gU01TPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZUNhbmNlbCc+TVlSIDMwLjAwPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZSc+TVlSIDE1LjAwPC9zcGFuPg0KPC9kaXY+DQo8L2E+DQo8YSBocmVmPSdlQm9va1Nob3dEZXRhaWxzLmFzcHg/cUJvb2tJRD1FTTEzMTknPg0KPGRpdiBjbGFzcz0nRDNCb29rQ3NzSHAnIGFsaWduPSdjZW50ZXInPg0KPGltZyBzcmM9Jy9Eb2N1bWVudFJlcG9zaXRvcnkvZUJvb2tJbWFnZXMvODU0MF9lQ292ZXI0NTAuanBnJyBjbGFzcz0nRDNCb29rSW1nQ3NzSHAnIC8+DQo8YnIvPg0KPHNwYW4gY2xhc3M9J0QzQm9va05hbWUnPlRoZSBNaXJhY2xlIE9mIFRoZXJhcGV1dGljIFRvdWNoPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZUNhbmNlbCc+TVlSIDMwLjAwPC9zcGFuPg0KPGJyLz4NCjxzcGFuIGNsYXNzPSdocEJvb2tQcmljZSc+TVlSIDE1LjAwPC9zcGFuPg0KPC9kaXY+DQo8L2E+DQpkAgkPZBYCAgEPDxYCHwIFvgZXZWxjb21lIHRvIG15IGVCb29rIFN0b3JlLCB0aGUgRmlyc3QgaW4gdGhlIFdvcmxkIHRoYXQgb2ZmZXJzIHRoZSBjb252ZW5pZW5jZSBvZiBTTVMgUHVyY2hhc2UgaW4gYWRkaXRpb24gdG8gUGF5cGFsIGFuZCBDcmVkaXQgQ2FyZCBQdXJjaGFzZSEhPGJyLz48YnIvPk15IFN0b3JlIGtlZXAgYW4gZXh0ZW5zaXZlIGVib29rIGNvbGxlY3Rpb24gb2YgbWFueSBnZW5yZXMgZnJvbSBDaGlsZHJlbiwgTWFya2V0aW5nLCBCZWF1dHksIFdlbGxuZXNzIHRvIEZpbmFuY2UgYW5kIGV0Yy4gIEJyb3dzZSB0aHJvdWdoIHRoZSBlYXN5IG5hdmlnYXRpbmcgZUJvb2sgQ2F0YWxvZyBhbmQgeW91IHdpbGwgYmUgc3VycHJpc2VkIGJ5IHRoZSBudW1iZXJzIG9mIGVib29rcyBhdmFpbGFibGUuPGJyLz48YnIvPklmIHlvdSBoYXZlIG5vIGlkZWFzIHdoYXQgdG8gcHVyY2hhc2UsIHZpc2l0IHRoZSBWYWx1ZSBCdXksIEZlYXR1cmVkIEJ1eSBvciB0aGUgQmVzdCBTZWxsZXIgc2VjdGlvbiBvZiBvdXIgZUJvb2sgU3RvcmUuICBIZXJlIHlvdSB3aWxsIGZpbmQgc29tZSBvZiB0aGUgd2VsbCByZWFkIGFuZCBiZXN0IHZhbHVlIGVCb29rcyBvZmZlciBhdCBncmVhdCBwcmljZXMgeW91IGNhbid0IHJlc2lzdC4gPGJyLz48YnIvPkRvbid0IGZvcmdldCB0byBjaGVjayBvdXQgdGhlIEZSRUUgZUJvb2sgc2VjdGlvbiB0byBjbGFpbSB5b3VyIEZSRUUgZWJvb2ssIGFuZCBjb21lIGJhY2sgb2Z0ZW4gYXMgSSB1cGRhdGUgdGhpcyBzZWN0aW9uIHJlZ3VsYXJseS4gIGg8YnIvPjxici8+VGlsbCBUaGVuLCBzZWUgeW91IGFnYWluIGFuZCBIYXBweSBTaG9wcGluZyBhbmQgUmVhZGluZyEhaGRkAgsPZBYCAgEPDxYCHwIFC0Jlc3QgU2VsbGVyZGQCDQ9kFgICAQ8PFgIfAgUJVmFsdWUgQnV5ZGQCDw9kFgICAQ8PFgIfAgULRnJlZSBlQm9va3NkZAILD2QWAgIBD2QWAgIBDxYCHwQFJkNvcHlyaWdodHNAMjAxNC4gIEFsbCBSaWdodHMgUmVzZXJ2ZWQuZGQ1izIIzuNwIaS0PJFzhTLPwKQJnA==" />
+        </div>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D7B9A3B9" />
+        </div>
+        <div id="maincontainer">
+
+
+
+            <table border="0" cellpadding="0" cellspacing="0" class="style1">
+
+
+                <tr>
+                    <td>
+                        <div id="headercontent">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td valign="bottom">
+                                        <table cellpadding="0" border="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td style="height:30px;" class="font_12Normal" valign="middle" align="left">
+                                                    <div id="divWrapper">
+                                                        <div class="SideDiv" style="width:450px; float:left; padding-left: 20px; padding-top:3px;">
+                                                            <table id="ctl00_TopMostMenu1_tbltopMostMenu" border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                                                                <tr>
+                                                                    <td width="20px">&nbsp;</td>
+                                                                    <td align="right" style="white-space:nowrap">
+                                                                        &nbsp;
+
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        <img src="Images/CustHome.gif" id="ctl00_TopMostMenu1_imgHome" alt="Clogin" />
+                                                                        <a id="ctl00_TopMostMenu1_HypHome" class="links_TopLine" href="Default.aspx">Home</a>
+
+                                                                        &nbsp; &nbsp;
+                                                                        <a id="ctl00_TopMostMenu1_HypContactUs" class="links_TopLine" href="UserContactUsPage.aspx">Contact Us</a>
+
+                                                                        &nbsp; &nbsp;
+                                                                        <img src="Images/CustLogin.gif" id="ctl00_TopMostMenu1_imgCustLogin" alt="Clogin" />
+
+
+
+
+                                                                        <a id="ctl00_TopMostMenu1_HypEbook" class="links_TopLine" href="http://210.5.45.47/EBook/ebook.html" target="_blank">eVendor Login</a>
+
+
+                                                                    </td>
+                                                                    <td width="20px">&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </td>
+
+                                                <td align="center"></td>
+
+
+
+                                                <td valign="top" colspan="2" align="right">
+
+                                                    <div id="ctl00_dvGoogleTranslater">
+                                                        <div id="google_translate_element" style="float:right; padding-right:20px;"></div>
+                                                        <script type="text/javascript">
+                                                            function googleTranslateElementInit() {
+                                                                new google.translate.TranslateElement({
+                                                                    pageLanguage: 'en',
+                                                                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                                                    includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                                                                }, 'google_translate_element');
+                                                            }
+                                                        </script>
+                                                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                                                    </div>
+
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr style="height: 50px">
+
+
+                                                <td colspan="4">
+
+                                                    <div id="DvMainBar" class="dvMenuBar">
+                                                        <div id="ctl00_dvTopMenu" class="D3menu" style="float:left;"><ul><li><a class='links_MainMenuBar' href='EbooksList.aspx'>eBook Catalog</a></li><li><a class='links_MainMenuBar' href='eBooksfeatured.aspx'>Feature Buy</a></li><li><a class='links_MainMenuBar' href='eBooksBestSeller.aspx'>Best Seller</a></li><li><a class='links_MainMenuBar' href='eBooksNewRelease.aspx'>New Releases</a></li><li><a class='links_MainMenuBar' href='EbooksValueBuy.aspx'>Value Buy</a></li><li><a class='links_MainMenuBar' href='eBooksFree.aspx'>Free eBooks</a></li><li><a class='links_MainMenuBar' href="UsersOwnPage.aspx?Bt=1&BN=my+Button1eng">my Button1eng</a></li></ul></div>
+                                                    </div>
+
+                                                </td>
+
+
+                                            </tr>
+
+                                        </table>
+
+                                    </td>
+                                </tr>
+
+
+
+                            </table>
+
+
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <div id="ctl00_dvContentRight" class="ContentRight99">
+
+
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+
+                            </script>
+
+
+                            <div id="dvBody" style="min-height: 200px;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="101%">
+
+                                    <tr>
+                                        <td>
+
+                                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+                                                <tr>
+                                                    <td valign="top" width="200px;">
+
+                                                        <a href="eBooksList.aspx" class="tc">
+                                                            <div id="ctl00_ContentPlaceHolderRight_dvEbookCatalog" class="" style="width: 200px;margin-top : 20px;">
+
+                                                                <div id="up" class="dvBoxUp clearfix">
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/ebc.jpg" />
+                                                                </div>
+                                                                <div id="down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3eBookCatalog" class="h3font">eBook Catalog</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblOurLibrary" class="h1font">Our Library</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="eBooksNewRelease.aspx" class="tc">
+                                                            <div id="ctl00_ContentPlaceHolderRight_dvNewRelease" class="" style="width: 200px;margin-top : 30px;">
+
+
+                                                                <div id="up" class="dvBoxUp clearfix">
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/Nr.jpg" />
+
+                                                                </div>
+                                                                <div id="down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3NewReleases" class="h3font">New Releases</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblFineNewBooks" class="h1font">Find New eBooks Here</span>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </a>
+                                                        <a href="eBooksFeatured.aspx" class="tc">
+
+                                                            <div id="ctl00_ContentPlaceHolderRight_dvFeaturedBuys" class="" style="width: 200px; margin-top : 30px;">
+
+
+                                                                <div id="T3up" class="dvBoxUp clearfix">
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/fsb.jpg" />
+                                                                </div>
+                                                                <div id="T3down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3FeautredBuys" class="h3font">Feature Buy</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblOurRecommendations" class="h1font">Our Recommendations</span>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </a>
+
+                                                    </td>
+                                                    <td valign="top" width="80%">
+
+
+
+                                                        <div id="ctl00_ContentPlaceHolderRight_dvBestSellerHP" class="rTape" style="height:322px; width:800px;">
+                                                            <h3>Best Seller</h3> <br /> <a href='eBookShowDetails.aspx?qBookID=EE1516'>
+                                                                <div class='D3BookCssHp' align='center'>
+                                                                    <img src='/DocumentRepository/eBookImages/856_EBook Biz.png' class='D3BookImgCssHp' />
+                                                                    <br />
+                                                                    <span class='D3BookName'>World Digital Biz eBook Platform</span>
+                                                                    <br />
+                                                                    <span class='hpBookPriceCancel'>MYR 30.00</span>
+                                                                    <br />
+                                                                    <span class='hpBookPrice'>MYR 15.00</span>
+                                                                </div>
+                                                            </a>
+                                                            <a href='eBookShowDetails.aspx?qBookID=EE1515'>
+                                                                <div class='D3BookCssHp' align='center'>
+                                                                    <img src='/DocumentRepository/eBookImages/6760_6-in-1.png' class='D3BookImgCssHp' />
+                                                                    <br />
+                                                                    <span class='D3BookName'>6-in-1 Ultimate eBooks Sample Collection</span>
+                                                                    <br />
+                                                                    <span class='hpBookPriceCancel'>MYR 30.00</span>
+                                                                    <br />
+                                                                    <span class='hpBookPrice'>MYR 15.00</span>
+                                                                </div>
+                                                            </a>
+                                                            <a href='eBookShowDetails.aspx?qBookID=EE1514'>
+                                                                <div class='D3BookCssHp' align='center'>
+                                                                    <img src='/DocumentRepository/eBookImages/9775_55 Ideas.png' class='D3BookImgCssHp' />
+                                                                    <br />
+                                                                    <span class='D3BookName'>55 Ideas Make $$$ with Premium SMS</span>
+                                                                    <br />
+                                                                    <span class='hpBookPriceCancel'>MYR 30.00</span>
+                                                                    <br />
+                                                                    <span class='hpBookPrice'>MYR 15.00</span>
+                                                                </div>
+                                                            </a>
+                                                            <a href='eBookShowDetails.aspx?qBookID=EM1319'>
+                                                                <div class='D3BookCssHp' align='center'>
+                                                                    <img src='/DocumentRepository/eBookImages/8540_eCover450.jpg' class='D3BookImgCssHp' />
+                                                                    <br />
+                                                                    <span class='D3BookName'>The Miracle Of Therapeutic Touch</span>
+                                                                    <br />
+                                                                    <span class='hpBookPriceCancel'>MYR 30.00</span>
+                                                                    <br />
+                                                                    <span class='hpBookPrice'>MYR 15.00</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+
+
+                                                        <div id="ctl00_ContentPlaceHolderRight_dvWelcome" class="rTape" style="width:800px; min-height: 260px;">
+
+                                                            <div id="dvW_WelcomePageText" class="WC_WPtextBox" style="float: left; padding-left: 30px;">
+                                                                <span id="ctl00_ContentPlaceHolderRight_lblWp_WelcomePageText" class="WC_WPtext">Welcome to my eBook Store, the First in the World that offers the convenience of SMS Purchase in addition to Paypal and Credit Card Purchase!!<br /><br />My Store keep an extensive ebook collection of many genres from Children, Marketing, Beauty, Wellness to Finance and etc.  Browse through the easy navigating eBook Catalog and you will be surprised by the numbers of ebooks available.<br /><br />If you have no ideas what to purchase, visit the Value Buy, Featured Buy or the Best Seller section of our eBook Store.  Here you will find some of the well read and best value eBooks offer at great prices you can't resist. <br /><br />Don't forget to check out the FREE eBook section to claim your FREE ebook, and come back often as I update this section regularly.  h<br /><br />Till Then, see you again and Happy Shopping and Reading!!h</span>
+
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                                    </td>
+                                                    <td valign="top" width="200px;">
+
+                                                        <a href="eBooksBestSeller.aspx" class="tc">
+                                                            <div id="ctl00_ContentPlaceHolderRight_dvBestBuy" class="" style="width: 200px;margin-top : 20px;">
+
+                                                                <div id="R4up" class="dvBoxUp clearfix">
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/bs1.jpg" />
+
+                                                                </div>
+                                                                <div id="R4down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3BestBuys" class="h3font">Best Seller</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblGreatvalue" class="h1font">eBooks at Great Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="eBooksValueBuy.aspx" class="tc">
+                                                            <div id="ctl00_ContentPlaceHolderRight_dvFreeBooks" class="" style="width: 200px;margin-top : 30px;">
+
+
+                                                                <div id="R5up" class="dvBoxUp clearfix">
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/vb.jpg" />
+
+                                                                </div>
+                                                                <div id="R5down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3ValueBuys" class="h3font">Value Buy</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblBundleddeals" class="h1font">Bundled deals</span>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="eBooksFree.aspx" class="tc">
+                                                            <div id="ctl00_ContentPlaceHolderRight_Div3" class="" style="width: 200px; margin-top : 30px;">
+
+
+                                                                <div id="R6up" class="dvBoxUp clearfix">
+
+                                                                    <img alt="FreeBooks" class="upImage" src="Images/ebImages/Design3/fr.gif" />
+                                                                </div>
+                                                                <div id="R6down" class="dvBoxDown">
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblD3FreeBooks" class="h3font">Free eBooks</span>
+                                                                    <br />
+                                                                    <span id="ctl00_ContentPlaceHolderRight_lblWeAreNotJoking" class="h1font">We are not joking!</span>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+
+
+
+                                            </table>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>
+                        <div id="dvfooter" class="dvfooter">
+
+
+
+
+                            <table border="0" cellpadding="0" cellspacing="0" align="right" width="98%">
+                                <tr>
+                                    <td align="right" class="fontCopyRight">
+                                        <div id="ctl00_ContentPlaceHolderFooter_CopyRightsINFO1_dvCopyRights">Copyrights@2014.  All Rights Reserved.</div>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+
+
+
+
+
+                        </div>
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </div>
+        <iframe id="ctl00_Defib" src="/SessionKeepAlive.aspx" frameborder="no" width="0" height="0"></iframe>
+    </form>
+
+</body>
+</html>

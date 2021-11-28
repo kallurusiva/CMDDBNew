@@ -1,0 +1,247 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TmpMasterGen2.master.cs" Inherits="TmpMasterGen2" %>
+
+<%@ Register src="TopMostMenu.ascx" tagname="TopMostMenu" tagprefix="uc1" %>
+
+<%@ Register src="SuperAdmin/SelectLanguage4Create.ascx" tagname="SelectLanguage4Create" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <%--   <meta http-equiv="content-type" content="text/html; charset=UTF-8; IE=7;">--%>
+    <link runat="server" id="TmpMasterCss" name="TmpMasterCss" href="App_Themes/Common/TmpStyleSheet6_tomato.css" rel="stylesheet" type="text/css" />
+
+    <link href="App_Themes/Default/eBookPage.css" rel="stylesheet" />
+    <link href="App_Themes/Default/EbHomePageStyles.css" rel="stylesheet" />
+    <link href="Assets/css/Red/style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+body {
+    margin: 0;
+    padding:0; 
+    background: #fff;
+}
+
+#headercontent{
+     width: 100%;
+     height: 100px;
+     margin: 0;
+     border-width: 0 0 0 0;
+ }
+
+#maincontainer 
+{
+    width: 1326px;
+    margin: 0 auto;
+    
+}
+
+.ContentLeft {
+    width: 2%;
+    float: left;
+    color: #000;
+    padding: 0px; 
+}
+
+.ContentRight 
+{
+width: 100%;   
+float: left;
+} 
+
+.ContentRight99 
+{
+width: 99%;   
+float: left;
+padding: 00px;
+} 
+
+#divWrapper {
+overflow:hidden;
+}
+
+.SideDiv
+{
+   
+   height:30px;
+   float: left;
+    /*border: solid 1px red;*/
+   overflow: auto;
+
+   /* IE only
+   word-wrap: break-word; */
+}
+
+#footer
+{
+    width: 100%;
+    height :30px;
+}
+
+.divCssBannerImg2 { height:200px; width:1190px; }
+
+.divGen1LogoCss { max-height: 200px; max-width: 200px; }
+
+</style>
+    
+</head>
+<body>
+
+<form id="form1" runat="server">
+    <div id="maincontainer">
+    
+    
+    
+        <table border="0" cellpadding="0" cellspacing="0" class="style1">
+            
+                       
+            <tr>
+             <td>
+             <div id="headercontent">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+              <td valign="bottom">
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                <td style="height:35px;"   class="font_12Normal" valign="middle">
+                <div id="divWrapper">
+                    <div  class="SideDiv" style="width:450px;" >
+                    <uc1:TopMostMenu ID="TopMostMenu1" runat="server" />
+                    </div>
+                    <div id="dvGoogleTranslater" runat="server" visible="false">
+                     <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({
+                                  pageLanguage: 'en',
+                                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                  includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                              }, 'google_translate_element');
+                          }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              
+                    </div>
+
+                </div>
+                    </td>
+                
+                <td align="center">
+
+                               
+                </td>
+                
+               
+              
+                <td valign="top" colspan="2">
+                
+                    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+    
+                    
+                    <tr id="trLoginRow" runat="server">
+                    <td>
+                   &nbsp;
+                        
+                    </td>
+                    </tr>
+                       
+                    </table>
+                    
+                    
+                </td>
+                
+                </tr>
+               
+                <tr  style="height: 50px">
+             
+                
+                <td colspan="4">
+                 <div class="indentmenu" id="dvTopMenu" runat="server" style="float:left;">
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="current">About Us</a></li>
+                    <li><a href="#">Corporate Info</a></li>
+                    <li><a href="#">Incentive Plan</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Presentation</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                
+             
+                </td>
+                
+             
+                </tr>
+                
+                </table>
+              
+              </td>
+              </tr>
+              
+             <%-- <tr>
+              <td>
+              
+              </td>
+              </tr>--%>
+                
+                </table>
+             
+             
+             </div>
+             
+             </td>
+            </tr>
+            
+             <tr>
+             <td>
+            <asp:Panel ID="PanelContentLeft" Visible="false" runat="server">
+             <div id="dvContentLeft" class="ContentLeft" runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderLEFT" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+             </asp:Panel>
+              <div id="dvContentRight" class="ContentRight" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRight" runat="server">
+                     </asp:ContentPlaceHolder></div>
+              </td>
+            </tr>
+            
+            <tr>
+            <td>&nbsp;</td></tr>
+            
+            
+            <tr>
+             <td>
+             <div id="footer">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+                
+                    <div id="dvCopyRights" class="fontCopyRight" runat="server">GlobalSurf Sdh bhd.2010 All Rights Reserved </div> 
+                    
+                    </asp:ContentPlaceHolder>
+                    
+                    </div>
+             </td>
+            </tr>
+            
+            
+        </table>
+    
+    </div>
+<IFRAME id=Defib src="/SessionKeepAlive.aspx" 
+     frameBorder=no width=0 height=0 runat="server"></IFRAME>
+</form>
+
+</body>
+</html>

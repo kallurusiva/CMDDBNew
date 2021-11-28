@@ -1,0 +1,339 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TmpMaster3.master.cs" Inherits="TmpMaster3" %>
+
+<%@ Register src="TopMostMenu.ascx" tagname="TopMostMenu" tagprefix="uc1" %>
+
+<%@ Register src="SuperAdmin/SelectLanguage4Create.ascx" tagname="SelectLanguage4Create" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link runat="server" id="TmpMasterCss" name="TmpMasterCss" href="App_Themes/Common/TmpStyleSheet3.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+body {
+    margin: 0;
+    padding:0; 
+    background: #fff;
+}
+
+#headercontent{
+     width: 100%;
+     height: 330px;
+     margin: 0;
+     border-width: 0 0 0 0;
+ }
+
+#maincontainer 
+{
+    width: 1020px;
+    margin: 0 auto;
+    
+}
+
+.ContentLeft {
+    width: 20%;
+    float: left;
+    color: #000;
+    padding: 0px; 
+}
+
+.ContentRight 
+{
+width: 76%;   
+float: left;
+padding: 10px;
+} 
+
+.ContentRight99 
+{
+width: 100%;   
+float: left;
+padding: 0px;
+} 
+
+
+#footer
+{
+    width: 100%;
+    height :30px;
+}
+
+</style>
+    
+</head>
+<body>
+
+<form id="form1" runat="server">
+    <div id="maincontainer">
+    
+    
+    
+        <table  border="0" cellpadding="0" cellspacing="0" class="style1">
+            
+                       
+            <tr>
+             <td>
+             <div id="headercontent">
+              <table  border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+<%--              <td  width="200px" style="height:66px"> 
+                    <div id="dvLogoImage" runat="server">
+                        &nbsp;</div>
+                    <div id="dvLogoText" runat="server">
+                    </div>
+               </td>--%>
+              <td valign="bottom">
+              <table  border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                <td style="height:35px;"  width="300px" class="font_12Normal" valign="middle">
+                 <%--<div id="dvLangdropDown" runat="server" visible="false">
+                Language :
+                    <asp:DropDownList ID="ddlChangeLanguage" CssClass="stdDropDown" runat="server" 
+                        AutoPostBack="True" 
+                        onselectedindexchanged="ddlChangeLanguage_SelectedIndexChanged">
+                        <asp:ListItem Selected="True" Value="EN">English</asp:ListItem>
+                         <asp:ListItem Value="BM">Bahasa Melayu</asp:ListItem>
+                        <asp:ListItem Value="CN">Chinese</asp:ListItem>
+                    </asp:DropDownList>
+                    </div>--%>
+
+                    <div id="dvGoogleTranslater" runat="server" visible="false">
+                     <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({
+                                  pageLanguage: 'en',
+                                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                  includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                              }, 'google_translate_element');
+                          }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              
+                    </div>
+
+                    </td>
+                
+                <td>
+                
+                &nbsp;
+                
+                </td>
+                
+                <%--
+                <div id="dvLogoText" runat="server"> </div>--%>
+                <td valign="top">
+                
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr style="height:22px;">
+                    <td>
+                       <uc1:TopMostMenu ID="TopMostMenu1" runat="server" />
+                     </td>
+                    </tr>
+                       
+                    </table>
+                    
+                    
+                </td>
+                <td  width="20px">&nbsp;</td>
+                </tr>
+                <%--<tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>--%>
+                <tr>
+                <%--<td align="left" valign="top"  >
+                <img alt="topleftarc" src="Images/table_top_Leftarc.gif" 
+                        style="width: 10px; height: 20px" />
+                </td>--%>
+                <td colspan="4"   >
+                <div class="indentmenu" id="dvTopMenu" runat="server">
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="current">About Us</a></li>
+                    <li><a href="#">Corporate Info</a></li>
+                    <li><a href="#">Incentive Plan</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Presentation</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                </td>
+               <%--<td align="right" valign="top" >
+                  <img alt="toprightarc" src="Images/table_top_Rightarc.gif" 
+                        style="width: 10px; height: 20px" />
+                        </td>--%>
+                </tr>
+                </table>
+              
+              </td>
+              </tr>
+              
+              <tr>
+              <td>
+                <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                 <td>
+                <div id="dvBannerLeftPanel" runat="server" style="width:200px;">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 200px; height:200px; background-image:url('Images/Tmpt3/mbox2.jpg');">
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td align="center"><div id="dvLogoImage" style="float:none;" runat="server"></div></td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td align="center" style="padding-left:10px; padding-right: 10px;"><asp:Label ID="lblLogoText" runat="server" Text=""></asp:Label></td>
+                <td>&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+                                
+                </table>
+                </div>
+                </td>
+                
+                <td><div id="dvBannerImg" runat="server">
+                    <img alt="banner image"  class="divCssBannerImg" src="ImageRepository/Banner1.jpg" />
+                    </div>
+                </td>
+               
+                </tr>
+                <tr class="BkgunderBannerBar">
+                <td colspan="2"></td>
+                </tr>
+                <tr id="trLoginRow" runat="server">
+                <td colspan="2" class="bkgMemLogin" align="center">
+                <!-- Member Login area -->
+                    <%--<table id="tblLoginArea" runat="server" border="0" cellpadding="0" cellspacing="0" width="95%" >
+                    <tr>
+                    <td class="font_Title1" width="200px" valign="bottom" align="left">
+                                     <asp:Literal ID="ltrLoginTitle" runat="server"></asp:Literal></td>
+                     <td valign="bottom" width="90px" align="right">
+                        <font class="font_12Login">
+                            <asp:Literal ID="ltrLoginID" Text="Login Id" runat="server"></asp:Literal> : </font>&nbsp; 
+                         </td>
+                        <td valign="bottom" align="left">
+                         <asp:TextBox ID="txtLoginID" runat="server" CssClass="stdTextFieldLogin" 
+                            MaxLength="20"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="txtLoginID" CssClass="font_11Msg_Error" Display="Dynamic" 
+                            ErrorMessage="&lt;br/&gt;Enter Login Name."></asp:RequiredFieldValidator>
+                    </td>
+                    <td valign="bottom"  width="95px"  align="right">
+                        <font class="font_12Login">
+                            <asp:Literal ID="ltrPassword" Text="Password runat="server"></asp:Literal> : </font>&nbsp; 
+                        </td>
+                        <td valign="bottom" align="left">
+                         <asp:TextBox ID="txtPassword" runat="server" CssClass="stdTextFieldLogin" 
+                            style="margin-bottom: 0px" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                            ControlToValidate="txtPassword" CssClass="font_11Msg_Error" Display="Dynamic" 
+                            ErrorMessage="&lt;br/&gt;Enter Password."></asp:RequiredFieldValidator>
+                    
+                    </td>
+                    <td><asp:Button ID="btnSignIn" runat="server" CssClass="stdButtonLogin" 
+                                        Height="26px" onclick="btnSignIn_Click" Text="Sign In" Width="72px" />
+                                        </td>
+                                         <td align="right" valign="bottom">
+                                    <a class="links_ForgotPwd" href="UserForgotPassword.aspx">
+                                        <asp:Literal ID="ltrForgotpwd" Text="Forgot Password" runat="server"></asp:Literal>?</a>
+                                </td>
+                                
+                                 <td class="font_11Msg_Error">
+                                    <asp:Literal ID="LtrErrMessage" runat="server" Text=""></asp:Literal>
+                                </td>
+                    </tr>   
+                    
+                    </table>--%>
+                </td>
+                </tr>
+                
+                </table>
+              </td>
+              </tr>
+              <%--<tr>
+              <td>&nbsp;</td>
+              </tr>
+              <tr>
+              <td>
+                   &nbsp;
+              </td>
+              </tr>
+              <tr>
+             <td>
+                &nbsp;
+             </td>
+            </tr>--%>
+              </table>
+             
+             
+             </div>
+             
+             </td>
+            </tr>
+            
+             <tr>
+             <td>
+             <div>
+             <asp:Panel ID="PanelContentLeft" Visible="false" runat="server">
+             <div id="dvContentLeft" class="ContentLeft" runat="server">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolderLEFT" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+             </asp:Panel>
+              <div id="dvContentRight" class="ContentRight" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRight" runat="server">
+                     </asp:ContentPlaceHolder></div>
+              
+              </div>
+              </td>
+            </tr>
+            <tr>
+            <td>&nbsp;</td></tr>
+            
+            
+            <tr>
+             <td>
+             <div id="footer">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+                
+                    <div id="dvCopyRights" class="fontCopyRight" runat="server">GlobalSurf Sdh bhd.2010 All Rights Reserved </div> 
+                    
+                    </asp:ContentPlaceHolder>
+                    
+                    </div>
+             </td>
+            </tr>
+            
+            
+        </table>
+    
+    </div>
+<IFRAME id=Defib src="/SessionKeepAlive.aspx" 
+     frameBorder=no width=0 height=0 runat="server"></IFRAME>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+/* Let's import the lovely google font, please keep this line at the top of your stylesheet */
+/* Menu CSS */#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  padding: 0;
+  margin: 0;
+/*  line-height: 1;*/
+  font-family: 'Capriola', sans-serif;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: '';
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu {
+  zoom: 1;
+  height: 27px;
+  /*background: url(images/bottom-bg.png) repeat-x center bottom;
+  background-color: #4FA0CC;*/
+
+ /*  border: dashed 1px #FF0000; */
+ border-bottom: solid 1px #A3C0CB;
+  -webkit-border-radius: 16px;                         
+ -moz-border-radius: 16px;						 
+ border-radius: 16px;
+  width: auto;
+}
+#cssmenu ul {
+/*  background: url(images/nav-bg.png) repeat-x 0px 4px;*/
+  background-color: #1C8CC9;
+  height: 27px;
+    -webkit-border-radius: 16px;                         
+ -moz-border-radius: 16px;						 
+ border-radius: 16px;
+}
+#cssmenu ul li {
+  float: left;
+  list-style: none;
+}
+#cssmenu ul li a {
+  display: block;
+  height: 21px;
+ /* padding: 5px 10px 0px;*/
+ padding-left: 9px;
+ padding-right: 9px;
+  
+  margin: 3px 1px 0;
+  border-radius: 2px 2px 0 0;
+  text-decoration: none;
+  font-size: 11px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  font-weight: 300;
+  opacity: .9;
+  border-right: groove 1px #A3C0CB;
+/*   border: dotted 1px #FF00FF; */
+
+ 
+  
+}
+#cssmenu ul li:first-child a {
+  margin: 3px 1px 0 0;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+/*  background: url(images/color.png) center bottom;*/
+  background-color: #F1BF10;
+  display: block;
+  height: 21px;
+  margin-top: -5px;
+  padding-top: 10px;
+  color: #004f7c;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  opacity: 1;
+}

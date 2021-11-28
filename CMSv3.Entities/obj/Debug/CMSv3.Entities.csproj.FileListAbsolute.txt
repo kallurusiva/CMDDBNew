@@ -1,0 +1,24 @@
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.pdb
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.Entities\bin\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.csprojResolveAssemblyReference.cache
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.Entities\obj\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\bin\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\bin\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.csprojResolveAssemblyReference.cache
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\bin\Debug\CMSv3.Entities.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\bin\Debug\CMSv3.Entities.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.csprojResolveAssemblyReference.cache
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.Entities\obj\Debug\CMSv3.Entities.pdb

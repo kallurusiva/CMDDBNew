@@ -1,0 +1,668 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Exo);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+.eb              {font-family: Lucida Sans Unicode, Verdana, Arial, Tahoma;}
+.ebSeparator    {background-color:#FFFFFF;}
+.eb_TLtarc      { display: table-cell; float:left; vertical-align: top;}
+
+.eb_head        { height: 40px; border-bottom: solid 3px #FAC96B; font: bold 120%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;}
+.eb_head2       { height: 40px; border-bottom: solid 2px #FAC96B; font: bold 12px "Trebuchet MS","Lucida Console", Arial, sans-serif; letter-spacing: 1px;}
+
+.eb_headText    {padding:  4px 0 0px 10px;  text-align: left; color: #3A3F39;}
+.eb_QuestionText { font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding: 8px 0 4px 10px;  text-align: left; color: #3A3F39;}
+.ebQuestion      {background-color:#D4E594; height:30px; 
+                   background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+                    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);
+                   }
+.ebQuestion2  {background-color:#E1F1A6; height:27px;}
+.ebAnswer    {min-height: 40px; background-color:#F0F9CE; font-size: 11px; border: solid 1px #D4E594; padding: 5px 5px 5px 10px; color: #3A3F39;}
+.ebAnswer2   {min-height: 30px; background-color:#ABCCED; font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; font-variant: small-caps; border: solid 1px #E7F5B5; padding: 5px 5px 3px 5px; color: #3A3F39;}
+
+
+
+
+.RowFormLabel   { background-color: #E8F0F1; border-bottom: solid 1pt #C9E9ED; font-variant: small-caps; color: #4E5163; font: bold 12px "Trebuchet MS","Lucida Console", Arial, sans-serif; height:25px; padding-left:10px; text-align:left;}
+.RowFormText    { background-color: #F1F8F9; border-bottom: solid 1pt #C9E9ED; border-left: solid 1pt #C9E9ED;   font-size: 12px; color: #4E5163; height:25px; padding-left: 20px;}
+
+.RowFormText1Help {background-color: #EEEFEB; border-bottom: solid 1pt #D4DFAA; border-left: solid 1pt #D4DFAA;   font-size: 10px; color: #5C80A8; height:25px; padding-left: 20px; vertical-align: bottom;}
+
+
+
+.fontTitle		        { FONT-SIZE: 12px; COLOR: #376382; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; font-weight: bold;}
+.fontDescription		{ FONT-SIZE: 12px; COLOR: #376382; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;}
+
+
+.FontBHeader          {color: #687367; font-style:italic; font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; 
+                        margin: 30px 0 50px; vertical-align:middle; background-color:#AFD4CF; line-height: 30px; padding-left: 5px;
+                         -webkit-border-radius: 6px;                         
+						 -moz-border-radius: 6px;						 
+						 border-radius: 6px;
+					     }
+
+
+.ebookShowBox 
+{
+    border: 1px dotted #BAC0C7;
+    padding: 10px; 
+    height: 220px;
+    margin: 2px;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.ebImageBox { width: 180px; }
+.ebDescriptionBox { width: 650px; }
+.ebDetailsBox { width: 270px; }
+
+.ebHeaderBox {
+    width: 1160px;
+    height: 30px;
+    border: 1px dotted #BAC0C7;
+     padding: 5px; 
+      margin: 2px;
+       background-color: #EEFAFE;
+     -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.ebImgCss {
+
+   
+    max-width: 165px;
+    max-height: 205px;
+}
+
+
+.Vb_ebImgCss {
+    max-width: 135px;
+    max-height: 150px;
+}
+
+.VB_ebImageBox { width: 136px; }
+
+.VB1_Main
+{
+   
+     border: 1px dotted #0076FF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    padding: 10px; 
+    float: left; 
+}
+
+.VB1_ebookShowBox 
+{
+    border: 1px dotted #BAC0C7;
+    padding: 10px; 
+    height: 200px;
+    margin: 2px;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.VB1_ebDescriptionBox {
+     width: 850px;
+     overflow: scroll; 
+     
+      margin-left: 10px;
+
+}
+.VB_ebookShowBox_Main 
+{
+    border: 1px dotted #BAC0C7;
+    padding: 10px; 
+    height: 270px;
+    margin: 2px;
+       
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+
+.VB_ebookShowBox2 
+{
+    border: 1px dotted #BAC0C7;
+    padding: 10px; 
+    height: 180px;
+    margin: 2px;
+    margin-left: 5px;
+     float:left; 
+    padding-left: 10px; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+
+
+.ebValueBuyBOXCss
+{
+    width: 840px;
+}
+
+.VB_BookName {
+    padding: 2px; 
+     color: #AB45FA; font-style:italic; font: bold 11px "Trebuchet MS","Lucida Console", Arial, sans-serif; 
+   
+
+}
+
+.VB_headFont1    { font: bold 14px Exo, "Trebuchet MS","Lucida Console", Arial, sans-serif; letter-spacing: 1px; color: #000000;  vertical-align: bottom; text-decoration: dashed; text-transform: capitalize;}
+.VB_headFont2    { font: bold 15px "Trebuchet MS","Lucida Console", Arial, sans-serif; letter-spacing: 1px; color: #FF2A00;  vertical-align: bottom;  text-shadow: 0 1px 1px #FFFFFF;}
+
+.VB_BookHeader
+{
+    border: 1px solid #BAC0C7;
+    background-color: #D4E594;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    text-align: left;
+    vertical-align: text-bottom; 
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 25px;
+    width: 800px;
+    margin: 2px;
+    
+}
+
+.VB_BookPurchaseCss
+{
+     border: 1px solid #BAC0C7;
+    background-color: #FAD540;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#FAD540), to(#F4E75A)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FAD540,  #F4E75A); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FAD540 ,EndColorStr=#F4E75A,GradientType=0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    text-align: left;
+    vertical-align: text-bottom; 
+    padding-top: 3px;
+    padding-left: 20px;
+    height: 20px;
+    width: 800px;
+    margin: 2px;
+}
+
+.VB_Purchase_format {
+    font: bold 90%/100%  Exo,"Trebuchet MS","Lucida Console", Arial, sans-serif; color: #FF3000;
+     text-shadow: 1px 0px 1px rgba(170, 170, 170, 1);
+	letter-spacing: 1px;
+	text-transform: capitalize;
+    padding: 2px 5px;
+
+}
+
+.VB_Purchase_header { 
+    font: bold 11px  Arial, sans-serif; color: #922EC5; text-align: left; 
+}
+
+
+.VB_Purchase_send { 
+    font: bold 11px verdana, "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #E91DEB; text-align: right; 
+}
+
+
+
+.VB_BookHeader
+{
+    border: 1px solid #BAC0C7;
+    background-color: #D4E594;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    text-align: left;
+    vertical-align: text-bottom; 
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 25px;
+    width: 800px;
+    margin: 2px;
+    
+}
+
+
+.ebImgHomeCss {
+
+   background-color : transparent;
+    max-width: 165px;
+    max-height: 205px;
+    padding-right: 30px; 
+}
+
+.ebDvImageBox {
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+filter: alpha(opacity=50);  /* IE 5-7 */
+-moz-opacity: 0.5;          /* Netscape */
+-khtml-opacity: 0.5;        /* Safari 1.x */
+opacity: 0.5; 
+}
+
+
+.CategoryBox 
+{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #BAC0C7;
+    padding: 10px; 
+
+
+  /*-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+     box-shadow:   0 1px 3px rgba(0,0,0,0.5);*/
+}
+
+
+/* Simple CSS menu for ebook Categories */
+
+.menu_simple {
+    vertical-align: top;
+}
+
+.menu_simple ul {
+    margin: 0; 
+    padding: 0;
+    width:150px;
+    list-style-type: none;
+}
+
+
+.menu_simple ul li {
+
+    border-bottom: 1px dotted #2084F4; 
+
+}
+.menu_simple ul li a {
+    text-decoration: none;
+    color: #2084F4; 
+    padding: 5px 5px;
+    background-color: #FFFFFF;
+    display:block;
+    font: 12px  "Open Sans", Arial, Verdana, sans-serif;
+    cursor: pointer; 
+}
+ 
+/*.menu_simple ul li a:visited {
+    color: white;
+}*/
+ 
+.menu_simple ul li a:hover {
+    color: white;
+    background-color: #FB935F;
+    cursor: pointer; 
+
+    border-top: 1px solid #687367;
+	border-bottom: 1px solid  #687367;
+	
+
+}
+
+.menu_simple ul li .current {
+    color: white;
+    font-weight: bold;
+    font-size: 13px; 
+    font-variant:small-caps; 
+    background-color: #FB935F;
+    cursor: pointer; 
+    border-top: 1px solid #687367;
+	border-bottom: 1px solid  #687367;
+
+}
+
+
+
+/*
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+    color: white;
+    background-color: #2084F4;
+    cursor: pointer; 
+}*/
+
+
+.dvValueBuy {
+    border: 1px dotted #BAC0C7;
+     padding: 5px; 
+      margin: 10px;
+       background-color: #FFFFFF;
+     -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.dvValueBuyHeader {
+    border: 1px solid #BAC0C7;
+     padding: 5px; 
+     padding-left: 50px; 
+     height: 30px; 
+       background-color: #60B3BA;
+     -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.dvPayPalSuccess {
+    border: 5px Solid #14CC06;
+     padding: 10px; 
+      margin: 10px;
+       background-color: #FFFFFF;
+     -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+
+    
+}
+
+.dvPayPalFailed {
+    border: 5px Solid #FA4E20;
+     padding: 10px; 
+      margin: 10px;
+       background-color: #FFFFFF;
+     -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+
+    
+}
+
+
+.fontEBName { 
+    font: bold 14px "Exo", "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #2E92C5;
+}
+
+.fontEBPrice { 
+    font: bold 14px "Exo", "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #922EC5;
+}
+
+.fontValueBuyHeader {
+
+     font: bold 120%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #551974;
+     text-shadow: 1px 1px 2px rgba(230, 230, 230, 1);
+								letter-spacing: 1px;
+								text-transform: capitalize;
+
+}
+
+
+.fontValueBuyText {
+
+     font: bold 100%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #F7FCFC;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+								letter-spacing: 1px;
+								text-transform: capitalize;
+
+}
+
+.EbHomePageHeaderFont {font: bold 101%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #687367; font-style:italic;}
+.EbHomePageContentFont {
+    font-size: 12px;
+    height: 250px;
+    width: 850px;
+    overflow: hidden;
+    text-align: justify;
+    padding-left: 15px;
+    padding: 10px;
+    font-family: Tahoma, Arial, Verdana, Lucida Bright;
+    color: #686A68;
+}
+
+.dvBookPurchaseCss 
+{
+    border: 1px solid #BAC0C7;
+    position:  relative;
+    margin: 1px 0;
+    padding: 5px 15px;
+    background-color: #eef4f9;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFCFC), to(#eef4f9)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FBFCFC,  #eef4f9); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FBFCFC,EndColorStr=#eef4f9,GradientType=0);
+
+
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+    width: 450px;
+    height: auto;
+    float: left; 
+    margin-left: 50px;
+
+
+    
+}
+
+.dvBookPurchase_FreeBookCss 
+{
+    border: 1px solid #BAC0C7;
+    position: relative;
+    margin: 5px 0;
+    padding: 10px 15px;    
+    background-color: #C4F7E9;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFCFC), to(#C4F7E9)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FBFCFC,  #C4F7E9); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FBFCFC,EndColorStr=#C4F7E9,GradientType=0);
+
+    
+
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+    width: 450px;
+    height: auto;
+    float: left; 
+   /* margin-left: 200px;*/
+
+
+    
+}
+
+.dvBookPurchase_ComingCss 
+{
+    border: 1px solid #BAC0C7;
+    position: relative;
+    margin: 5px 0;
+    padding: 10px 15px;
+   
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+    background-color: #F7EFC4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FBFCFC), to(#F7EFC4)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FBFCFC,  #F7EFC4); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FBFCFC,EndColorStr=#F7EFC4,GradientType=0);
+
+   
+
+    width: 420px;
+    height: 250px;
+    float: left; 
+    margin-left: 200px;
+
+
+    
+}
+
+
+
+
+.dvBookPurchaseFREECss 
+{
+    border: 1px solid #BAC0C7;
+    position: relative;
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+    width: 430px;
+    height: 250px;
+    float: left; 
+    margin-left: 100px;
+
+
+    
+}
+
+
+
+.Purchase_format {
+    font: bold 100%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #FF3000;
+     text-shadow: 1px 0px 1px rgba(170, 170, 170, 1);
+	letter-spacing: 1px;
+	text-transform: capitalize;
+    padding: 2px 5px;
+
+}
+
+
+.Purchase_send { 
+    font: bold 11px verdana, "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #E91DEB; text-align: right; padding: 2px; 
+}
+
+.Purchase_header { 
+    font: bold 11px  Arial, sans-serif; color: #922EC5; text-align: left; 
+}
+
+
+.Purchase_Note { 
+    font: 11px Arial, sans-serif; color: #9F4D11; text-align: left; padding-top: 2px; font-size-adjust:inherit; border-top: solid 1px #922EC5;
+}
+
+.Purchase_Note2 { 
+    font: 10px Arial, sans-serif; color: #9F4D11; text-align: left; padding-top: 2px; font-size-adjust:inherit; border-top: solid 1px #922EC5;
+}
+
+
+.PriceFont {
+    padding: 2px; 
+     color: #AB45FA; font-style:italic; font: bold 11px "Trebuchet MS","Lucida Console", Arial, sans-serif; 
+   
+
+}
+
+.PriceFont2 {
+    padding: 1px; 
+     color: #AB45FA; font-style:italic; font: bold 10px "Trebuchet MS","Lucida Console", Arial, sans-serif; 
+   
+
+}
+  
+
+.dvBookInfoCss {
+    min-height: 100px;
+}
+
+
+
+.Pag_Header
+{
+    
+    border-right: 10px solid #eef4f9;
+    padding: 10px; 
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+    
+    background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);
+
+    font: bold 100%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #922EC5;
+    
+    
+}
+
+
+.Pag_Item
+{
+    margin-left: 5px; 
+     padding: 3px; 
+     padding-left: 6px; 
+     padding-right: 6px; 
+
+
+
+   border-right: 3px solid #AFCBE2;
+   border-bottom: 3px solid #AFCBE2; 
+   
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+     text-decoration: none;
+    
+    background: -webkit-gradient(linear, left top, left bottom, from(#D4E594), to(#F1FAD0)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #D4E594,  #F1FAD0); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#D4E594 ,EndColorStr=#F1FAD0,GradientType=0);
+
+    font: bold 100%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #070707;
+    text-shadow: 1px 0px 1px rgba(170, 200, 220, 1);
+
+}
+
+
+.Pag_Item_current
+{
+    margin-left: 5px; 
+     padding: 3px; 
+     padding-left: 10px; 
+     padding-right: 10px; 
+
+
+   border-left: 3px solid #AFCBE2; 
+   border-top: 3px solid #AFCBE2; 
+   
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+    
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFAE00), to(#FCEB79)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #FFAE00,  #FCEB79); /* for firefox 3.6+ */
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FFAE00 ,EndColorStr=#FCEB79,GradientType=0);
+
+    font: bold 100%/100%  "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #070707;
+    text-shadow: 1px 0px 1px rgba(170, 200, 220, 1);
+
+}

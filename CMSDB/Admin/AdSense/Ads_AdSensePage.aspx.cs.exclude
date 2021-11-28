@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Text;
+
+public partial class Admin_Ads_AdSensePage : System.Web.UI.Page
+{
+    SqlConnection dbConn;
+    SqlCommand dbCmd;
+    SqlDataReader dbReader;
+    string strSQL;
+
+    string tmpWpDescription = string.Empty;
+    int qLgType = 1;
+    int mLanguage = 1; 
+    
+
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       
+     
+     
+
+
+        if (!IsPostBack)
+        {
+
+            txtAdsLoginID.Text = "Sample@gmail.com";
+            txtAdsPassword.Text = "SamplePassword"; 
+
+            
+                
+           StringBuilder sb = new StringBuilder();
+
+           sb.AppendLine(@"<script type='text/javascript'>"); 
+           sb.AppendLine("<!--"); 
+           sb.AppendLine("google_ad_client = 'ca-pub-6333333434392010';"); 
+           sb.AppendLine("google_ad_slot = '5847555896';"); 
+           sb.AppendLine("google_ad_width = 728;"); 
+           sb.AppendLine("google_ad_height = 90;"); 
+           sb.AppendLine("//-->"); 
+           sb.AppendLine("</script>");
+           sb.AppendLine("<script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'> </script>");
+           txtAdCode.Text = sb.ToString();
+
+
+           #region Code to Hide Menu buttons for WebPortal 
+
+           HtmlTableRow tr1 = (HtmlTableRow)Master.FindControl("MROW1");
+           tr1.Visible = false;
+
+
+           HtmlTableRow tr2 = (HtmlTableRow)Master.FindControl("MROW2");
+           tr2.Visible = false;
+
+           HtmlTableRow tr3 = (HtmlTableRow)Master.FindControl("MROW3");
+           tr3.Visible = false;
+
+           HtmlContainerControl tmpDivHeader = (HtmlContainerControl)Master.FindControl("headercontent");
+           tmpDivHeader.Attributes.Add("height", "80px");
+
+           #endregion
+
+
+        }
+
+     }
+
+
+    protected void Page_PreRender(object sender, EventArgs e)
+    {
+        ////PreSelecting the Language DropDown --
+        ////-- accessing the Selected Language 
+        //ContentPlaceHolder cph = Page.Master.FindControl("ContentBody") as ContentPlaceHolder;
+        //UserControl uc = (UserControl)cph.FindControl("ucSelectLanguage");
+        //DropDownList objddlSelLang = (DropDownList)uc.FindControl("ddlLanguage");
+
+        //if (objddlSelLang.Items[0].ToString() == "ALL")
+        //{
+        //    objddlSelLang.Items.RemoveAt(0);
+        //}
+        //    objddlSelLang.SelectedValue = Convert.ToString(qLgType);
+
+
+
+    }
+
+
+
+}

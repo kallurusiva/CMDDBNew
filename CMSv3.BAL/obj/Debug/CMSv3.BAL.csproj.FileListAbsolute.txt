@@ -1,0 +1,45 @@
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.pdb
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.pdb
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.pdb
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\obj\Debug\ResolveAssemblyReference.cache
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.dll
+D:\GlobalSurf\Web\DotNet\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.csprojResolveAssemblyReference.cache
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.BAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.DAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\bin\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.csprojResolveAssemblyReference.cache
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS\CMSv3.BAL\obj\Debug\CMSv3.BAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.BAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.BAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.DAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.Entities.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.DAL.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.Entities.pdb
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.csprojResolveAssemblyReference.cache
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.dll
+C:\Users\ksprUser\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.BAL.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.BAL.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.DAL.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.Entities.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.DAL.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\bin\Debug\CMSv3.Entities.pdb
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.csprojResolveAssemblyReference.cache
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.dll
+C:\Users\work\Documents\Visual Studio 2013\Projects\CMS1\CMSv3.BAL\obj\Debug\CMSv3.BAL.pdb

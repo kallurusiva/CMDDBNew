@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{871FEF11-D1B1-48B7-B42B-4DB044D498B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMSv3.BAL</RootNamespace>
+    <AssemblyName>CMSv3.BAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSettings.cs" />
+    <Compile Include="AdminSettings.cs" />
+    <Compile Include="CommonFunc.cs" />
+    <Compile Include="Buyer.cs" />
+    <Compile Include="DPE.cs" />
+    <Compile Include="PayPal.cs" />
+    <Compile Include="gAdSense.cs" />
+    <Compile Include="Gallery.cs" />
+    <Compile Include="GemailSystem.cs" />
+    <Compile Include="IFMDomains.cs" />
+    <Compile Include="Domains.cs" />
+    <Compile Include="enquiry.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="FAQ.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="MalaysiaSMS.cs" />
+    <Compile Include="Mobile\MbOwnButtons.cs" />
+    <Compile Include="Mobile\MbMain.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="OwnButton.cs" />
+    <Compile Include="PremiumSMS\PremiumSMS.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="eBook.cs" />
+    <Compile Include="SCdb.cs" />
+    <Compile Include="Testimonial.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMSv3.DAL\CMSv3.DAL.csproj">
+      <Project>{B28F73DB-36F1-4BE2-A31F-0A2706B73A56}</Project>
+      <Name>CMSv3.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMSv3.Entities\CMSv3.Entities.csproj">
+      <Project>{0E7CAAAA-7DA9-4739-82C1-61CB1809AA51}</Project>
+      <Name>CMSv3.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,97 @@
+﻿
+.login-boxBlue {
+	width:200px;
+	height: 240px;
+	padding: 30px 76px 0 36px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	/* file:///D:\GlobalSurf\Web\DotNet\CMS\CMSv3\Images\loginbox\login-box-backg_blue.jpg 
+	background: url(/Images/loginbox/login-box-backg_blue.jpg) no-repeat left top;*/
+}
+
+.login-boxBrown {
+	width:200px;
+	height: 240px;
+	padding: 30px 76px 0 36px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	/*background: url(\Images\loginbox\login-box-backg_brown.jpg) no-repeat left top;*/
+}
+
+.login-boxGreen {
+	width:200px;
+	height: 240px;
+	padding: 30px 76px 0 36px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images//loginbox/login-box-backg_Green.jpg) no-repeat left top;
+}
+
+.login-box img {
+	border:none;
+}
+
+.login-box h2 {
+	padding:0;
+	margin:0;
+	color: #ebebeb;
+	font: bold 36px "Calibri", Arial;
+}
+
+
+.login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+}
+
+.login-box-field {
+	float: left;
+	display:inline;
+	width:100px;
+	margin:0;
+	margin:0 0 7px 0;
+}
+
+
+.form-loginBlue  {
+	width: 150px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#5279AF; 
+	font-size: 14px;
+	color: #ebebeb;
+}
+
+.form-loginGreen  {
+	width: 150px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#7DBB9D; 
+	font-size: 14px;
+	color: #ebebeb;
+}
+
+.form-loginBrown  {
+	width: 150px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#AA8F61; 
+	font-size: 14px;
+	color: #ebebeb;
+}
+
+
+.login-box-options  {
+	clear:both;
+	padding-left:87px;
+	font-size: 11px;
+}
+
+.login-box-options a {
+	color: #ebebeb;
+	font-size: 11px;
+}

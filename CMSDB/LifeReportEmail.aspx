@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LifeReportEmail.aspx.cs" Inherits="LifeReportEmail" %>

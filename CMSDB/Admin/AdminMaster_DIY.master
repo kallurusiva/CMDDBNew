@@ -1,0 +1,517 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster_DIY.master.cs" Inherits="Admin_AdminMaster_DIY" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link runat ="server" id="LinkDiyCss" href="../App_Themes/Default/DIY1_styles.css" rel="stylesheet" type="text/css" />
+    <link runat ="server" id="LinkDefaultCss" href="../App_Themes/Default/DefaultStyleSheet.css" rel="stylesheet" type="text/css" />
+    <link runat ="server" id="LinkButtonCss" href="../App_Themes/Default/NewButtons.css" rel="stylesheet" type="text/css" />
+    
+   <style type="text/css">
+       body {
+            margin: 0;
+            padding:0; 
+            background: #fff;
+        }
+        #dvHeader
+        {
+            height: 270px;
+            background-color: #fff;
+        }
+        
+        #dvContent
+        {
+           
+            background-color: #FFF;
+            overflow: auto;
+	        width: 100%
+        }
+         
+        .dvLeftBar
+        {
+            height: 200px;
+            min-height: 650px;
+            background-color: #fff;
+            width: 25%;
+            float: left;
+            display: inline-block;
+        }
+        
+        .dvRightBar
+        {
+        	 width: 65%;
+             float: left;
+             display: inline-block;
+        }
+         
+        .btnimgsCss
+        {
+            max-height : 20px; 
+        }
+         
+        .dvfooter
+        {
+            clear: both;
+            height: 27px;
+            background-color: #787373;
+        }
+
+        .imgWebBanner
+        {
+            max-height: 150px; 
+            max-width: 1024px; 
+            min-height: 120px; 
+            min-width : 600px; 
+        }
+
+       .fontPending {  font: 11px "Capriola", arial; color: orangered;   }
+       .fontCompleted {  font: 11px "Capriola", arial; color: greenyellow;  }
+
+   </style>
+   
+   <style type="text/css">
+/*<![CDATA[*/
+div#google_translate_element img {display:inline !important;}
+/*]]>*/
+</style>
+
+</head>
+<body>
+    
+    <%---- HEADER -- --%>
+    <div id="dvHeader">
+    
+        
+          <table cellpadding="0" cellspacing="0" width="100%" border="0">
+          <tr id="trTopRow1" runat="server"  >
+              <td id="tdTopRowA" runat="server" nowrap="nowrap" width="35%">
+
+                   <%--<div id="dvEbWPNews" runat="server" visible="false" style="float:left; padding-left: 5px; padding-right:2px;">
+             <asp:HyperLink ID="HyperLink1"  CssClass="small yellow awesome" NavigateUrl="~/Admin/EbAd_WPNews.aspx" Text = " <%$ Resources:LangResources, News %> "  runat="server" />
+
+             </div>--%>
+
+               <div id="dvRegistration" runat="server" style="float: left; " visible="false">  
+                   &nbsp;&nbsp;                 
+                <asp:HyperLink ID="HyperLink2"  CssClass="small yellow awesome" NavigateUrl="~/Admin/EbAd_RegDashboard.aspx" Text = "Registration"  runat="server">
+                    &nbsp; &nbsp;<asp:Label ID="Label1" runat="server"  Text="Registration"></asp:Label>
+                    &nbsp; &nbsp;<asp:Label ID="lblRegProcessStatus" runat="server" CssClass="fontPending" Text=></asp:Label>
+                </asp:HyperLink>
+              </div>
+              
+            <div id="dvRegistrationC" runat="server" style="float: left; " visible="false">  
+                   &nbsp;&nbsp;                 
+                <asp:HyperLink ID="HyperLink4"  CssClass="small yellow awesome" NavigateUrl="~/Admin/EbAd_RegDashboard.aspx" Text = "Registration"  runat="server">
+                    &nbsp; &nbsp;<asp:Label ID="Label3" runat="server"  Text="Registration"></asp:Label>
+                    &nbsp; &nbsp;<asp:Label ID="Label4" runat="server" CssClass="fontPending" Text=></asp:Label>
+                </asp:HyperLink>
+              </div>
+
+              <div id="dvTraining" runat="server" style="float: left; ">    
+                  &nbsp;&nbsp;               
+                <asp:HyperLink ID="hypTraining"  CssClass="small yellow awesome" NavigateUrl="~/TrainingFromEbook.aspx" Target="_blank" Text = "Training"  runat="server" />
+                 &nbsp;
+              </div>
+
+            <div id="Div1" runat="server" style="float: left; ">    
+                  &nbsp;&nbsp;               
+                <asp:HyperLink ID="hypMSTraining"  CssClass="small yellow awesome" NavigateUrl="~/MSATrainingFromEbook.aspx" Target="_blank" Text = "MS Academy"  runat="server" />
+                 &nbsp;
+              </div>
+
+              <div id="dvEditSubDomain" runat="server" style="float: left; " visible="false">  
+                   &nbsp;&nbsp;                 
+                <asp:HyperLink ID="HyperLink3"  CssClass="small yellow awesome" NavigateUrl="~/Admin/EbAd_RegDashboardFreet.aspx" Text = "SubDomain"  runat="server">
+                    &nbsp; &nbsp;<asp:Label ID="Label2" runat="server"  Text="SubDomain"></asp:Label>
+                    &nbsp; &nbsp;<asp:Label ID="lblModSubdomainStatus" runat="server" CssClass="fontPending" Text=></asp:Label>
+                </asp:HyperLink>
+              </div>
+
+            <div id="dvEditSubDomainC" runat="server" style="float: left; " visible="false">  
+                   &nbsp;&nbsp;                 
+                <asp:HyperLink ID="HyperLink5"  CssClass="small yellow awesome" NavigateUrl="~/Admin/EbAd_RegDashboardFreet.aspx" Text = "Registration"  runat="server">
+                    &nbsp; &nbsp;<asp:Label ID="Label5" runat="server"  Text="Registration"></asp:Label>
+                    &nbsp; &nbsp;<asp:Label ID="Label6" runat="server" CssClass="fontPending" Text=></asp:Label>
+                </asp:HyperLink>
+              </div>
+
+                  <div id="dvSMSBizLink" runat="server" style="float: left;">
+                 <%--<img id="imgSmsBusiness" runat="server" alt="Clogin" src="~/Images/report.png" />--%>
+                <asp:HyperLink ID="HypSMSBusiness" CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=1MACC" Text ="HiTech Business"  runat="server" />
+                 &nbsp;
+                   
+             </div>
+
+              <div id="dvSMSsystemLink" runat="server" style="float: left; ">                   
+                <asp:HyperLink ID="HypSmsSystem"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=SMSSYSTEM" Text = "Bulk SMS"  runat="server" />
+                 &nbsp;
+              </div>
+
+              
+              <div id="dvEbook" runat="server" visible="false"  style="float:left;">
+              <asp:HyperLink ID="HypEbook" NavigateUrl="~/Admin/Switch2Ebook.aspx" CssClass="BintButton green xbtnSize0 xfnt12 glossy skew" Text = "eBook Biz System"  runat="server" />
+              &nbsp;
+              </div>
+
+              <div id="dvWebPortal" runat="server" style="float:left;">
+              <asp:HyperLink ID="HypWebPortal" NavigateUrl="~/Admin/Ad_Welcome.aspx" CssClass="BintButton blue xbtnSize0 xfnt12 glossy skew" Text = "Web Portal"  runat="server" />
+              &nbsp;
+              </div>
+
+
+            <%--  <asp:HyperLink ID="hypKeywordRegister" Visible="false" runat="server" Text="Register eVendor Code" CssClass="button_BronzeG" NavigateUrl="~/Admin/EBAd_KeywordRegister.aspx" />--%>
+
+              <div id="dvPreSmsSystem" runat="server" visible="false" style="float:left;">
+              <asp:HyperLink ID="HypPreSmsSystem" NavigateUrl="~/Admin/Switch2PreSmsSystem.aspx" CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" Text = "eBook SMS Vending System"  runat="server" />
+              &nbsp;
+              </div>
+              
+              
+               <div id="dvMobileWeb" runat="server" style="float:left;">
+                <%--<img id="img2" runat="server" alt="mphone" src="~/Images/smart_phone.png" />--%>
+                <asp:HyperLink ID="HypMobileWeb"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Mobile/Ad_MobileHome3.aspx" Text = "Mobile Web"  runat="server" />
+                &nbsp;
+              </div>
+              
+              <div id="dvEmail" runat="server" visible="false"  style="float:left;">
+                <asp:HyperLink ID="HypEmail"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ads_EmailPage.aspx" Text = "Email System"  runat="server" />
+                &nbsp;
+              </div>
+            
+
+             <div id="dvPremiumSMS" runat="server" visible="false"   style="float: left;">
+                <asp:HyperLink ID="HypPremiumSMS" Visible="true" CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/PremiumSMS/Ad_Ps_Welcome.aspx" Text ="PremiumSMS"  runat="server" />
+                  &nbsp;
+            </div>
+
+            <div id="dvStatus" runat="server" style="float: left; ">                   
+                <asp:Label ID="lblStatus" runat="server" CssClass="links_SampleURL" Text=""></asp:Label> 
+                       &nbsp;
+            </div>
+
+              </td>
+              <td  id="tdTopRowB" runat="server">
+                    <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                          function googleTranslateElementInit() {
+                              new google.translate.TranslateElement({
+                                  pageLanguage: 'en',
+                                  layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+                                  includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                              }, 'google_translate_element');
+                          }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                    
+                  <asp:Label ID="lblDebug" runat="server"  Text=""></asp:Label>                   
+                   </td>
+
+              <td  id="tdTopRowC" runat="server" align="center" nowrap="nowrap" width="36%" valign="top" style="vertical-align: top; padding-left:5px; padding-top: 1px;">
+                  <div style=" clear: both;">
+               <div id="dvRegDomainLink" runat="server" style="float: left; ">                   
+                <asp:HyperLink ID="HypRegDomain"  CssClass="small blue awesome" NavigateUrl="~/Admin/Ad_DomainsList.aspx" Text = "Register Domain"  runat="server" />
+              </div>
+              
+          <div id="dvSampleURL" style="float:left; padding-left: 20px; vertical-align:bottom; padding-top:2px;">
+                  <asp:HyperLink ID="HypSampleURL" CssClass="links_SampleURL" Target="_blank" runat="server">Your SampleURL</asp:HyperLink>
+         
+          </div>
+
+            <%--<div id="dvINFObtn" runat="server" style="float:left; padding-left: 5px; padding-right:2px;">
+            <asp:HyperLink ID="HypINFObtn"  CssClass="small red awesome" NavigateUrl="~/Admin/Ad_INFOlisting.aspx" Text = " INFO "  runat="server" />
+             </div>--%>
+
+            
+
+        
+            <div style="float:right; padding-right:20px;">
+             <a id="LogOutHref" runat="server" href="../MemberLogout.aspx"><img src="../Images/WebPortal/Exit.png" title="LogOut" style="border: solid 0px #FF00FF; margin:0px; height:20px; width:20px;" /></a>
+                <asp:HyperLink ID="LogOutHypLink" CssClass="links_Logout" NavigateUrl="~/MemberLogout.aspx" runat="server">Sign Out</asp:HyperLink>
+
+             </div>
+
+                  </div>
+              </td>
+          </tr>
+          <tr id="trTopMenu"  runat="server">
+              <td colspan="3">
+                 <nav class="menu1">
+                    <ul>
+                        <li  id="liBtnHome" runat="server"> <a runat="server" id="aWelcome"  href="Ad_Welcome.aspx">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/WebPortal/home.png" BorderWidth="0"></asp:Image>                            
+                            <asp:Literal ID="Literal1" runat="server" Text="<%$ Resources:LangResources, Home %>"></asp:Literal>
+                            </a>
+                         </li>
+                        <li id="liEbookCatalog" runat="server" visible="false"> <a runat="server" id="aEbCatalog" href="EBAd_Dashboard.aspx">
+                            <asp:Image ID="Image25" CssClass="btnimgsCss" ImageUrl="~/Images/WebPortal/Products.png" runat="server"></asp:Image>
+                              <asp:Literal ID="Literal6" runat="server" Text="<%$ Resources:LangResources, EbookManagement %>"></asp:Literal> 
+                            </a> </li>
+                        <li id="liEbookButtons"  runat="server" visible="false"> <a runat="server" id="aEbButtons" href="EBAd_FeatureBuy.aspx">
+                            <asp:Image ID="Image24" CssClass="btnimgsCss" ImageUrl="~/Images/WebPortal/Products.png" runat="server"></asp:Image>
+                            eBook&nbsp;
+                            <asp:Literal ID="Literal7" runat="server" Text="<%$ Resources:LangResources, Button %>"></asp:Literal> 
+                            </a> </li>
+                        <li id="lblFreeBooks"  runat="server" visible="false"> <a runat="server" id="a2" href="EbAd_EBookSales_Dashboard.aspx">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal3" runat="server" Text="EBook Sales"></asp:Literal> 
+                            </a> </li>
+                        <li id="liEbookSalesRecord"  runat="server" visible="false"> <a runat="server" id="aEBSalesRecord" href="PremiumSMSReport_Summary.aspx">
+                            <asp:Image ID="Image23" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal12" runat="server" Text="EBook Incentive"></asp:Literal> 
+                            </a> </li>
+                        <li id="lblSMSInfo"  runat="server" visible="false"> <a runat="server" id="a6" href="~/Admin/SMS/EbAd_MySMSAccount.aspx">
+                            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal11" runat="server" Text="SMS"></asp:Literal> 
+                            </a> </li>
+
+                        <li id="lblDFranchise"  runat="server" visible="false"> <a runat="server" id="a3" href="~/Admin/EBAd_DashboardFranchise.aspx">
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal5" runat="server" Text="DFranchise"></asp:Literal> 
+                            </a> </li>
+                        
+                        <li id="lblMarketing"  runat="server" visible="false"> <a runat="server" id="a4" href="~/Admin/EBAd_EBookMarketingInfo.aspx">
+                            <asp:Image ID="Image10" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal9" runat="server" Text="Marketing"></asp:Literal> 
+                            </a> </li>
+                        
+
+                        <%--<li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/AboutUs.png" border="0">About Us</a> </li>
+                        <li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/ContactUs.png" border="0">Contact Us</a> </li>
+                        <li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/welcome.png" border="0">Welcome Page</a> </li>
+                        <li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/logo.png" border="0">Logo</a> </li>
+                        <li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/TempPic.png" border="0">Template Picture</a> </li>
+                        --%>
+                       
+                        <%--<li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/products.png" border="0">Products</a> </li>--%>
+
+                        <li id="liBtnNews" runat="server"> <a runat="server" id="aNews" href="Ad_NewsHome.aspx">
+                           <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/WebPortal/news.png" BorderWidth="0"></asp:Image>
+                            News</a> </li>
+
+
+                        <li id="liBtnEvent" runat="server"> <a runat="server" id="aEvents" href="Ad_EventHome.aspx">
+                            <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/WebPortal/event.png" BorderWidth="0"></asp:Image>
+                            Event</a> </li>
+
+
+                        <li id="liBtnFaq" runat="server"> <a runat="server" id="aFaq" href="Ad_FaqHome.aspx">
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/WebPortal/faq.png" BorderWidth="0"></asp:Image>
+                            Faq</a> </li>
+
+
+                        <li id="liBtnTestimonial" runat="server"> <a runat="server" id="aTestimonial" href="Ad_TestimonialHome.aspx">
+                             <asp:Image ID="Image7" runat="server" ImageUrl="~/Images/WebPortal/Testimonial.png" BorderWidth="0"></asp:Image>
+                            Testimonial</a> </li>
+
+                         <%--<li id="liBtnWebEnquiry" runat="server"> <a runat="server" id="aEmail" href="Ad_EmailListing.aspx">
+                             <asp:Image ID="Image8" runat="server" ImageUrl="~/Images/WebPortal/Email.png" BorderWidth="0"></asp:Image>
+                               <asp:Literal ID="Literal11" runat="server" Text="<%$ Resources:LangResources, WebEnquiry %>"></asp:Literal>
+                            </a> </li>--%>
+                       
+                        
+
+
+                        <%--<li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/samplewebs.png" border="0">Sample Websites</a> </li>--%>
+                        <%-- <li> <a runat="server" id="aWebTemplate" href="Ad_TemplateSet.aspx"><img src="../Images/WebPortal/webTemplate.png" border="0">Web Template</a> </li>--%>
+                        <%--<li id="liBtnEmailSystem" runat="server"> <a runat="server" id="aEmailSystem" href="~/Admin/Ads_EmailPage.aspx"><img  src="../Images/WebPortal/email.png" border="0">Email System</a> </li>--%>
+
+                        <%--<li id="liEbookPurchase" runat="server" visible="false"> <a  runat="server" id="aPaymentInfo" href="EBookPaymentReport_Summary.aspx">
+                            <asp:Image ID="Image10" runat="server" ImageUrl="~/Images/WebPortal/Do.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal10" runat="server" Text="EBook Payment"></asp:Literal>
+                             </a> </li>--%>
+
+                        <%--<li id="liSMSPayment" runat="server" visible="false"> <a  runat="server" id="a4" href="PremiumSMSReport_Summary.aspx">
+                            <asp:Image ID="Image26" runat="server" ImageUrl="~/Images/WebPortal/Do.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal13" runat="server" Text="SMS Payment"></asp:Literal>
+                             </a> </li>--%>
+
+                        <%--<li id="liEmailMarkting" runat="server" visible="false"> <a runat="server" id="aEmailMkt" href="EmailMkt/EbAd_EmailEbook.aspx">
+                            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/WebPortal/Do.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal3" runat="server" Text="Email Marketing"></asp:Literal>
+                             </a> </li>--%>
+
+
+                       <%-- <li id="liEbookProfitShare"  runat="server" visible="false"> <a runat="server" id="aEBProfitShare" href="EbAd_BankInfo.aspx">
+                            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal3" runat="server" Text="<%$ Resources:LangResources, SMSProfitSharing %>"></asp:Literal>
+                            </a> </li>--%>
+
+                        
+
+                        <%--<li id="liTRAINING"  runat="server" visible="false"> <a runat="server" id="a2" href="EbAd_WPTraining.aspx">
+                             <asp:Image ID="Image14" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                             <asp:Literal ID="Literal5" runat="server" Text="<%$ Resources:LangResources, Training %>"></asp:Literal>   </a> </li>--%>
+                       
+                       
+                         <%--<li id="liSmsSystem"  runat="server" visible="false"> <a runat="server" id="a3" href="~/Admin/SMS/EbAd_MySMSAccount.aspx">
+                             <asp:Image ID="Image12" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                             <asp:Literal ID="Literal9" runat="server" Text="<%$ Resources:LangResources, SMSSystem %>"></asp:Literal> 
+                            </a> </li>--%>
+
+                        <%--<li id="liEBookcodeSMS"  runat="server" visible="false"> <a runat="server" id="a5" href="~/Admin/SMS/EBAd_CreateList.aspx">
+                             <asp:Image ID="Image27" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                             <asp:Literal ID="Literal14" runat="server" Text="EBook SMS List"></asp:Literal> 
+                            </a> </li>--%>
+
+                        <%--<li id="liButtonEB1" visible="false" runat="server"> <a runat="server" id="aButtonEB1" href="Ad_OwnButtonCreates.aspx?MyButtonNo=1"><img style="max-height: 27px;" src="../Images/WebPortal/MyButton.png" border="0">My Button 1</a> </li>
+                        <li id="liButtonEB2" visible="false" runat="server"> <a runat="server" id="aButtonEB2" href="Ad_OwnButtonCreates.aspx?MyButtonNo=2"><img style="max-height: 27px;" src="../Images/WebPortal/MyButton.png" border="0">My Button 2</a> </li>
+                        <li id="liButtonEB3" visible="false" runat="server"> <a runat="server" id="aButtonEB3" href="Ad_OwnButtonCreates.aspx?MyButtonNo=3"><img style="max-height: 20px;" src="../Images/WebPortal/MyButton.png" border="0">My Button 3</a> </li>--%>
+                       
+                       <%-- <li id="liButton1" runat="server"> <a runat="server" id="aButton1" href="Ad_OwnButtonCreates.aspx?MyButtonNo=1"> <asp:Image ID="Image15" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn1" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton2" runat="server"> <a runat="server" id="aButton2" href="Ad_OwnButtonCreates.aspx?MyButtonNo=2"> <asp:Image ID="Image16" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn2" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton3" runat="server"> <a runat="server" id="aButton3" href="Ad_OwnButtonCreates.aspx?MyButtonNo=3"> <asp:Image ID="Image17" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn3" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton4" runat="server"> <a runat="server" id="aButton4" href="Ad_OwnButtonCreates.aspx?MyButtonNo=4"> <asp:Image ID="Image18" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn4" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton5" runat="server"> <a runat="server" id="aButton5" href="Ad_OwnButtonCreates.aspx?MyButtonNo=5"> <asp:Image ID="Image19" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn5" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton6" runat="server"> <a runat="server" id="aButton6" href="Ad_OwnButtonCreates.aspx?MyButtonNo=6"> <asp:Image ID="Image20" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn6" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton7" runat="server"> <a runat="server" id="aButton7" href="Ad_OwnButtonCreates.aspx?MyButtonNo=7"> <asp:Image ID="Image21" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn7" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton8" runat="server"> <a runat="server" id="aButton8" href="Ad_OwnButtonCreates.aspx?MyButtonNo=8"> <asp:Image ID="Image22" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn8" runat="server" Text=""></asp:Literal> </a> </li>
+                        --%>
+                        
+                    </ul>
+                </nav>
+                  
+                  </td>
+          </tr>
+          <tr id="trBanner" style="min-height:150px; min-width:800px;"  runat="server">
+              <td align="center" colspan="3">
+              
+                  <%--<img src="../Images/WebPortal/hdBanner2.jpg" border="0" style="max-height: 144px;"/>--%>
+                  <asp:Image ID="ImgBanner" CssClass="imgWebBanner" ImageUrl="~/Images/WebPortal/hdBanner2.jpg" runat="server" />
+              
+              
+              </td>
+          </tr>
+          <tr id="trBottomMenu">
+              <td colspan="3">
+               
+               <nav class="menu1">
+                    <ul>
+                        <%--<li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/email.png" border="0" >Email</a> </li>
+                        <li> <a href="#"><img style="max-height: 27px;" src="../Images/WebPortal/domain.png" border="0">Domain</a> </li>--%>
+                        <%--<li> <a runat="server" id="aGallery" href="Ad_Gallery_Images2.aspx"><img style="max-height: 27px;" src="../Images/WebPortal/webGallery.png" border="0">Web Gallery</a> </li>--%>
+                        <%--<li> <a href="#"><img style="max-height: 20px;" src="../Images/WebPortal/training.png" border="0">Training</a> </li>--%>
+
+                        
+                        
+
+                       <%-- <li id="liEbookFeatureBuy"  runat="server" visible="false"> <a runat="server" id="aEBFeatureBuy" href="EBAd_FeatureBuy.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/Products.png" border="0">Feature Buy</a> </li>
+                        <li id="liEbookBestSeller"  runat="server" visible="false"> <a runat="server" id="aEBBestSeller" href="EBAd_BestSeller.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/Products.png" border="0">Best Seller</a> </li>
+                        <li id="liEbookValueBuy"  runat="server" visible="false"> <a runat="server" id="aEBValueBuy" href="EBAd_ValueBuyList.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/Products.png" border="0">Value Buy</a> </li>--%>
+
+                        <%--<li id="liEbookFree"  runat="server" visible="false"> <a runat="server" id="aEbFree" href="EBAd_FreeEbooks.aspx">
+                            <asp:Image ID="Image1" CssClass="btnimgsCss" ImageUrl="~/Images/WebPortal/Products.png" runat="server"></asp:Image>
+                            <asp:Literal ID="ltrFreeEbooks" Text="<%$ Resources:LangResources, FreeEbooks %>" runat="server"></asp:Literal>
+                            </a> </li>--%>
+                        
+                       
+                        <%--  <li id="liNews"  runat="server" visible="false"> <a runat="server" id="a3" href="EbAd_WPNews.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/Products.png" border="0"> NEWS </a> </li>--%>
+
+                        <li  id="liBtnProfile" runat="server"> <a runat="server" id="aAccount" class="" href="MyAccount.aspx">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/WebPortal/Profile.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal2" runat="server" Text="<%$ Resources:LangResources, Profile %>"></asp:Literal>
+                            </a> 
+                        </li>
+
+                        <li id="liBtnWebSettings" runat="server"> <a runat="server" id="aWebSettings" href="Ad_WebSettings.aspx">
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Images/WebPortal/settings.png" BorderWidth="0"></asp:Image>
+                             <asp:Literal ID="Literal8" runat="server" Text="<%$ Resources:LangResources, WebSettings %>"></asp:Literal>
+                         </a> </li>
+
+                        <li id="lblWebUser"  runat="server" visible="false"> <a runat="server" id="a7" href="PrepaidCardRegisteredUsers.aspx">
+                            <asp:Image ID="Image14" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                            <asp:Literal ID="Literal14" runat="server" Text="Buyer Accounts"></asp:Literal> 
+                            </a> </li>
+
+                        <li id="liINFO"  runat="server" visible="false"> <a runat="server" id="a1" href="EbAd_WPInfo.aspx">
+                             <asp:Image ID="Image13" runat="server" ImageUrl="~/Images/WebPortal/Products.png" BorderWidth="0"></asp:Image>
+                              <asp:Literal ID="Literal4" runat="server" Text="BizInfo"></asp:Literal>  </a> </li>
+
+                        <li id="liButton1" runat="server"> <a runat="server" id="aButton1" href="Ad_OwnButtonCreates.aspx?MyButtonNo=1"> <asp:Image ID="Image15" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn1" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton2" runat="server"> <a runat="server" id="aButton2" href="Ad_OwnButtonCreates.aspx?MyButtonNo=2"> <asp:Image ID="Image16" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn2" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton3" runat="server"> <a runat="server" id="aButton3" href="Ad_OwnButtonCreates.aspx?MyButtonNo=3"> <asp:Image ID="Image17" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn3" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton4" runat="server"> <a runat="server" id="aButton4" href="Ad_OwnButtonCreates.aspx?MyButtonNo=4"> <asp:Image ID="Image18" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn4" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton5" runat="server"> <a runat="server" id="aButton5" href="Ad_OwnButtonCreates.aspx?MyButtonNo=5"> <asp:Image ID="Image19" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn5" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton6" runat="server"> <a runat="server" id="aButton6" href="Ad_OwnButtonCreates.aspx?MyButtonNo=6"> <asp:Image ID="Image20" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn6" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton7" runat="server"> <a runat="server" id="aButton7" href="Ad_OwnButtonCreates.aspx?MyButtonNo=7"> <asp:Image ID="Image21" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn7" runat="server" Text=""></asp:Literal> </a> </li>
+                        <li id="liButton8" runat="server"> <a runat="server" id="aButton8" href="Ad_OwnButtonCreates.aspx?MyButtonNo=8"> <asp:Image ID="Image22" runat="server" ImageUrl="~/Images/WebPortal/MyButton.png" BorderWidth="0"></asp:Image> <asp:Literal ID="ltrMyBtn8" runat="server" Text=""></asp:Literal> </a> </li>
+                        
+                        
+                        
+              
+                    </ul>
+                </nav>
+               
+               </td>
+          </tr>
+
+
+           <%-- <tr id="trPremiumSMS"  runat="server" visible="false">
+              <td colspan="3">
+               
+               <nav class="menu1">
+                    <ul>
+                       
+                       
+                        <li> <a runat="server" id="a2" href="~/Admin/PremiumSMS/Ad_Ps_MyProfile.aspx"><img style="max-height: 27px;" src="../Images/WebPortal/MyButton.png" border="0">My-Profile</a> </li>
+                        <li> <a runat="server" id="a3" href="~/Admin/PremiumSMS/Ad_Ps_ShowPremiumInfo.aspx"><img style="max-height: 27px;" src="../Images/WebPortal/MyButton.png" border="0">INFO</a> </li>
+                        <li> <a runat="server" id="a4" href="~/Admin/PremiumSMS/Ad_Ps_Purchases_My.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/MyButton.png" border="0">My-PurchasePinNo</a> </li>
+                        <li> <a runat="server" id="a5" href="~/Admin/PremiumSMS/Ad_Ps_KeywordsList.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/MyButton.png" border="0">Customer-List</a> </li>
+
+                        <li> <a runat="server" id="a1" href="~/Admin/PremiumSMS/Ad_Ps_ProfitShartingKeyword.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/MyButton.png" border="0">Profit-Sharing</a> </li>
+                        <li> <a runat="server" id="a6" href="~/Admin/PremiumSMS/Ad_Ps_Logins.aspx"><img style="max-height: 20px;" src="../Images/WebPortal/MyButton.png" border="0">PremiumSMS-Logins</a> </li>
+                       
+                    </ul>
+                </nav>
+               
+               </td>
+          </tr>--%>
+
+      </table>
+        
+    
+    </div>
+    
+    <%---- LEFTBAR -- --%>
+
+    
+    <%---- CONTENT -- --%>
+    
+    
+          
+    <div id="dvContent" >
+    <div id="divLeftBar" class="dvLeftBar" runat="server" >
+    <asp:ContentPlaceHolder ID="ContentLeftMenu" runat="server">
+     </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="divRightBar" class="dvRightBar" runat="server">
+        <asp:ContentPlaceHolder id="ContentBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+  </div>
+  
+    <%---- FOOTER -- --%>
+    <div id="divfooter" class="dvfooter" runat="server">
+    
+         <asp:ContentPlaceHolder id="CphFooter" runat="server">
+         </asp:ContentPlaceHolder>
+    
+    </div>
+
+
+
+    
+    <div style="font: 15px Arial Bold white;">
+        <asp:Label ID="lblDebug1" runat="server" Text=""></asp:Label>
+    </div>
+    
+    <div>
+        
+    </div>
+
+</body>
+</html>

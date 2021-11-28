@@ -1,0 +1,387 @@
+﻿/* --- Body ---   */
+
+BODY 					{margin: 2px; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif}
+
+
+.SearchLabelBold        {height:25px; FONT-SIZE: 12px; COLOR: #221F0B; padding-left:10px; border-bottom: 1px solid #DEDBCA;  FONT-FAMILY: Arial, Helvetica, sans-serif; font-weight:bold;}
+.SearchLabel            {height:25px; FONT-SIZE: 12px; COLOR: #44412F; padding-left:2px; border-bottom: 1px solid #DEDBCA;  FONT-FAMILY: Arial, Helvetica, sans-serif;}
+
+.stdtableBorder_Search		{ background-color:#F7F9E5; BORDER-BOTTOM: #b8e0fb 1px solid; BORDER-TOP: #b8e0fb 1px solid; width:98%;
+                    		  FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "Lucida Console", Arial,Verdana, Helvetica, sans-serif;}
+
+
+.tblSubHeader           { height: 40px; margin: 0; BORDER-BOTTOM: #CDF2D6 1px solid; background-color:#FAC96B; 
+                           background: -webkit-gradient(linear, left top, left bottom, from(#FAC96B), to(#FAEDA4)); /* for webkit browsers */
+                           background: -moz-linear-gradient(top,  #FAC96B,  #FAEDA4); /* for firefox 3.6+ */
+                           filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FAC96B ,EndColorStr=#FAEDA4,GradientType=0);
+                          }
+.tblSubMenuHeader       { width: 96%;height: 40px; margin: 0; BORDER-BOTTOM: #F8DAD6 1px solid; background-color:#F8DAD6;
+                          filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FDF0EE ,EndColorStr=#F8DAD6) }
+
+
+/* --- FAQ CSS ---- */
+
+.cssfaq           {font-family: Lucida Sans Unicode, Verdana, Arial, Tahoma;}
+.cssfaqSeparator    {background-color:#FFFFFF;}
+.cssfaq_TLtarc      { display: table-cell; float:left; vertical-align: top;}
+.cssfaq_head        { height: 40px; border-bottom: solid 4px #FAC96B; font: bold 120%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;}
+.cssfaq_headText    {padding:  4px 0 0px 10px;  text-align: left; color: #3A3F39;}
+.cssfaq_QuestionText { font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding: 8px 0 4px 10px;  text-align: left; color: #3A3F39;}
+.cssfaqQuestion  {background-color:#6BDAFA; height:30px; 
+                              background: -webkit-gradient(linear, left top, left bottom, from(#FF6347), to(#FDC4BA)); /* for webkit browsers */
+                background: -moz-linear-gradient(top,  #FF6347,  #FDC4BA); /* for firefox 3.6+ */
+                filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FF6347 ,EndColorStr=#FDC4BA,GradientType=0);
+                   }
+.cssfaqQuestion2  {background-color:#EFBEB8; height:27px;}
+.cssfaqAnswer    {min-height: 50px; background-color:#FBDFDC; font-size: 11px; border: solid 1px #F6ECC0; padding: 10px 5px 5px 10px; color: #3A3F39;}
+
+
+.loginCss1       {width: 230px; height: 250px; float: left; margin-left: 10px; margin-right: 10px;}
+.loginCss2       {width: 220px; float:left; margin-left: 10px; margin-right: 10px;}
+.loginCss3       {width: 220px; float: left; margin-left: 10px; margin-right: 10px;}
+
+.loginBkg     { background-color:#E4F6EA;}
+.loginfont12   { FONT-SIZE: 10px; COLOR: #1D999D; font-weight:bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.loginfontTitle { font: bold 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; COLOR: #367CFE; font-weight:bold;}
+.loginTextBox   {color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:20px; width: 180px;}
+.loginTextBox100  {color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:20px; width: 100px;}
+.LogoBoxheadBlue   { height: 35px; background-color:#66C4DC;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66C4DC,EndColorStr=#A5ECFE) }
+.LogoBoxheadGreen  { height: 35px; background-color:#C6DC72;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#C6DC72,EndColorStr=#F0FFB8) }
+
+.LogoBoxheadOren  { height: 35px; background-color:#F4CE68;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F4CE68,EndColorStr=#F0FFB8) }
+
+
+.MaingPgTopMenuGrad     {background-color:#2A90C7; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#2A90C7,EndColorStr=#2ABAC7)}
+
+
+/* --- Fonts ---   */
+.AdminFont  	{font: bold 150%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;	position: relative;	margin: 30px 0 50px; vertical-align:middle;	color: #f5f5f5; font-weight: bold; font-style:italic;}
+.MessagerBarCss         { margin: 3px; display:block; background-color:#FEFFDE; border: solid 1px #B2B2B2; width:96%;}
+.font_12Msg_Success		{ FONT-SIZE: 12px; height:20px; padding:5px; padding-left:10px; COLOR: #359F07; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_12Msg_Error		{ FONT-SIZE: 12px; height:20px; padding:5px; padding-left:10px; COLOR: #FF4800; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_11Msg_Success		{ FONT-SIZE: 11px; height:20px; COLOR: #359F07; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_11Msg_Error		{ FONT-SIZE: 11px; height:20px; COLOR: #FF4800; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_stdupdateMsg		{FONT-SIZE: 12px; font-weight:bold; COLOR: #ff9900; FONT-FAMILY: Century Gothic, Verdana, Arial, Helvetica, sans-serif}
+.HelpInputCss           {FONT-SIZE: 9px; COLOR: #7C9CB3; FONT-FAMILY: Arial, Helvetica, sans-serif; text-align:right; max-width: 200px; border: solid 1px #7C9CB3;}
+
+.font_EventDates11   { FONT-SIZE: 11px; COLOR: #446934; FONT-FAMILY:Arial,  sans-serif}
+.font_EventDates    { FONT-SIZE: 10px; COLOR: #446934; FONT-FAMILY:Arial,  sans-serif}
+.font_Title1		{ font: bold 105%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; COLOR: #3C3D3A; font-weight:bold;}
+.font_12Normal		{ FONT-SIZE: 12px; COLOR: #03C0C6; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_forgotPwd		{ FONT-SIZE: 9px; COLOR: #035F62; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_14BoldGrey    { FONT-SIZE: 14px; font-weight:bold; COLOR: #525B5B; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif}
+.font_12BoldGrey    { FONT-SIZE: 12px; COLOR: #3B3C3C; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_12BlueBold	{ FONT-SIZE: 12px;  font-weight:bold; COLOR: #2291A1; height:25px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.font_12Login		{ FONT-SIZE: 11px; font-weight:bold; COLOR: #97403C; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif}
+
+.font_14SuccessBold { FONT-SIZE: 14px;  font-weight:bold; COLOR: #FF7200; height:30px; FONT-FAMILY: "Trebuchet MS",Helvetica, Verdana, Arial, Helvetica, sans-serif} 
+
+.FormLabel              {height:25px; background-color:#E5F4FA ; FONT-SIZE: 12px; COLOR: #015CB6; padding-left:10px; FONT-FAMILY: Arial, Helvetica, sans-serif; font-weight:bold;}
+.subHeaderFontGrad  	{font: bold 120%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;	position: relative;	margin: 30px 0 50px; vertical-align:middle;	color: #687367; font-style:italic;}
+
+.subHeaderMenuFontGrad  {font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;	position: relative;	margin: 30px 0 50px; vertical-align:middle;	color: #687367; font-style:italic;}
+
+
+/* --- HyperLinks ---   */
+
+.links_TopLine			{COLOR: #E55940; FONT-FAMILY: Arial, Helvetica, Tahoma,  sans-serif; font-variant:small-caps; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.links_TopLine:hover 	{COLOR: #1F1F1F; FONT-FAMILY: Arial, Helvetica, Tahoma,  sans-serif; font-variant:small-caps; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline}
+
+.links_TopLineRed		{COLOR: #F97257; FONT-FAMILY:  Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.links_TopLineRed:hover 	{COLOR: #FDC5BA; FONT-FAMILY:  Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; FONT-SIZE: 8pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline}
+
+.links_DomainName		{COLOR: #F97257; FONT-FAMILY:  Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; FONT-SIZE: 12pt; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.links_DomainName:hover 	{COLOR: #FDC5BA; FONT-FAMILY:  Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; FONT-SIZE: 12pt; FONT-WEIGHT: bold; TEXT-DECORATION: underline}
+
+.links_ForgotPwd		{COLOR: #035F62; FONT-FAMILY: "sans-serif","Lucida Console", "Trebuchet MS"; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-DECORATION: none; cursor: hand;}
+A.links_ForgotPwd:hover	{COLOR: #035F62; FONT-FAMILY: "sans-serif","Lucida Console", "Trebuchet MS"; FONT-SIZE: 8pt; TEXT-DECORATION: underline}
+
+.links_MainMenuBar			{COLOR: #FFF; font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+A.links_MainMenuBar:hover 	{COLOR: #FFF; font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+
+
+.links_MainMenuBar11			{COLOR: #FFF; font: bolder  11px Arial, "Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+A.links_MainMenuBar2:hover 	{COLOR: #FFF; font: bold 11px Arial,"Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+
+.links_MainMenuBar10			{COLOR: #FFF; font: bolder  10px Arial, "Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+A.links_MainMenuBar3:hover 	{COLOR: #FFF; font: bold 10px Arial,"Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+
+
+.links_MainMenuBar9			{COLOR: #FFF; font: bolder  9px Arial, "Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+A.links_MainMenuBar3:hover 	{COLOR: #FFF; font: bold 9px Arial,"Century Gothic", "Trebuchet MS", Helvetica, Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+
+
+.links_MainMenuBar70			{COLOR: #FFF; font: bold 12px Arial, "Trebuchet MS", Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+A.links_MainMenuBar70:hover 	{COLOR: #FFF; font: bold 12px Arial, "Trebuchet MS", Tahoma, Arial, sans-serif; font-variant:small-caps; TEXT-DECORATION: none;}
+
+/* buttons */
+
+.stdbuttonAction            
+{   display:block;  float:left; margin:0 6px 0 0;
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#76E28A,EndColorStr=#BAE2C2);
+    background-color:#dff4ff;letter-spacing: 1px;cursor:pointer;font-size:90%;line-height:100%; 
+    border:1px solid #dedede; border-top:1px solid #999999; border-left:1px solid #999999;
+    font-family:  Arial, Verdana, sans-serif; font-variant:small-caps;
+    text-decoration:none; font-weight:bold; color:#565656;padding:6px 5px 4px 5px; /* padding  Tp Rt Dn Lt*/
+    }
+    
+.stdbuttonAction button  { width:auto;    overflow:visible;    padding:4px 10px 3px 7px; /* IE6 */}    
+.stdbuttonAction:hover, .buttons a:hover   {background-color:#dff4ff; border:1px solid #c2e1ef; color:#336699;}
+.stdbuttonAction a:active   {background-color:#6299c5; border:1px solid #6299c5; color:#fff;}
+    
+
+.stdButtonNormal            {background-color:#C6ECCE; font-size:8pt; font-family:Verdana, Tahoma, Arial, Helvetica, Trebuchet Ms;}    
+.stdButton                  {background-color:#FFFFFF; font-size:8pt; font-family:Verdana, Tahoma, Arial, Helvetica, Trebuchet Ms;}    
+
+.stdButtonLogin             {background-color:#DF9E97; display:block; border:1px solid #dedede; font-size:8pt; font-family:"Trebuchet Ms", Verdana, Tahoma, Arial, Helvetica;}        
+.stdButtonLogin:hover       {background-color:#F1C2BD; border:1px solid #c2e1ef; color:#336699; border-bottom:1px solid #999999; border-right:1px solid #999999;}
+
+
+/* --- Textbox ---   */
+
+.stdTextFieldLogin		{color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:15px; background-color: #EDD1CD;}
+.stdTextField			{color:#474444; font-size: 8pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #CCCCCC; height:20px;}
+.stdTextField1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px;}
+.stdTextField2			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:400px;}
+
+.stdTextArea1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:200px; height:80px;}
+.stdTextArea2			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:400px; height:150px;}
+
+
+/* --- DropDown ---   */
+.stdDropDown			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px;}
+.stdDropDown1			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:208px;}
+.stdDropDown2			{color:#474444; font-size: 9pt; font-family:Verdana,Tahoma,Helvetica,Arial,Trebuchet Ms; border: 1px solid #999999; padding-left:5px; padding-top:2px; vertical-align:baseline; height:20px; width:408px;}
+
+/* --- Tables ---   */
+
+.stdtableBorder_Only        {border: #EA644E 0px solid; min-height: 400px; height:550px; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial,Verdana, Helvetica, sans-serif;}      
+.stdtableBorder_Main		{ background-color:#F6F7F6; border: #CDF2D6 1px solid; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Arial,Verdana, Helvetica, sans-serif;}
+.stdtableBorder_SideMenu   	{ background-color:#F0F0F6; FONT-SIZE: 10px; COLOR: #333333; FONT-FAMILY: Arial,Verdana, Helvetica, sans-serif;}
+                     
+
+/* --- Products ---- */
+.tblProductsBody        {background-color:#F7C6C0;}                      
+.tblProducts            {padding: 2px 2px 2px 5px; font-family: Tahoma, Arial, Verdana; letter-spacing: 1pt;} 
+.tblProductsFormLabel   { background-color: #E9B4AF; border-bottom: solid 1pt #F4EAB5; font-variant: small-caps; color: #4E5163; font-size: 12px; font-weight:bold; height:20px;}
+.tblProductsFormText    { background-color: #F6D8D8;  font-size: 11px; color: #4E5163;}
+
+.tblFormLabel   { background-color: #F2F0B2; border-bottom: solid 1pt #D4DFAA; font-variant: small-caps; color: #4E5163; font-size: 12px; font-weight:bold; height:20px;}
+.tblFormText    { background-color: #F8F6BC; border-bottom: solid 1pt #D4DFAA; font-size: 11px; color: #4E5163;}
+
+
+/* Grids */
+
+
+/* --- Calendar Css--- */
+
+.CalCss .ajax__calendar_container { border:1px solid #646464; background-color: #DAE8BE;  color: #738352;}
+.CalCss .ajax__calendar_header  {background-color: #B1BC9B; color: #2A2C25; font-size: 12px;}
+.CalCss .ajax__calendar_today  {background-color: #F6FCEA; color: #984B4B; font-size: 11px;}
+.CalCss .ajax__calendar_hover  {background-color: #F0F237; color: #984B4B;}
+.CalCss .ajax__calendar_active {background-color: #F3C4C4; color: #984B4B;}
+
+.calSelectedDay {      font-weight: bold;      color: white;      background-color: #E56A5A;}
+.calTitle       {      font-weight: bold;  font-size: 20px;  background-color: #F1BFBA; border: solid 0px #BAE0F1;}
+.calTodayDay    {      color: black;      background-color: #E56A5A;}
+.calOtherMonthDay   {    color: #BAE0F1;}
+.calSelector    {      background-color: #F1C7BA;}
+.calNextPrev    {      vertical-align: bottom;}
+.calDayHeader   {      background-color: #EDA194; font-weight: bold; color: Black;}
+.calWeekendDay  {      background-color: #F2DCD8;}
+
+
+/*  -- DIV ---- */
+#newsTitle   {width: 150px; height:30px; background-color:#CEEBFB;  color: #51A5BA;  margin: 0 auto; FONT-FAMILY: "Trebuchet MS",Verdana, Helvetica, sans-serif; FONT-SIZE: 10pt; FONT-WEIGHT: bold;}
+#newsDate    {width: 150px; color: #BE8401;  margin: 0 auto; FONT-FAMILY: "Trebuchet MS",Verdana, Helvetica, sans-serif; FONT-SIZE: 10pt; FONT-WEIGHT: bold;}
+#newsContent {width: 150px; color: #8E897C;  margin: 0 auto; FONT-FAMILY: Tahoma ,Verdana, Helvetica, sans-serif; FONT-SIZE: 8pt; }
+
+#footer    { height: 40px; background-color:#DBA7A4;}
+.separator { border-top: dotted 1px #8E897C; }
+.tblDown1  { width: 200px; height: 200px; margin: 5px auto; border-right: dotted 1px #8E897C; padding-right: 20px; padding-left: 10px; }
+#tbldownRt { width: 200px; height: 400px; margin: 5px auto; padding-right: 20px; padding-left: 10px; }
+#tblright1 { width: 250px; height: 500px; margin: 5px auto; padding-left: 10px; float:right;}
+
+.bkgNewsBoxOren		    {background-color:#F3D651;}
+.bkgNewsBoxOren_Grad	{background-color:#F3D651; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F3D651,EndColorStr=#FEECBE)}
+
+.bkgNewsBox		    {background-color:#7FE7EA;}
+.bkgNewsBox_Grad	{background-color:#7FE7EA; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#7FE7EA,EndColorStr=#91FAFD)}
+.bkgNewsHeader  	{font: bold 101%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif;	position: relative;	margin: 30px 0 50px; vertical-align:middle;	color: #687367; font-style:italic;}
+.bkgNewsTitle       {FONT-SIZE: 9pt; height: 25px; font-weight:bold; background-color:#F1F0EB; color:#94804D; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 5px;}
+.bkgNewsContent     {FONT-SIZE: 8pt; color:#8E897C; text-align:justify; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding: 10px 5px 10px 5px;}
+.bkgNewsTable       { width: 200px; background-color:#F9F8F4;}
+.bkgTestTitle       {FONT-SIZE: 8pt; height: 20px; font-weight:bold; background-color:#F1F0EB; color:#94804D; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 5px;}
+.bkgTestTitle2      {FONT-SIZE: 7pt; height: 15px; background-color:#F1F0EB; color:#94804D; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 15px;}
+.bkgTestReadmore    {FONT-SIZE: 8pt; height: 15px; background-color:#F7F6F3; color:#4A8EAD; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 15px;}
+
+.HomePageHeaderFont {font: bold 101%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #687367; font-style:italic;}
+.HomePageContentFont {font-size:12px; height:150px; width: 550px; overflow:hidden;  text-align: justify; padding-left:15px; padding: 10px;
+                       font-family: Tahoma, Arial, Verdana, Lucida Bright; color:#686A68;
+                    
+                  /*  background: -webkit-gradient(linear, left top, left bottom, from(#C4EBF1), to(#FFFFFF)); /* for webkit browsers */
+                  /*  background: -moz-linear-gradient(top,  #C4EBF1,  #FFFFFF); /* for firefox 3.6+ */
+                  /*  filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#C4EBF1 ,EndColorStr=#FFFFFF,GradientType=1); */
+ }
+#HomepgContent      { font-size:12px; text-align: justify; font-family: Tahoma, Arial, Verdana, Lucida Bright; color:#7B7D7B; padding: 15px; }
+.fontCopyRight       {font-size:12px; font-family: Tahoma, Arial, Verdana, Lucida Bright; color:#FFFFFF; padding-top:1px;}
+
+.TestIm        { padding-left: 10px; padding-right:10px;}
+.TestimHeader  { height:25px; padding: 3px; border-bottom: solid 1px #7FE7EA; font: bold 101%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; color: #687367; font-style:italic;}
+               
+  /* --   #FBE78D;*/   
+.Testimbox     {background-color: #ECECEC;width: 550px; height: 100px;color:#657071; font-size:12px; font-family:Tahoma, Arial, Verdana, Lucida Bright; overflow:hidden; padding: 2px; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#ECECEC,EndColorStr=#FCF6DB) }
+
+
+/*  -- div css  */
+.dvBannerLeftPanel { width:200px; height:200px;background-color:#DEE1E2; float:right;}
+.divCssLogoImage { max-height: 75px; max-width: 180px; overflow:hidden;}
+.divCssBannerImg { height:200px; width:820px; }
+/*.CssFollowUs     { float:left; margin-left: 50px; margin: 5px; padding-left:50px; padding: 0px;} */
+.CssFollowUs     { float:left; margin: 5px; padding: 0px;}
+
+.CssFollowUsText { float:left; font: bold italic 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+           
+.Testimfooter  {padding-left: 28px;padding-top: 0px;margin-bottom: 2em; font-size:10px; vertical-align: top;  font-family: Tahoma, Arial, Verdana, font-size: 90%;color: #4A4A4A;}
+
+
+/* -- box section  --- */
+#box        { display: table; width: 250px;  background-color:#F9F8F4;}
+    /* -- Light blue color header  --- */
+#boxhead    { height: 35px; background-color:#7FE7EA;  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#7FE7EA,EndColorStr=#A8FBFD) }
+    /* -- Light Orange color header  --- */
+#Orboxhead    { height: 35px; background-color:#F3D651; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F3D651,EndColorStr=#FFEFA6) }
+
+#boxsubhead { FONT-SIZE: 9pt; height: 25px; font-weight:bold; background-color:#F1F0EB; color:#94804D; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 5px;}
+#boxContent { FONT-SIZE: 8pt; color:#8E897C; text-align:justify; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding: 15px 10px 15px 10px; height: 100px; overflow:hidden;}
+#boxFooter  { FONT-SIZE: 8pt; height: 15px; background-color:#F7F6F3; color:#4A8EAD; font-family: Tahoma, Arial, Verdana, Lucida Bright; float: right; padding-right: 15px;}
+#boxheadText{ font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+#boxTLtarc  { display: table-cell; float:left; vertical-align: top;}
+#boxTRtarc  {display: table-cell; float:right; vertical-align: top;}
+.Boxblank   { height:20px; background-color:#FFFFFF;}
+
+
+.sideBox        { display: table; background-color:#F9F8F4;}
+    /* -- Light blue color header  --- */
+.sideBoxhead    { height: 35px; background-color:#7FE7EA;  
+                  background: -webkit-gradient(linear, left top, left bottom, from(#FF6347), to(#FDC4BA)); /* for webkit browsers */
+                background: -moz-linear-gradient(top,  #FF6347,  #FDC4BA); /* for firefox 3.6+ */
+                filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FF6347 ,EndColorStr=#FDC4BA,GradientType=0);
+                  
+                  )
+                   }
+    /* -- Light Orange color header  --- */
+.OrsideBoxhead    { height: 35px; background-color:#F3D651; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F3D651,EndColorStr=#FFEFA6) }
+
+.sideBoxsubhead { FONT-SIZE: 8pt; height: 25px; font-weight:bold; background-color:#F1F0EB; color:#94804D; font-family: Tahoma, Arial, Verdana, Lucida Bright; padding-left: 5px; padding-top: 5px; vertical-align:middle;}
+.sideBoxContent2 { FONT-SIZE: 8pt; color:#8E897C; text-align:justify; font-family: Tahoma, Arial, Verdana, Lucida Bright; height: 150px; overflow:hidden;}
+.sideBoxFooter  { FONT-SIZE: 8pt; height: 15px; color:#4A8EAD; font-family: Tahoma, Arial, Verdana, Lucida Bright; float: right; padding-right: 5px;}
+.sideBoxheadText{ font: bold italic 102%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; padding-top: 10px; text-align: center; color: #687367;}
+.sideBoxTLtarc  { display: table-cell; float:left; vertical-align: top;}
+.sideBoxTRtarc  {display: table-cell; float:right; vertical-align: top;}
+
+.sideBoxTextArea {border: 0px; color:#657071; font-size:8pt; font-family:Tahoma, Lucida Bright, Arial;  background-color:#F1F0EB; height:150px; width:195px; overflow: hidden;}
+.sideBoxTextArea_Testim {border: 0px;background-color: #ECECEC;width: 550px; height:100px; overflow:hidden; font-size:8pt; font-family: Verdana, Tahoma, Georgia;  color: #4A4A4A;
+                    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#ECECEC,EndColorStr=#FCF6DB)}
+
+
+.sideBoxContent 
+ {FONT-SIZE: 8pt; color:#8E897C; text-align:justify; padding: 8px 8px 8px 8px; font-family: Tahoma, Arial, Verdana, Lucida Bright; height: 100px; overflow:hidden;
+  background: #ECECEC; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECECEC', endColorstr='#FFFFFF'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#ECECEC), to(#FFFFFF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #ECECEC,  #FFFFFF); /* for firefox 3.6+ */ }
+
+
+.GreenBoxhead    { height: 35px; background-color:#EEFAC0;  
+                   filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFC955,EndColorStr=#FAE867);
+                   background: -webkit-gradient(linear, left top, left bottom, from(#FFC955), to(#FAE867)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #FFC955,  #FAE867); /* for firefox 3.6+ */
+                    }   
+.GreenBoxGrad    { FONT-SIZE: 8pt; color:#8E897C; min-height:50px; padding: 5px 5px 5px 5px; border: #EEFAC0 1px solid; text-align:justify; font-family: Tahoma, Arial, Verdana, Lucida Bright;
+                   filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fbf1aa,EndColorStr=#FEFFFB);
+                   background: -webkit-gradient(linear, left top, left bottom, from(#fbf1aa), to(#FEFFFB)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #fbf1aa,  #FEFFFB); /* for firefox 3.6+ */
+                    }
+
+
+.PhoneBoxGrad    { font: bold 110%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; color:#C124C7; width:250px; height:50px; padding: 35px 5px 5px 5px; border: #EEFAC0 1px solid; text-align:justify; 
+                   filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#D5E6CA,EndColorStr=#FFFFFF);
+                   background: -webkit-gradient(linear, left top, left bottom, from(#D5E6CA), to(#FFFFFF)); /* for webkit browsers */
+                    background: -moz-linear-gradient(top,  #D5E6CA,  #FFFFFF); /* for firefox 3.6+ */
+                    }
+                    
+.opacityit img   {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);-moz-opacity: 0.4; -webkit-opacity: 0.4; float:left;}
+
+
+/* -- Body Section --- */
+
+#ContentLeft        { float:left; padding-left: 5px; width: 210px;}
+#ContentRight       { float:right; padding-right: 5px; width: 210px;}
+#ContentMid         { float: left;	width: 57%;}
+
+        
+#leftcontent {
+    width: 100%;
+    float: none;
+    color: #000;
+    padding: 10px; 
+}
+
+#rightcontent 
+{
+width: 100%;   
+float: none;
+padding: 10px;
+}
+
+.BkgunderBannerBar   {background-color:#6C6B6B; height:5px;}
+.BkgIndentMenuRow {height: 40px;   background-color:#88EDF1;                
+background: -webkit-gradient(linear, left top, left bottom, from(#88EDF1), to(#36CBD1)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #88EDF1,  #36CBD1); /* for firefox 3.6+ */
+filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#88EDF1 ,EndColorStr=#36CBD1,GradientType=0);
+                   }
+
+
+.bkgMemLogin   {height: 40px;
+background: -webkit-gradient(linear, 50% 100%, 0% 0%, from(#FF6347), to(#FFFFFF), color-stop(.4,#FFFFFF)); /* for webkit browsers */
+background: -moz-linear-gradient(left,  #FFFFFF,  #FF6347); /* for firefox 3.6+ */
+filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FFFFFF ,EndColorStr=#FF6347,GradientType=1);}
+                 
+
+
+.LogoText       {font: bold 105%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText2      {font: bold 95%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+.LogoText3      {font: bold 90%/100% "Trebuchet MS","Lucida Console", Arial, sans-serif; height: 30px;	position: relative;	margin: 10px 0 10px; vertical-align:middle;	color: #195675; font-style:italic;}
+
+
+.indentmenu     {font: bold 16px Arial;width: 100%;overflow: visible;}
+
+.indentmenu ul  {margin: 0;padding: 0;float: left;width: 100%; position:relative;display:block;border: 1px solid #564c66;
+                border-width: 1px 0;list-style-type:none;text-transform:uppercase;border-bottom:6px solid #6C6B6B;
+                border-top:1px solid #919191;height: 45px; vertical-align: middle;
+                background-color: #FD7F68; 
+                /*background: -webkit-gradient(linear, left top, left bottom, from(#FF6347), to(#FDC4BA));
+                background: -moz-linear-gradient(top,  #FF6347,  #FDC4BA); 
+                filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#FF6347 ,EndColorStr=#FDC4BA,GradientType=0);*/
+}
+
+.indentmenu ul li   {display: inline;}
+.indentmenu ul li a { float:left; color: white; padding:6px 10px 0 10px;text-decoration: none; text-shadow: 0 1px 1px #111;
+                     border-right: 1px solid #564c66; /*dark purple divider between menu items*/}
+
+
+.indentmenu ul li a:visited {color: white;}
+.indentmenu ul li a:hover, .indentmenu ul li .current{
+color: white !important; /*text color of selected and active item*/
+padding-top: 6px; /*shift text down 1px for selected and active item*/
+padding-bottom: 4px; /*shift text down 1px for selected and active item*/
+ border-top: 2px solid #564c66; 
+  background-color: #FD7F68; 
+
+}
+
+
+.tmp3_RimgCSS { background-color: White; background-image:url(../../Images/tmp3_Rgt_img2.jpg); background-repeat: no-repeat; background-position: right center;}
+.tmp3_BimgCSS { background-color: White; background-image:url(../../Images/tmp3_Bimg3.jpg); background-repeat: no-repeat; background-position: center center;}
+

@@ -1,0 +1,9 @@
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.BAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.BAL.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.DAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.Entities.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.DAL.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\bin\Release\CMSv3.Entities.pdb
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Release\CMSv3.BAL.csprojResolveAssemblyReference.cache
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Release\CMSv3.BAL.dll
+D:\Projects\GlobalSurf\DotNet\CMS\CMSv3.BAL\obj\Release\CMSv3.BAL.pdb

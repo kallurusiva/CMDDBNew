@@ -1,0 +1,212 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterDIYMB.master.cs" Inherits="AdminMasterDIYMB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../App_Themes/Default/MobileDIY_styles.css" rel="stylesheet" type="text/css" />
+    <link href="../../App_Themes/Default/MobileStyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="../../App_Themes/Default/NewButtons.css" rel="stylesheet" type="text/css" />
+   <style type="text/css">
+       body {
+            margin: 0;
+            padding:0; 
+            background: #fff;
+        }
+        #dvHeader
+        {
+            height: 250px;
+            background-color: #fff;
+        }
+        
+        #dvContent
+        {
+           
+            background-color: #FFF;
+            overflow: auto;
+	        width: 100%
+        }
+         
+        .dvLeftBar
+        {
+            height: 200px;
+            min-height: 350px;
+            background-color: #fff;
+            width: 20%;
+            float: left;
+            display: inline-block;
+        }
+        
+        .dvRightBar
+        {
+        	 width: 70%;
+             float: left;
+             display: inline-block;
+        }
+         
+        
+         
+        .dvfooter
+        {
+            clear: both;
+            height: 27px;
+            background-color: #787373;
+        }
+
+   </style>
+</head>
+<body>
+    
+    <%---- HEADER -- --%>
+    <div id="dvHeader">
+    
+        
+          <table cellpadding="0" cellspacing="0" width="100%">
+          <tr id="trTopRow1" >
+              <td nowrap="nowrap" style="padding-left:10px;" width="30%">
+               <asp:Label ID="lblDebug" runat="server"  Text=""></asp:Label>
+           
+
+              <div id="dvSMSBizLink" runat="server" style="float: left;">
+                <asp:HyperLink ID="HypSMSBusiness" CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=1MACC" Text ="HiTech Business"  runat="server" />
+                 &nbsp;
+             </div>
+
+              
+               <div id="dvSMSsystemLink" runat="server" style="float: left; ">                   
+                <asp:HyperLink ID="HypSmsSystem"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ad_Navigate2WebSites.aspx?go2Page=SMSSYSTEM" Text = "Bulk SMS"  runat="server" />
+                 &nbsp;
+              </div>
+
+               <div id="dvWebPortal" runat="server" style="float:left;">
+              <asp:HyperLink ID="HypWebPortal"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ad_Welcome.aspx" Text = "Web Portal"  runat="server" />
+              &nbsp;
+              </div>
+              
+              
+              <div id="dvEmail" runat="server" style="float:left;">
+                <asp:HyperLink ID="HypEmail"  CssClass="BintButton orange xbtnSize0 xfnt12 glossy skew" NavigateUrl="~/Admin/Ads_EmailPage.aspx" Text = "Email System"  runat="server" />
+                &nbsp;
+              </div>
+             
+              </td>
+              <td class="WebPortalTextfont" align="right">&nbsp;
+                MobileWeb
+                
+                <div id="google_translate_element" style="float:left;"></div>
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({
+                          pageLanguage: 'en',
+	                        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+	                        includedLanguages: 'af,sq,ar,be,bg,ca,zh-CN,zh-TW,hr,cs,da,nl,en,et,tl,fi,fr,gl,de,el,ht,iw,hi,hu,is,id,ga,it,ja,ko,lv,lt,mk,ms,mt,no,fa,pl,pt,ro,ru,sr,sk,sl,es,sw,sv,th,tr,uk,vi,cy,yi'
+                          }, 'google_translate_element');
+                        }
+                        </script>
+                        <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                             
+              
+              </td>
+              <td align="center" nowrap="nowrap" width="30%" valign="top" style="vertical-align: top; padding-left:5px; padding-top: 1px;">
+              
+              
+            <%--<asp:HyperLink ID="HyperLink8" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=1" Text="ENG" runat="server" />    
+            <asp:HyperLink ID="HyperLink11" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=2" Text="BM" runat="server" />    
+            <asp:HyperLink ID="HyperLink13" CssClass="links_LanguageTOP" NavigateUrl="~/Admin/Ad_ChangeAdminLanguage.aspx?lg=3" Text="CHN" runat="server" />   --%> 
+            <%--<asp:HyperLink ID="HyperLink3" CssClass="links_TopLineRed" NavigateUrl="~/Admin/Ad_SystemNewsListing.aspx" Text="<%$ Resources:LangResources, SystemNews %>" runat="server" />    --%>
+            <div style="float:right; padding-right:20px;">
+             <a href="../../MemberLogout.aspx"><img src="../../Images/WebPortal/Exit.png" title="LogOut" style="border: solid 0px #FF00FF; margin:0px; height:20px; width:20px;" /></a>
+             </div>
+              </td>
+          </tr>
+          <tr id="trTopMenu">
+              <td colspan="3">
+                 <nav class="menu1">
+                    <ul>
+                        <li> <a  runat="server" id="aMbHome" href="Ad_MobileHome3.aspx"><img  src="../../Images/WebPortal/settings.png" border="0">Settings</a> </li>
+                        <li> <a  runat="server" id="aMbTemplate" href="Ad_MobileTemplates.aspx"><img src="../../Images/WebPortal/webTemplate.png" border="0"> Templates</a> </li>
+                        <li> <a  runat="server" id="aMbAnchor" href="Ad_MobiAnchorImg.aspx"><img src="../../Images/WebPortal/paint.png" border="0"> WallPaper</a> </li>
+                        <li> <a  runat="server" id="aMbSampleMobi" href="Ad_AnchorSampleMobis.aspx"><img src="../../Images/WebPortal/webTemplate.png" border="0"> Sample Mobile Webs</a> </li>
+                    </ul>
+                </nav>
+                  
+                  </td>
+          </tr>
+          <tr id="trBanner" style="min-height:150px; min-width:800px;">
+              <td align="center" colspan="3">
+              
+                  <img src="../../Images/WebPortal/hdBanner2.jpg" border="0" style="max-height: 144px;"/>
+              
+              
+              </td>
+          </tr>
+          <tr id="trBottomMenu">
+              <td colspan="3">
+               
+               <nav class="menu1">
+                    <ul>
+                        <li> <a runat="server" id="aMbBtn1" href="Ad_MobileOwnButtonCreate.aspx?bt=1"><img style="max-height: 27px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 1</a> </li>
+                        <li> <a runat="server" id="aMbBtn2" href="Ad_MobileOwnButtonCreate.aspx?bt=2"><img style="max-height: 27px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 2</a> </li>
+                        <li> <a runat="server" id="aMbBtn3" href="Ad_MobileOwnButtonCreate.aspx?bt=3"><img style="max-height: 20px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 3</a> </li>
+                        <li> <a runat="server" id="aMbBtn4" href="Ad_MobileOwnButtonCreate.aspx?bt=4"><img style="max-height: 20px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 4</a> </li>
+                        <li> <a runat="server" id="aMbBtn5" href="Ad_MobileOwnButtonCreate.aspx?bt=5"><img style="max-height: 20px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 5</a> </li>
+                        <li> <a runat="server" id="aMbBtn6" href="Ad_MobileOwnButtonCreate.aspx?bt=6"><img style="max-height: 20px;" src="../../Images/WebPortal/MyButton.png" border="0">Mobile web Button 6</a> </li>
+                        
+                        <%--<div id="dvRegDomainLink" runat="server" style="float: right; ">                   
+                <asp:HyperLink ID="HypRegDomain"  CssClass="small blue awesome" NavigateUrl="~/Admin/Ad_DomainsList.aspx" Text = "Register Domain"  runat="server" />
+                 &nbsp;
+              </div>--%>
+              
+                    </ul>
+                </nav>
+               
+               </td>
+          </tr>
+      </table>
+        
+    
+    </div>
+    
+    <%---- LEFTBAR -- --%>
+
+    
+    <%---- CONTENT -- --%>
+    
+    
+          
+    <div id="dvContent" >
+    <div id="divLeftBar" class="dvLeftBar" runat="server" >
+    <asp:ContentPlaceHolder ID="ContentLeftMenu" runat="server">
+     </asp:ContentPlaceHolder>
+    </div>
+    
+    <div id="divRightBar" class="dvRightBar" runat="server">
+        <asp:ContentPlaceHolder id="ContentBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+  </div>
+  
+    <%---- FOOTER -- --%>
+    <div id="divfooter" class="dvfooter" runat="server">
+    
+         <asp:ContentPlaceHolder id="CphFooter" runat="server">
+         </asp:ContentPlaceHolder>
+    
+    </div>
+
+
+
+    
+    <div>
+    
+    </div>
+    
+    <div>
+        
+    </div>
+
+</body>
+</html>
